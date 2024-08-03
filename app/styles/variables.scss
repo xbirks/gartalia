@@ -70,7 +70,7 @@ $mb-xxl:148px; .mb-xxl{margin-bottom: $mb-xxl;}
 }
 
 @mixin media1458px {
-  @media only screen and (max-width: 1390px) {
+  @media only screen and (max-width: 1458px) {
     @content;
   }
 }
