@@ -54,6 +54,10 @@ body{
     background-color: $blanco-verde;
 }
 
+strong{
+	font-weight: 700;
+}
+
 .header__master{
     display: flex;
     justify-content: space-between;

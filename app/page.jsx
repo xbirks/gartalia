@@ -4,6 +4,7 @@ import Intro from "./components/cabecera/intro";
 import GridMaster from "./components/grid/gridMaster";
 import Empresas from "./components/empresas/empresas";
 import Location from "./components/location/location";
+import Nosotros from "./components/nosotros&review/nosotros";
 
  
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <GridMaster></GridMaster>
       <Empresas></Empresas>
       <Location></Location>
+      <Nosotros></Nosotros>
     </div>
   );
 }
