@@ -86,7 +86,7 @@
             }
 
             @include media600px {
-                height: 200px;
+                height: 150px;
                 border-radius: 20px;
             }
         }
@@ -137,6 +137,8 @@
 
             @include media600px {
                 font-size: 28px;
+                text-align: center;
+                max-width: 100%;
             }
         }
     
@@ -154,6 +156,11 @@
                 font-size: 14px;
                 line-height: 18px; 
             }
+
+            @include media600px {
+                text-align: center;
+                max-width: 100%;
+            }
         }
 
         .grid__buttons{
@@ -165,6 +172,11 @@
                 @include media700px {
                     margin-bottom: 7px;
                 }
+            }
+
+            @include media600px {
+display: flex;
+justify-content: center;
             }
         }
     }
