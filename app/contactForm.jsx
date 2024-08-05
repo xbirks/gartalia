@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import "./style.scss";
 import IconPresupuesto from "./assets/img/icon_presupuesto.svg";
+import Compressor from 'compressorjs';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,7 +11,7 @@ function ContactForm() {
     tel: '',
     service: '',
     location: '',
-    images: [] 
+    images: [] // Almacenará URLs de las imágenes para previsualización
   });
   const [acceptedPolicy, setAcceptedPolicy] = useState(false);
   const [status, setStatus] = useState('');
@@ -23,23 +24,27 @@ function ContactForm() {
 
   const handleFileChange = (e) => {
     const files = Array.from(e.target.files);
-    const updatedFiles = files.slice(0, 5); 
-    const fileReaders = updatedFiles.map(file => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      return reader;
+    files.forEach(file => {
+      new Compressor(file, {
+        quality: 0.6, // Ajusta la calidad de la imagen resultante
+        maxWidth: 1920, // Máximo ancho de la imagen resultante
+        maxHeight: 1080, // Máximo altura de la imagen resultante
+        success(result) {
+          const reader = new FileReader();
+          reader.readAsDataURL(result);
+          reader.onloadend = () => {
+            setFormData(prev => ({
+              ...prev,
+              images: [...prev.images, reader.result]
+            }));
+            setSelectedFiles(prev => [...prev, result.name]); // Guardar nombre del archivo para mostrar
+          };
+        },
+        error(err) {
+          console.error('Error during image compression:', err.message);
+        },
+      });
     });
-
-    fileReaders.forEach((reader, index) => {
-      reader.onloadend = () => {
-        setFormData(prev => ({
-          ...prev,
-          images: [...prev.images, reader.result]
-        }));
-      };
-    });
-
-    setSelectedFiles(updatedFiles.map(file => file.name));
   };
 
   const handleSubmit = async (e) => {
@@ -60,11 +65,10 @@ function ContactForm() {
       });
 
       if (response.ok) {
-        const result = await response.json();
         setStatus('success');
-        setFormData({ name: '', tel: '', service: '', location: '', images: [] });
-        setAcceptedPolicy(false); // Reset the form
-        setSelectedFiles([]); // Reset file selection
+        setFormData({ name: '', tel: '', service: '', location: '', images: [] }); // Resetear formulario
+        setSelectedFiles([]); // Resetear archivos seleccionados
+        setAcceptedPolicy(false);
       } else {
         const error = await response.text();
         throw new Error(error);
