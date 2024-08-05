@@ -113,7 +113,7 @@ function ContactForm() {
 
         <input type="text" name="location" placeholder="¿Dónde lo necesitas?" value={formData.location} onChange={handleChange} required />
 
-        <input type="file" id="file-upload" name="image" accept="image/jpeg, image/png, image/jpg, image/heic" multiple onChange={handleFileChange} style={{ display: 'none' }} />
+        <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
         <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos que nos ayuden a saber el estado del jardín</label>
         <div className="file-selected">
           {selectedFiles.length > 0 ? selectedFiles.join(', ') : 'Ninguna foto seleccionada'}
