@@ -1,5 +1,6 @@
 import "./style.scss";
 import Header from './components/header.jsx';
+import Footer from "./components/footer.jsx";
  
 
 export const metadata = {
@@ -164,7 +165,7 @@ export default function RootLayout({ children }) {
         <div className="master__gartalia">
         <Header />
           {children}
-          
+        <Footer />
         </div>
       </body>
     </html>

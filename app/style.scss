@@ -115,6 +115,14 @@ strong{
 .master{
 	width: 70%;
 	margin: 0 auto 60px auto;
+
+	@include media2200px {
+		width: 80%;
+	}
+
+	@include media1200px {
+		width: 90%;
+	}
 }
 
 .faq__banner{
@@ -144,21 +152,255 @@ strong{
 }
 
 
-//4K
-@media only screen and (max-width: 2200px) {
-    
-	.master{
+
+
+
+  //FOOTER
+
+  .footer__master{
+	width: 70%;
+	margin: 0 auto 60px auto;
+
+	@include media2200px {
 		width: 80%;
 	}
-  }
 
-
-
-  //LAPTOP
-@media only screen and (max-width: 1200px) {
-    
-	.master{
+	@include media1200px {
 		width: 90%;
 	}
-  }
 
+	.footer__resume{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		.footer__logo{
+			background-color: $esmeralda;
+			border-radius: 50px;
+			height: 40px;
+			padding: 8px 40px 12px 40px;
+			margin-right: 10px;
+
+			@include media800px {
+				width: 100%;
+				text-align: center;
+            }
+
+			img{
+				width: 130px;
+			}
+		}
+
+		.header__nav{
+			background-color: $esmeralda;
+			border-radius: 50px;
+			height: 40px;
+			padding: 10px 40px;
+			width: 100%;
+			justify-content: center;
+
+			.imgButton__white{
+				background-color: $esmeralda;
+			}
+
+			@include media800px {
+				display: none;
+            }
+
+			
+		}
+	}
+
+	.footer__contacto{
+		background-color: $botella;
+		border-radius: 30px;
+		text-align: center;
+
+		.footer__contacto-title{
+			color: $blanco-verde;
+			text-align: center;
+			font-family: $halyard;
+			font-size: 70px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 100.905%;
+			max-width: 700px;
+			margin:  10px auto 10px auto;
+			padding-top: 30px;
+			padding-bottom: 50px;
+
+			@include media1200px {
+				font-size: 60px;
+				line-height: 68px;
+            }
+
+			@include media700px {
+				font-size: 50px;
+				line-height: 56px;
+				max-width: 90%;
+            }
+
+			@include media600px {
+				font-size: 32px;
+				line-height: 34px;
+            }
+
+			span{
+				color: $esmeralda;
+			}
+		}
+
+		form{
+			margin-top: 80px;
+			display: grid;
+			padding: 0 30% 0 30%;
+
+			@include media1200px {
+				padding: 0 20% 0 20%;
+            }
+
+			@include media700px {
+				padding: 0 10% 0 10%;
+            }
+
+			button{
+			}
+
+			input{
+				all: unset;
+		
+				background-color: $blanco-verde;
+				width: auto;
+				height: 40px;
+				border-radius: 50px;
+				font-family: $neue;
+				font-size: 18px;
+				padding-left: 20px;
+		
+				@include media600px {
+					width: 95%;
+				}
+		
+				&::placeholder{
+					color: $gris-verde;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				
+				}
+		
+				&:focus{
+					color: $botella;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					
+					position: relative;
+				}
+		
+				&:active{
+					color: $esmeralda;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					
+					position: relative;
+				}
+		
+				&:valid{
+					background-color: $menta;
+				}
+		
+			}
+
+			.form__send-button{
+				all: unset;
+	
+				background-color: $esmeralda;
+				width: auto;
+				height: 30px;
+				border-radius: 50px;
+				font-family: $neue;
+				font-size: 18px;
+				padding-left: 20px;
+				padding-top: 10px;
+				margin-top: 10px;
+				color: $botella;
+				text-align: center;
+	
+				p{
+					position: relative;
+					top: -5px;
+				}
+	
+				&:hover{
+					color: $botella;
+					cursor: pointer;
+					background-color: $destacado;
+					transition: $transition-short;
+				}
+	
+				&:disabled{
+					background-color: $gris-verde;
+					&:hover{
+						background-color: $gris-verde;
+						transition: 0s;
+						color: $gris-verde;
+					}
+				}
+	
+			}
+		}
+
+		.footer__legal{
+			font-family:$neue;
+			color: $blanco-verde;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 143.326%;
+			padding-left: 10px;
+			margin-top: 10px;
+			margin-bottom: 60px;
+		}
+
+		.success-message{
+			background-color: $destacado;
+			font-family: $neue;
+			align-content: center;
+			font-size: 14px;
+			color: $botella;
+			text-align: center;
+			max-width: 90%;
+			margin: 0 auto;
+			height: 30px;
+			border-radius: 20px;
+			position: relative;
+			bottom: 20px;
+			padding: 5px 15px;
+		}
+	
+		.error-message{
+			background-color: red;
+			font-family: $neue;
+			align-content: center;
+			font-size: 14px;
+			color: $botella;
+			text-align: center;
+			max-width: 90%;
+			margin: 0 auto;
+			height: 30px;
+			border-radius: 20px;
+			position: relative;
+			bottom: 20px;
+		}
+	
+
+	}
+  }
