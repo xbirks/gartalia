@@ -11,7 +11,7 @@ function ContactForm() {
     tel: '',
     service: '',
     location: '',
-    images: [] // Almacenará URLs de las imágenes para previsualización
+    images: [] 
   });
   const [acceptedPolicy, setAcceptedPolicy] = useState(false);
   const [status, setStatus] = useState('');

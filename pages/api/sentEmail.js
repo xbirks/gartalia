@@ -19,17 +19,6 @@ export default async function handler(req, res) {
         }
     });
 
-    // const attachments = images.map((image, index) => {
-    //     const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
-    //     if (!matches || matches.length !== 3) {
-    //         throw new Error("Invalid input string for image index " + index);
-    //     }
-    //     return {
-    //         filename: `Image${index + 1}.${matches[1].split('/')[1]}`, // Dynamic filename with extension
-    //         content: matches[2], // Base64 encoded content
-    //         encoding: 'base64'
-    //     };
-    // });
 
     const attachments = await Promise.all(images.map(async (image, index) => {
         const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
@@ -58,7 +47,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
         from: process.env.SMTP_USER,
-        to: 'andres03ortega@gmail.com, aom.contacto@gmail.com',
+        to: 'andres03ortega@gmail.com',
         subject: `Mensaje de ${name}`,
         html: `<p>Nombre: ${name}</p><p>Teléfono: ${tel}</p><p>Servicio: ${service}</p><p>Ubicación: ${location}</p>`,
         attachments
