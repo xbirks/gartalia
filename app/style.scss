@@ -117,6 +117,32 @@ strong{
 	margin: 0 auto 60px auto;
 }
 
+.faq__banner{
+	background-color: $destacado;
+	padding: 20px 0 20px 0;
+	color: $botella;
+	text-align: center;
+	font-family: $halyard;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100.905%;
+
+	a{
+		font-weight: 500;
+			}
+
+	@include media700px {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	@include media600px {
+		font-size: 22px;
+		line-height: 34px;
+	}
+}
+
 
 //4K
 @media only screen and (max-width: 2200px) {
