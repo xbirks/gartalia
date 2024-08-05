@@ -63,6 +63,13 @@ $mb-xxl:148px; .mb-xxl{margin-bottom: $mb-xxl;}
 
 //MIXINS RESPONSIVE
 
+@mixin media2200px {
+  @media only screen and (max-width: 2200px) {
+    @content;
+  }
+}
+
+
 @mixin media1730px {
   @media only screen and (max-width: 1730px) {
     @content;
@@ -77,6 +84,12 @@ $mb-xxl:148px; .mb-xxl{margin-bottom: $mb-xxl;}
 
 @mixin media1390px {
   @media only screen and (max-width: 1390px) {
+    @content;
+  }
+}
+
+@mixin media1200px {
+  @media only screen and (max-width: 1200px) {
     @content;
   }
 }
