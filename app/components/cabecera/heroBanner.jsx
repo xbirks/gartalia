@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import Link from 'next/link';
 import "./intro.scss";
 import certificados from '../../assets/img/icon_certificados.svg';
 

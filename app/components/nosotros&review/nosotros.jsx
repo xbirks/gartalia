@@ -27,13 +27,13 @@ function nosotros(){
                 </p>
                 <div className="location__buttons">
                 <StandardButton
-                link="https://ermo.es"
+                link="tel:+34658677423"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://ermo.es"
+                link="#presupuesto"
                 title="Presupuesto"
                 style="emptyStandardButton">
                 </StandardButton>
@@ -70,14 +70,14 @@ function nosotros(){
 
              <div className="review__buttons">
                 <StandardButton
-                link="https://ermo.es"
-                title="Contactar"
+                link="https://g.page/r/CbwuUZbFLjXpEAE/review"
+                title="Review"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://ermo.es"
-                title="Presupuesto"
+                link="https://maps.app.goo.gl/bnh6pKARVGWfLXUK8"
+                title="Google Maps"
                 style="emptyStandardButton">
                 </StandardButton>
              </div>
