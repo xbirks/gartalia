@@ -81,23 +81,23 @@ function Footer(){
             <SeoAnchor link="/moncada" pueblo="Moncada"></SeoAnchor>
             <SeoAnchor link="/paterna" pueblo="Paterna"></SeoAnchor>
             <SeoAnchor link="/ribarroja" pueblo="Ribarroja del Turia"></SeoAnchor>
-            <SeoAnchor link="/puçol" pueblo="Puçol"></SeoAnchor>
+            <SeoAnchor link="/pucol" pueblo="Puçol"></SeoAnchor>
             <SeoAnchor link="/montserrat" pueblo="Montserrat"></SeoAnchor>
             <SeoAnchor link="/alfafar" pueblo="Alfafar"></SeoAnchor>
-            <SeoAnchor link="/camarena" pueblo="Camarena"></SeoAnchor>
+            <SeoAnchor link="/mascamarena" pueblo="Mas Camarena"></SeoAnchor>
             <SeoAnchor link="/vilamarxant" pueblo="Vilamarxant"></SeoAnchor>
             <SeoAnchor link="/náquera" pueblo="Náquera"></SeoAnchor>
-            <SeoAnchor link="/buriassot" pueblo="Buriassot"></SeoAnchor>
+            <SeoAnchor link="/burjassot" pueblo="Burjassot"></SeoAnchor>
             <SeoAnchor link="/manises" pueblo="Manises"></SeoAnchor>
             <SeoAnchor link="/silla" pueblo="Silla"></SeoAnchor>
-            <SeoAnchor link="/benaquasil" pueblo="Benaquasil"></SeoAnchor>
+            <SeoAnchor link="/benaguasil" pueblo="Benaguasil"></SeoAnchor>
             <SeoAnchor link="/picassent" pueblo="Picassent"></SeoAnchor>
             <SeoAnchor link="/alginet" pueblo="Alginet"></SeoAnchor>
             <SeoAnchor link="/liria" pueblo="Liria"></SeoAnchor>
             <SeoAnchor link="/torrent" pueblo="Torrent"></SeoAnchor>
             <SeoAnchor link="/mislata" pueblo="Mislata"></SeoAnchor>
             <SeoAnchor link="/albal" pueblo="Albal"></SeoAnchor>
-            <SeoAnchor link="/sedavi" pueblo="Sedaví"></SeoAnchor>
+            <SeoAnchor link="/municipios/sedavi" pueblo="Sedaví"></SeoAnchor>
 
             </div>
 

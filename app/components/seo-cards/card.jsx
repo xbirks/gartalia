@@ -26,8 +26,8 @@ function Card({title, info, img, alt}){
             </div>
             <Image className="card__img" src={img} alt={alt} width={750} height={696} loading='lazy'></Image>
         </div> 
-    )
+    );
 
-};
+}
 
 export default Card;

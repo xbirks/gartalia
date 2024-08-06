@@ -23,7 +23,7 @@ import instalacercas from '../../assets/img/instala-cercas.jpg';
 
 
 
-function GridMaster(){
+function GridMaster({municipio}){
 
     return(
 
@@ -34,42 +34,42 @@ function GridMaster(){
         <div className="gridmaster__elements">
 
         <Grid
-        service="Poda y tala en altura"
+        service={`Poda y tala en altura ${municipio}`}
         description="Nos especializamos en poda y tala en altura, empleando técnicas seguras para gestionar árboles grandes y en ubicaciones complicadas. Este servicio previene riesgos y promueve la salud y el buen crecimiento de tus árboles."
         img={podatala}
         top="block"
         ></Grid>
 
         <Grid
-        service="Diseño de jardines"
+        service={`Diseño de jardines ${municipio}`}
         description="Ofrecemos servicios personalizados de diseño de jardines que transforman espacios exteriores en verdaderos oasis. Nuestros expertos trabajan contigo para crear diseños únicos, adaptados a tus gustos y las condiciones de tu entorno."
         img={disenojardines}
         top="none"
         ></Grid>
 
         <Grid
-        service="Paisajismo"
+        service={`Paisajismo ${municipio}`}
         description="Creamos paisajes impresionantes que complementan tu hogar y estilo de vida, utilizando un enfoque integrado que considera tanto la estética como la funcionalidad. Nuestro equipo utiliza su experiencia en horticultura para asegurar que cada elemento del paisaje esté en perfecta armonía."
         img={paisajismo}
         top="none"
         ></Grid>
 
         <Grid
-        service="Desrame de árboles"
+        service={`Desrame de árboles ${municipio}`}
         description="Realizamos desrame de árboles para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
         img={desrame}
         top="none"
         ></Grid>
 
         <Grid
-        service="Recogida y disposición de residuos"
+        service={`Recogida y disposición de residuos ${municipio}`}
         description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
         img={recogidaresiduos}
         top="block"
         ></Grid>
 
         <Grid
-        service=" Limpieza de parcelas"
+        service={`Limpieza de parcelas ${municipio}`}
         description="Ofrecemos un servicio completo de limpieza de parcelas, eliminando desechos, maleza y cualquier elemento no deseado para preparar el terreno para futuros proyectos o simplemente mantenerlo en óptimas condiciones. Este servicio es esencial para evitar plagas y fomentar un entorno más seguro y estético en tu propiedad."
         img={parcelas}
         top="none"
@@ -85,21 +85,21 @@ function GridMaster(){
         <div className="gridmaster__elements">
 
         <Grid
-        service="Mantenimiento de césped"
+        service={`Mantenimiento de césped ${municipio}`}
         description="Ofrecemos mantenimiento de césped integral, incluyendo corte regular, aireación y fertilización para garantizar un césped verde y saludable. Este servicio asegura la belleza y durabilidad de tu espacio verde durante todo el año."
         img={mantcesped}
         top="block"
         ></Grid>
 
         <Grid
-        service="Mantenimiento de comunidades"
+        service={`Mantenimiento de comunidades ${municipio}`}
         description="Proporcionamos servicios de mantenimiento de comunidades, asegurando que las áreas verdes compartidas estén siempre en perfecto estado. Nos encargamos de todo, desde el cuidado del césped hasta la poda de árboles, para mejorar el entorno de todos los residentes."
         img={mantcomunidades}
         top="block"
         ></Grid>
 
         <Grid
-        service="Limpieza de áreas verdes"
+        service={`Limpieza de áreas verdes ${municipio}`}
         description="Realizamos la limpieza de áreas verdes, eliminando residuos y desechos para mantener los espacios exteriores limpios y atractivos. Este servicio es esencial para preservar la belleza y la funcionalidad de parques y jardines."
         img={mantareasverdes}
         top="none"
@@ -114,21 +114,21 @@ function GridMaster(){
         <div className="gridmaster__elements">
 
         <Grid
-        service="Instalación de sistemas de riego por aspersión"
+        service={`Instalación de sistemas de riego por aspersión ${municipio}`}
         description="Implementamos sistemas de riego por aspersión eficientes que garantizan una distribución uniforme del agua, optimizando el riego y la salud de tus plantas. Este sistema es ideal para mantener tu jardín hidratado sin esfuerzo excesivo."
         img={instalariego}
         top="block"
         ></Grid>
 
         <Grid
-        service="Instalación de iluminación para jardines"
+        service={`Instalación de iluminación para jardines ${municipio}`}
         description="Instalamos iluminación para jardines, realzando la belleza de tu espacio exterior y aumentando la seguridad durante la noche. Nuestros sistemas de iluminación son tanto funcionales como decorativos, diseñados para complementar el paisaje de tu jardín."
         img={instalaluz}
         top="none"
         ></Grid>
 
         <Grid
-        service="Instalación de cercas, cipreses y muros verdes"
+        service={`Instalación de cercas, cipreses y muros verdes ${municipio}`}
         description="Ofrecemos instalación de cercas, cipreses y muros verdes para añadir privacidad y belleza a tu jardín. Estos elementos no solo mejoran la estética del espacio, sino que también proporcionan soluciones prácticas para delimitar áreas y mejorar la seguridad."
         img={instalacercas}
         top="none"
