@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import React, { useState } from 'react';
 import './faq.scss';
@@ -16,9 +16,7 @@ function FaqItem({ titulo, explicacion }) {
                 <span className="faq__item-btn-icon">
                     <p className={isExpanded ? 'expanded' : ''}>{isExpanded ? '-' : '+'}</p>
                 </span>
-                
                 <h3 className="faq__item-title">{titulo}</h3>
-
                 <div className={`faq__item-content ${isExpanded ? 'expanded' : ''}`}>
                     <p>{explicacion}</p>
                 </div>
@@ -28,3 +26,4 @@ function FaqItem({ titulo, explicacion }) {
 }
 
 export default FaqItem;
+
