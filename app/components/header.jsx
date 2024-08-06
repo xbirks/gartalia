@@ -27,21 +27,21 @@ function Header(){
         
             <div className="header__nav">
                 <ImgButton
-                    link="https://ermo.es"
+                    link="#servicios"
                     title="Servicios"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 ></ImgButton>
 
                 <ImgButton
-                    link="https://ermo.es"
+                    link="#mantenimiento"
                     title="Mantenimiento"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 ></ImgButton>
 
                 <ImgButton
-                    link="https://ermo.es"
+                    link="#instalaciones"
                     title="Instalaciones"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}
@@ -49,7 +49,7 @@ function Header(){
             </div>
 
             <StandardButton
-             link="https://ermo.es"
+             link="tel:+34658677423"
              title="Llamar"
              style="standardButton">
             </StandardButton>

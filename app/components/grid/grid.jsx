@@ -23,13 +23,13 @@ function Grid({service, description, img, top}){
             <p className="grid__description">{description}</p>
             <div className="grid__buttons">
                 <StandardButton
-                link="https://ermo.es"
+                link="tel:+34658677423"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://ermo.es"
+                link="#presupuesto"
                 title="Presupuesto"
                 style="emptyStandardButton">
                 </StandardButton>

@@ -13,13 +13,13 @@ function Card({title, info, img, alt}){
                 <h3 className="card__title">{title}</h3>
                 <p className="card__info">{info}</p>
                 <StandardButton
-                link="https://ermo.es"
+                link="#presupuesto"
                 title="Presupuesto"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://ermo.es"
+                link="tel:+34658677423"
                 title="Contacto"
                 style="emptyStandardButton">
                 </StandardButton>

@@ -27,7 +27,7 @@ function GridMaster(){
 
     return(
 
-    <div className="gridmaster"> 
+    <div className="gridmaster" id="servicios"> 
 
         <h2>Servicios</h2>
 
@@ -80,7 +80,7 @@ function GridMaster(){
 
 
 
-        <h2>Mantenimiento</h2>
+        <h2 id="mantenimiento">Mantenimiento</h2>
 
         <div className="gridmaster__elements">
 
@@ -109,7 +109,7 @@ function GridMaster(){
 
 
         
-        <h2>Instalaciones</h2>
+        <h2 id="instalaciones">Instalaciones</h2>
 
         <div className="gridmaster__elements">
 
