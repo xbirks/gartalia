@@ -2,7 +2,7 @@ import "../../style.scss";
 import Header from '../../components/header.jsx';
 import Footer from "../../components/footer.jsx";
 
-const municipio = "Sedaví";
+const municipio = "Albal";
 
 export const metadata = {
   title: `GARTALIA | Jardinería en ${municipio} para particulares y empresas`,

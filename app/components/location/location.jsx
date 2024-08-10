@@ -33,26 +33,30 @@ function Location(){
             </div>
 
             <div className="location__seo-link">
-                <Link href="#">Jardineros en Valencia</Link>
-                <Link href="#">Jardineros en Manises</Link>
-                <Link href="#">Jardineros en La Eliana</Link>
-                <Link href="#">Jardineros en Godella</Link>
-                <Link href="#">Jardineros en Mas Camarena</Link>
-                <Link href="#">Jardineros en Bétera</Link>
-                <Link href="#">Jardineros en Torre en Conill</Link>
-                <Link href="#">Jardineros en Benaguacil</Link>
-                <Link href="#">Jardineros en Casinos</Link>
-                <Link href="#">Jardineros en Turis</Link>
-                <Link href="#">Jardineros en Marines</Link>
-                <Link href="#">Jardineros en Náquera</Link>
-                <Link href="#">Jardineros en La Pobla de Vallbona</Link>
-                <Link href="#">Jardineros en Paterna</Link>
-                <Link href="#">Jardineros en La Cañada</Link>
-                <Link href="#">Jardineros en Rocafort</Link>
-                <Link href="#">Jardineros en Massarrojos</Link>
-                <Link href="#">Jardineros en Burjassot</Link>
-                <Link href="#">Jardineros en Olocau</Link>
-                <Link href="#">Jardineros en Liria</Link>
+                <Link href="/">Jardineros en Valencia</Link>
+                <Link href="/municipios/manises">Jardineros en Manises</Link>
+                <Link href="/municipios/eliana">Jardineros en La Eliana</Link>
+                <Link href="/municipios/godella">Jardineros en Godella</Link>
+                <Link href="/municipios/mascamarena">Jardineros en Mas Camarena</Link>
+                <Link href="/municipios/betera">Jardineros en Bétera</Link>
+                <Link href="/municipios/torreconill">Jardineros en Torre en Conill</Link>
+                <Link href="/municipios/benaguasil">Jardineros en Benaguacil</Link>
+                <Link href="/municipios/casinos">Jardineros en Casinos</Link>
+                <Link href="/municipios/turis">Jardineros en Turis</Link>
+                <Link href="/municipios/marines">Jardineros en Marines</Link>
+                <Link href="/municipios/naquera">Jardineros en Náquera</Link>
+                <Link href="/municipios/pobla-de-vallbona">Jardineros en La Pobla de Vallbona</Link>
+                <Link href="/municipios/paterna">Jardineros en Paterna</Link>
+                <Link href="/municipios/canada">Jardineros en La Cañada</Link>
+                <Link href="/municipios/rocafort">Jardineros en Rocafort</Link>
+                <Link href="/municipios/massarojos">Jardineros en Massarrojos</Link>
+                <Link href="/municipios/burjassot">Jardineros en Burjassot</Link>
+                <Link href="/municipios/olocau">Jardineros en Olocau</Link>
+                <Link href="/municipios/liria">Jardineros en Liria</Link>
+                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
+                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
+                <Link href="/municipios/santabarbara">Jardineros en Santa Bárbara</Link>
+                <Link href="/municipios/calicanto">Jardineros en Calicanto</Link>
             </div>
 
 

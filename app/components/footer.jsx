@@ -67,36 +67,36 @@ function Footer(){
             </div>
 
             <div className="footer__seo-anchor">
-            <SeoAnchor link="/eliana" pueblo="La Eliana"></SeoAnchor>
-            <SeoAnchor link="/cullera" pueblo="Cullera"></SeoAnchor>
-            <SeoAnchor link="/cheste" pueblo="Cheste"></SeoAnchor>
-            <SeoAnchor link="/benifaio" pueblo="Benifaió"></SeoAnchor>
-            <SeoAnchor link="/alboraya" pueblo="Alboraya"></SeoAnchor>
-            <SeoAnchor link="/rocafort" pueblo="Rocafort"></SeoAnchor>
-            <SeoAnchor link="/gandia" pueblo="Gandia"></SeoAnchor>
-            <SeoAnchor link="/godella" pueblo="Godella"></SeoAnchor>
-            <SeoAnchor link="/alzira" pueblo="Alzira"></SeoAnchor>
-            <SeoAnchor link="/chiva" pueblo="Chiva"></SeoAnchor>
-            <SeoAnchor link="/pobla-de-vallbona" pueblo="Pobla de Vallbona"></SeoAnchor>
-            <SeoAnchor link="/moncada" pueblo="Moncada"></SeoAnchor>
-            <SeoAnchor link="/paterna" pueblo="Paterna"></SeoAnchor>
-            <SeoAnchor link="/ribarroja" pueblo="Ribarroja del Turia"></SeoAnchor>
-            <SeoAnchor link="/pucol" pueblo="Puçol"></SeoAnchor>
-            <SeoAnchor link="/montserrat" pueblo="Montserrat"></SeoAnchor>
-            <SeoAnchor link="/alfafar" pueblo="Alfafar"></SeoAnchor>
-            <SeoAnchor link="/mascamarena" pueblo="Mas Camarena"></SeoAnchor>
-            <SeoAnchor link="/vilamarxant" pueblo="Vilamarxant"></SeoAnchor>
-            <SeoAnchor link="/náquera" pueblo="Náquera"></SeoAnchor>
-            <SeoAnchor link="/burjassot" pueblo="Burjassot"></SeoAnchor>
-            <SeoAnchor link="/manises" pueblo="Manises"></SeoAnchor>
-            <SeoAnchor link="/silla" pueblo="Silla"></SeoAnchor>
-            <SeoAnchor link="/benaguasil" pueblo="Benaguasil"></SeoAnchor>
-            <SeoAnchor link="/picassent" pueblo="Picassent"></SeoAnchor>
-            <SeoAnchor link="/alginet" pueblo="Alginet"></SeoAnchor>
-            <SeoAnchor link="/liria" pueblo="Liria"></SeoAnchor>
-            <SeoAnchor link="/torrent" pueblo="Torrent"></SeoAnchor>
-            <SeoAnchor link="/mislata" pueblo="Mislata"></SeoAnchor>
-            <SeoAnchor link="/albal" pueblo="Albal"></SeoAnchor>
+            <SeoAnchor link="/municipios/eliana" pueblo="La Eliana"></SeoAnchor>
+            <SeoAnchor link="/municipios/cullera" pueblo="Cullera"></SeoAnchor>
+            <SeoAnchor link="/municipios/cheste" pueblo="Cheste"></SeoAnchor>
+            <SeoAnchor link="/municipios/benifaio" pueblo="Benifaió"></SeoAnchor>
+            <SeoAnchor link="/municipios/alboraya" pueblo="Alboraya"></SeoAnchor>
+            <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
+            <SeoAnchor link="/municipios/gandia" pueblo="Gandia"></SeoAnchor>
+            <SeoAnchor link="/municipios/godella" pueblo="Godella"></SeoAnchor>
+            <SeoAnchor link="/municipios/alzira" pueblo="Alzira"></SeoAnchor>
+            <SeoAnchor link="/municipios/chiva" pueblo="Chiva"></SeoAnchor>
+            <SeoAnchor link="/municipios/pobla-de-vallbona" pueblo="Pobla de Vallbona"></SeoAnchor>
+            <SeoAnchor link="/municipios/moncada" pueblo="Moncada"></SeoAnchor>
+            <SeoAnchor link="/municipios/paterna" pueblo="Paterna"></SeoAnchor>
+            <SeoAnchor link="/municipios/ribarroja" pueblo="Ribarroja del Turia"></SeoAnchor>
+            <SeoAnchor link="/municipios/pucol" pueblo="Puçol"></SeoAnchor>
+            <SeoAnchor link="/municipios/montserrat" pueblo="Montserrat"></SeoAnchor>
+            <SeoAnchor link="/municipios/alfafar" pueblo="Alfafar"></SeoAnchor>
+            <SeoAnchor link="/municipios/mascamarena" pueblo="Mas Camarena"></SeoAnchor>
+            <SeoAnchor link="/municipios/vilamarxant" pueblo="Vilamarxant"></SeoAnchor>
+            <SeoAnchor link="/municipios/naquera" pueblo="Náquera"></SeoAnchor>
+            <SeoAnchor link="/municipios/burjassot" pueblo="Burjassot"></SeoAnchor>
+            <SeoAnchor link="/municipios/manises" pueblo="Manises"></SeoAnchor>
+            <SeoAnchor link="/municipios/silla" pueblo="Silla"></SeoAnchor>
+            <SeoAnchor link="/municipios/benaguasil" pueblo="Benaguasil"></SeoAnchor>
+            <SeoAnchor link="/municipios/picassent" pueblo="Picassent"></SeoAnchor>
+            <SeoAnchor link="/municipios/alginet" pueblo="Alginet"></SeoAnchor>
+            <SeoAnchor link="/municipios/liria" pueblo="Liria"></SeoAnchor>
+            <SeoAnchor link="/municipios/torrent" pueblo="Torrent"></SeoAnchor>
+            <SeoAnchor link="/municipios/mislata" pueblo="Mislata"></SeoAnchor>
+            <SeoAnchor link="/municipios/albal" pueblo="Albal"></SeoAnchor>
             <SeoAnchor link="/municipios/sedavi" pueblo="Sedaví"></SeoAnchor>
 
             </div>
