@@ -11,7 +11,7 @@ function ImgButton({link, title, style, icon}) {
             <div className={style}>
                 <p className="imgButton__title">{title}</p>
                 <div className="imgButton__icon">
-                    <Image src={icon}></Image>
+                    <Image src={icon} alt={title}></Image>
                 </div>
             </div>
         </a>

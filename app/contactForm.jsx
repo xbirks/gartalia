@@ -115,7 +115,7 @@ function ContactForm() {
           <option value="Poda de seguridad para ramas peligrosas">Poda de seguridad para ramas peligrosas</option>
         </select>
 
-        <input type="text" name="location" placeholder="¿Dónde lo necesitas?" value={formData.location} onChange={handleChange} required />
+        <input type="text" name="location" placeholder="¿En que municipio?" value={formData.location} onChange={handleChange} required />
 
         <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
         <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos que nos ayuden a saber el estado del jardín</label>
