@@ -20,7 +20,7 @@ function Location(){
 
             <div className="location__buttons">
                 <StandardButton
-                link="tel:+34658677423"
+                link="https://wa.me/message/44EBMJCUV7LNO1"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>

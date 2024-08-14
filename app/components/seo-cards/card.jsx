@@ -19,7 +19,7 @@ function Card({title, info, img, alt}){
                 </StandardButton>
 
                 <StandardButton
-                link="tel:+34658677423"
+                link="https://wa.me/message/44EBMJCUV7LNO1"
                 title="Contacto"
                 style="emptyStandardButton">
                 </StandardButton>

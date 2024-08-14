@@ -25,7 +25,7 @@ function Review( {title, review, time}){
 
             
             <StandardButton
-            link="https://ermo.es"
+            link="https://maps.app.goo.gl/bnh6pKARVGWfLXUK8"
             title="Leer en Maps"
             style="emptyStandardButton">
             </StandardButton>
