@@ -85,8 +85,8 @@ export const metadata = {
   },
 
   //APPLE
-  appleTouchIcon: 'https://gartalia.com/seo/180x180_apple_touch_icon.png', 
-  appleTouchStartupImage: 'https://gartalia.com/seo/180x180_apple_touch_icon.png',
+  appleTouchIcon: 'https://gartalia.com/seo/favicon_500x500.png', 
+  appleTouchStartupImage: 'https://gartalia.com/seo/favicon_500x500.png',
 
   
 

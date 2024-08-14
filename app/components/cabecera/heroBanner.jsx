@@ -15,7 +15,7 @@ function HeroBanner(){
                 <p>años de<br></br>experiencia</p>
             </div>
             <div className="hero__element hero__2">
-                <Image src={certificados}></Image>
+                <Image src={certificados} alt="icono de profesionales certificados de Gartalia"></Image>
                 <p>Profesionales<br></br>certificados</p>
             </div>
             <div className="hero__element hero__3">
