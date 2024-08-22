@@ -43,8 +43,8 @@ function Header() {
             </div>
 
             <StandardButton
-                link="tel:+34658677423"
-                title="Llamar"
+                link="https://wa.me/message/44EBMJCUV7LNO1"
+                title="WhatsApp"
                 style="standardButton"
             />
         </div>
