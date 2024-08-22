@@ -55,8 +55,8 @@ function GridMaster({municipio}){
         ></Grid>
 
         <Grid
-        service={`Desrame de árboles ${municipio}`}
-        description="Realizamos desrame de árboles para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
+        service={`Poda de palmeras ${municipio}`}
+        description="Realizamos poda de palmeras para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
         img={desrame}
         top="none"
         ></Grid>
