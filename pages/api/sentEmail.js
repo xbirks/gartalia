@@ -1,6 +1,14 @@
 import sharp from 'sharp';
 import nodemailer from 'nodemailer';
 
+export const config = {
+    api: {
+      bodyParser: {
+        sizeLimit: '7mb', // Cambia aquí el límite de tamaño del cuerpo
+      },
+    },
+  };
+
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         res.setHeader('Allow', ['POST']);
@@ -33,8 +41,8 @@ export default async function handler(req, res) {
         // Convertir HEIC a JPEG y reducir tamaño
         if (imageType === 'heic' || imageType === 'jpeg' || imageType === 'jpg' || imageType === 'png') {
             buffer = await sharp(buffer)
-              .resize(1024) // Cambia el ancho a 1024px, ajustando la altura para mantener la proporción.
-              .jpeg({ quality: 80 }) // Cambiar la calidad a 80 si es JPEG.
+              .resize(900) // Cambia el ancho a 1024px, ajustando la altura para mantener la proporción.
+              .jpeg({ quality: 40 }) // Cambiar la calidad a 80 si es JPEG.
               .toBuffer();
         }
 

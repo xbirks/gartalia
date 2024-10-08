@@ -41,7 +41,7 @@ function GridMaster({municipio}){
         ></Grid>
 
         <Grid
-        service={`Diseño de jardines ${municipio}`}
+        service={`Diseño y construcción de jardines ${municipio}`}
         description="Ofrecemos servicios personalizados de diseño de jardines que transforman espacios exteriores en verdaderos oasis. Nuestros expertos trabajan contigo para crear diseños únicos, adaptados a tus gustos y las condiciones de tu entorno."
         img={disenojardines}
         top="none"

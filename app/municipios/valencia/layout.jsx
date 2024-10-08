@@ -42,7 +42,7 @@ export const metadata = {
   ],
 };
 
-export default function SedaviLayout({ children }) {
+export default function ValenciaLayout({ children }) {
   return (
     <div className="master__gartalia">
       {children}

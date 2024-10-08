@@ -8,9 +8,9 @@ import Nosotros from '../../components/nosotros&review/nosotros';
 import Other from '../../components/other/other';
 import FaqMaster from '../../components/faq/faqmaster';
 import SeoCards from '../../components/seo-cards/seocards';
-import SedaviLayout from './layout';
+import ValenciaLayout from './layout';
 
-const Sedavi = () => {
+const Valencia = () => {
   const municipio = "Valencia";
   const enmunicipio = "en Valencia";
 
@@ -43,8 +43,8 @@ const Sedavi = () => {
   );
 };
 
-Sedavi.getLayout = function getLayout(page) {
-  return <SedaviLayout>{page}</SedaviLayout>;
+Valencia.getLayout = function getLayout(page) {
+  return <ValenciaLayout>{page}</ValenciaLayout>;
 };
 
-export default Sedavi;
+export default Valencia;
