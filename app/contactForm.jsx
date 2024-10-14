@@ -9,6 +9,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     tel: '',
+    email: '', // Nuevo campo de correo electrónico
     service: '',
     location: '',
     images: [] 
@@ -26,9 +27,9 @@ function ContactForm() {
     const files = Array.from(e.target.files);
     files.forEach(file => {
       new Compressor(file, {
-        quality: 0.6, // Ajusta la calidad de la imagen resultante
-        maxWidth: 1920, // Máximo ancho de la imagen resultante
-        maxHeight: 1080, // Máximo altura de la imagen resultante
+        quality: 0.6,
+        maxWidth: 1920,
+        maxHeight: 1080,
         success(result) {
           const reader = new FileReader();
           reader.readAsDataURL(result);
@@ -37,7 +38,7 @@ function ContactForm() {
               ...prev,
               images: [...prev.images, reader.result]
             }));
-            setSelectedFiles(prev => [...prev, result.name]); // Guardar nombre del archivo para mostrar
+            setSelectedFiles(prev => [...prev, result.name]);
           };
         },
         error(err) {
@@ -66,8 +67,8 @@ function ContactForm() {
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', tel: '', service: '', location: '', images: [] }); // Resetear formulario
-        setSelectedFiles([]); // Resetear archivos seleccionados
+        setFormData({ name: '', tel: '', email: '', service: '', location: '', images: [] }); // Resetear formulario incluyendo email
+        setSelectedFiles([]);
         setAcceptedPolicy(false);
       } else {
         const error = await response.text();
@@ -91,9 +92,33 @@ function ContactForm() {
 
       <form onSubmit={handleSubmit} className="form__inputs" encType="multipart/form-data">
 
-        <input type="text" name="name" placeholder="¿Cómo te llamas?" value={formData.name} onChange={handleChange} required />
+        <input
+          type="text"
+          name="name"
+          placeholder="¿Cómo te llamas?"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
 
-        <input type="tel" name="tel" placeholder="¿Cuál es tu teléfono?" value={formData.tel} onChange={handleChange} required maxLength="9" />
+        <input
+          type="tel"
+          name="tel"
+          placeholder="¿Cuál es tu teléfono?"
+          value={formData.tel}
+          onChange={handleChange}
+          required
+          maxLength="9"
+        />
+
+        <input
+          type="email" // Tipo email para validación automática
+          name="email" // Nombre del campo
+          placeholder="¿Cuál es tu correo?" // Placeholder solicitado
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
 
         <select name="service" value={formData.service} onChange={handleChange} required>
           <option value="No seleccionado">Selecciona un servicio</option>
@@ -115,7 +140,14 @@ function ContactForm() {
           <option value="Poda de seguridad para ramas peligrosas">Poda de seguridad para ramas peligrosas</option>
         </select>
 
-        <input type="text" name="location" placeholder="¿En que municipio?" value={formData.location} onChange={handleChange} required />
+        <input
+          type="text"
+          name="location"
+          placeholder="¿En que municipio?"
+          value={formData.location}
+          onChange={handleChange}
+          required
+        />
 
         <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
         <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos que nos ayuden a saber el estado del jardín</label>

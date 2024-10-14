@@ -34,7 +34,7 @@ const Valencia = () => {
         </div>
       </div>
       <div className="faq__banner">
-        <span>¿Más preguntas? <Link href="tel:+34658677423">658 677 423</Link></span>
+        <span>¿Más preguntas? <Link href="tel:+34657170847">657 170 847</Link></span>
       </div>
       <div className="master">
         <SeoCards municipio={enmunicipio} />
