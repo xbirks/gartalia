@@ -108,7 +108,7 @@ function Footer(){
                 style="emptyStandardButton">
                 </StandardButton>
                 <StandardButton
-                link="/"
+                link="/legal/privacidad"
                 title="Política de privacidad"
                 style="emptyStandardButton">
                 </StandardButton>

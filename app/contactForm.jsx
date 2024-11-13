@@ -157,7 +157,7 @@ function ContactForm() {
 
         <label className="label__checkbox">
           <input type="checkbox" checked={acceptedPolicy} onChange={() => setAcceptedPolicy(!acceptedPolicy)} />
-          <p>Por favor, lee y acepta nuestras políticas de privacidad antes de enviar la petición de presupuesto. Puedes leerlas haciendo <Link href="https://ermo.es">click aquí.</Link></p>
+          <p>Por favor, lee y acepta nuestras políticas de privacidad antes de enviar la petición de presupuesto. Puedes leerlas haciendo <Link href="/legal/privacidad">click aquí.</Link></p>
         </label>
 
         <button type="submit" disabled={!acceptedPolicy} className="form__send-button">
