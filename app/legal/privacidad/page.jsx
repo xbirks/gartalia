@@ -16,7 +16,7 @@ export default function Privacidad(){
 
       <h2>1. Responsable del Tratamiento</h2>
       <p className="p_pol">Nombre: <strong>Jardinería Gartalia</strong> <br></br>
-      Dirección: <strong>Av. de l'Equador, 103, Benicalap, 46025 València, Valencia</strong><br></br>
+      Dirección: <strong>Av. de l&apos;Equador, 103, Benicalap, 46025 València, Valencia</strong><br></br>
       Teléfono: <strong>657 170 847</strong><br></br>
       Correo Electrónico: <strong>gartalia.contacto@gmail.com</strong><br></br>
       Responsable: <strong>Carlos Correa</strong></p>
@@ -75,7 +75,7 @@ export default function Privacidad(){
       <h2>11. Contacto</h2>
       <p className="p_pol">Si tiene alguna pregunta o inquietud sobre nuestra Política de Privacidad o el tratamiento de sus datos personales, no dude en contactarnos:<br></br><br></br>
 
-      - Dirección: Av. de l'Equador, 103, Benicalap, 46025 València, Valencia<br></br>
+      - Dirección: Av. de l&apos;Equador, 103, Benicalap, 46025 València, Valencia<br></br>
       - Teléfono: 657 170 847<br></br>
       - Correo Electrónico: gartalia.contacto@gmail.com</p>
 
