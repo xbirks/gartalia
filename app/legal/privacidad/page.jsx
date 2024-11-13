@@ -10,7 +10,7 @@ export default function Privacidad(){
       
       <h1>Política de privacidad de Gartalia</h1>
 
-      <br></br><br></br><br></br><p className="p_pol">En Jardinería Gartalia (en adelante, "nosotros"), nos comprometemos a proteger su privacidad y garantizar el cumplimiento de la normativa vigente en materia de protección de datos personales, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
+      <br></br><br></br><br></br><p className="p_pol">En Jardinería Gartalia (en adelante, &quot;nosotros&quot;), nos comprometemos a proteger su privacidad y garantizar el cumplimiento de la normativa vigente en materia de protección de datos personales, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
 
       <br></br><br></br>
 
