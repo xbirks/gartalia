@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 
-  const { name, tel, email, service, location, images } = req.body; // Incluye email
+  const { name, tel, service, location, images } = req.body; // Incluye email
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -59,7 +59,6 @@ export default async function handler(req, res) {
     html: `
       <p>Nombre: ${name}</p>
       <p>Teléfono: ${tel}</p>
-      <p>Correo Electrónico: ${email}</p> <!-- Nuevo campo de correo electrónico -->
       <p>Servicio: ${service}</p>
       <p>Ubicación: ${location}</p>
     `,

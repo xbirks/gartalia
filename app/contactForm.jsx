@@ -110,7 +110,7 @@ function ContactForm() {
           required
           maxLength="9"
         />
-
+{/* 
         <input
           type="email" // Tipo email para validación automática
           name="email" // Nombre del campo
@@ -118,32 +118,22 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
+        /> */}
+
+        <input
+          type="text"
+          name="service"
+          placeholder="¿Qué servicio necesitas?"
+          value={formData.service}
+          onChange={handleChange}
+          required
         />
 
-        <select name="service" value={formData.service} onChange={handleChange} required>
-          <option value="No seleccionado">Selecciona un servicio</option>
-
-          <option value="Poda y tala en altura">Poda y tala en altura</option>
-          <option value="Diseño de jardines">Diseño de jardines</option>
-          <option value="Paisajismo">Paisajismo</option>
-          <option value="Desrame de árboles">Desrame de árboles</option>
-          <option value="Recogida y disposición de residuos">Recogida y disposición de residuos</option>
-          <option value="Limpieza de parcelas">Limpieza de parcelas</option>
-          <option value="Mantenimiento de césped">Mantenimiento de césped</option>
-          <option value="Mantenimiento de comunidades">Mantenimiento de comunidades</option>
-          <option value="Limpieza de áreas verdes">Limpieza de áreas verdes</option>
-          <option value="Riego por aspersión">Riego por aspersión</option>
-          <option value="Iluminación para el jardín">Iluminación para el jardín</option>
-          <option value="Instalación de cercas, cipreses y muros verdes">Instalación de cercas, cipreses y muros verdes</option>
-          <option value="Control fitosanitario">Control fitosanitario</option>
-          <option value="Instalación de jardines verticales">Instalación de jardines verticales</option>
-          <option value="Poda de seguridad para ramas peligrosas">Poda de seguridad para ramas peligrosas</option>
-        </select>
 
         <input
           type="text"
           name="location"
-          placeholder="¿En que municipio?"
+          placeholder="¿En que municipio estás?"
           value={formData.location}
           onChange={handleChange}
           required
