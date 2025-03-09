@@ -24,56 +24,7 @@
 		}
     }
 
-    .second_h2{
-        color: $esmeralda;
-        text-align: center;
-        font-family: $halyard;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100.905%;
-        margin-top: 10vh;
-        margin-bottom: 40px;
-
-        
-        @include media990px {
-            font-size: 100px;
-        }
-
-        @include media700px {
-            font-size: 80px;
-        }
-
-        @include media600px {
-            font-size: 60px;
-        }
-
-        @include media450px {
-            font-size: 50px;
-        }
-
-        @include media390px {
-            font-size: 12vw;
-        }
-    }
-
-    .second_p{
-        color: $botella;
-        text-align: center;
-        font-family: $neue;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        margin-bottom: 30px;
-        max-width: 1000px;
-        margin: 0 auto 40px auto;
-
-        @include media700px {
-            font-size: 14px;
-            line-height: 16px;
-        }
-    }
+    
 
     strong {
         font-weight: 700;
@@ -747,3 +698,53 @@
 
 
 
+.second_h2{
+    color: $esmeralda;
+    text-align: center;
+    font-family: $halyard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.905%;
+    margin-top: 10vh;
+    margin-bottom: 40px;
+
+    
+    @include media990px {
+        font-size: 64px;
+    }
+
+    @include media700px {
+        font-size: 64px;
+    }
+
+    @include media600px {
+        font-size: 64px;
+    }
+
+    @include media450px {
+        font-size: 6px;
+    }
+
+    @include media390px {
+        font-size: 6vw;
+    }
+}
+
+.second_p{
+    color: $botella;
+    text-align: center;
+    font-family: $neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+
+    @include media700px {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

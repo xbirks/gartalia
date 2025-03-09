@@ -189,7 +189,7 @@ justify-content: center;
     color: $esmeralda;
     text-align: center;
     font-family: $halyard;
-    font-size: 64px !important;
+    font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: 100.905%;
@@ -198,23 +198,23 @@ justify-content: center;
 
     
     @include media990px {
-        font-size: 100px;
+        font-size: 64px;
     }
 
     @include media700px {
-        font-size: 80px;
+        font-size: 30px;
     }
 
     @include media600px {
-        font-size: 60px;
+        font-size: 30px;
     }
 
     @include media450px {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     @include media390px {
-        font-size: 12vw;
+        font-size: 8vw;
     }
 }
 
