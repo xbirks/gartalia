@@ -7,7 +7,7 @@ import './grid.scss';
 import StandardButton from '../../buttons/standardButton.jsx';
 
 
-function Grid({service, description, img, top}){
+function Grid({service, description, img, top, link}){
 
     return(
 
@@ -19,7 +19,7 @@ function Grid({service, description, img, top}){
 
             <div className="grid__info">
 
-            <h3 className="grid__service">{service}</h3>
+            <a href={link}><h3 className="grid__service">{service}</h3></a>
             <p className="grid__description">{description}</p>
             <div className="grid__buttons">
                 <StandardButton

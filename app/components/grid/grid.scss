@@ -1,6 +1,14 @@
 @import '../../styles/variables.scss';
 
 
+a{
+    text-decoration: none;
+
+    &:hover{
+        color: $esmeralda;
+    }
+}
+
 //MASTER GRID
 
 .gridmaster{
