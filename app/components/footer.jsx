@@ -27,21 +27,21 @@ function Footer(){
                 </div>
                 <div className="header__nav">
                 <ImgButton
-                    link="#servicios"
+                    link="/#servicios"
                     title="Servicios"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 ></ImgButton>
 
                 <ImgButton
-                    link="#mantenimiento"
+                    link="/#mantenimiento"
                     title="Mantenimiento"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 ></ImgButton>
 
                 <ImgButton
-                    link="#instalaciones"
+                    link="/#instalaciones"
                     title="Instalaciones"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}

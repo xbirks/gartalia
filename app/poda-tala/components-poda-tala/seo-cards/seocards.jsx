@@ -56,7 +56,7 @@ function SeoCards({ municipio }) {
           </>
         }
         img={arbolcaio}
-        alt="Trabajador de Gartalia cortando el césped en Resort El Oasis La Eliana"
+        alt="Una encina caída en medio de la carretera cerca de San Antonio de Benageber"
       ></Card>
 
       <Card
@@ -102,7 +102,7 @@ function SeoCards({ municipio }) {
           </>
         }
         img={licencia}
-        alt="Trabajador de Gartalia cortando el césped en Resort El Oasis La Eliana"
+        alt="Jardinero de Gartalia cortando el tronco de un pino en Gilet, Valencia"
       ></Card>
     </div>
   );
