@@ -5,7 +5,7 @@ import Footer from "../components/footer.jsx";
 const municipio = "Valencia";
 
 export const metadata = {
-  title: `Poda y tala de árboles en ${municipio} | GARTALIA`,
+  title: `Poda y tala de árboles en ${municipio} | Empresa de tala en altura`,
   description: `Expertos en poda, tala y destoconado de árboles y palmeras en ${municipio}. ¡Servicio profesional y económico para particulares y empresas en Valencia.`,
   applicationName: 'GARTALIA',
   keywords: [
