@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import IntroTala from '../components-poda-tala/cabecera/introTala';
-import GridMaster from '../components-poda-tala/grid/gridMasterTala';
-import Empresas from '../components-poda-tala/empresas/empresas';
-import Location from '../components-poda-tala/location/location';
-import FaqMaster from '../components-poda-tala/faq/faqmasterTala';
-import SeoCards from '../components-poda-tala/seo-cards/seocardsTala';
-import SedaviLayout from '../layout';
+import Intro from './components-poda-tala/cabecera/intro';
+import GridMaster from './components-poda-tala/grid/gridMaster';
+import Empresas from './components-poda-tala/empresas/empresas';
+import Location from './components-poda-tala/location/location';
+import Nosotros from './components-poda-tala/nosotros&review/nosotros';
+import Other from './components-poda-tala/other/other';
+import FaqMaster from './components-poda-tala/faq/faqmaster';
+import SeoCards from './components-poda-tala/seo-cards/seocards';
+import SedaviLayout from './layout';
 
 const Sedavi = () => {
   const municipio = "Valencia";
@@ -15,7 +17,7 @@ const Sedavi = () => {
   return (
     <div className="gartalia">
       <div className="master">
-        <IntroTala municipio={municipio} />
+        <Intro municipio={municipio} />
         <GridMaster municipio={enmunicipio} />
       </div>
       
