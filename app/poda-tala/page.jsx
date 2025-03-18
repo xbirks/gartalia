@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import IntroTala from '../../components-poda-tala/cabecera/introTala';
-import GridMaster from '../../components-poda-tala/grid/gridMasterTala';
-import Empresas from '../../components-poda-tala/empresas/empresas';
-import Location from '../../components-poda-tala/location/location';
-import FaqMaster from '../../components-poda-tala/faq/faqmasterTala';
-import SeoCards from '../../components-poda-tala/seo-cards/seocardsTala';
-import SedaviLayout from '../../layout';
+import IntroTala from '../components-poda-tala/cabecera/introTala';
+import GridMaster from '../components-poda-tala/grid/gridMasterTala';
+import Empresas from '../components-poda-tala/empresas/empresas';
+import Location from '../components-poda-tala/location/location';
+import FaqMaster from '../components-poda-tala/faq/faqmasterTala';
+import SeoCards from '../components-poda-tala/seo-cards/seocardsTala';
+import SedaviLayout from '../layout';
 
 const Sedavi = () => {
   const municipio = "Valencia";
