@@ -9,8 +9,8 @@ import SeoCards from '../../components-poda-tala/seo-cards/seocardsTala';
 import SedaviLayout from '../../layout';
 
 const Sedavi = () => {
-  const municipio = "Valencia";
-  const enmunicipio = "en Valencia";
+  const municipio = "Pobla de Vallbona";
+  const enmunicipio = "en Pobla de Vallbona";
 
   return (
     <div className="gartalia">

@@ -1,21 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
-import IntroTala from '../../components-poda-tala/cabecera/introTala';
-import GridMaster from '../../components-poda-tala/grid/gridMasterTala';
+import Intro from '../../components-poda-tala/cabecera/introPoda';
+import GridMaster from '../../components-poda-tala/grid/gridMasterPoda';
 import Empresas from '../../components-poda-tala/empresas/empresas';
 import Location from '../../components-poda-tala/location/location';
-import FaqMaster from '../../components-poda-tala/faq/faqmasterTala';
-import SeoCards from '../../components-poda-tala/seo-cards/seocardsTala';
+import Nosotros from '../../components-poda-tala/nosotros&review/nosotros';
+import Other from '../../components-poda-tala/other/other';
+import FaqMaster from '../../components-poda-tala/faq/faqmaster';
+import SeoCards from '../../components-poda-tala/seo-cards/seocardsPoda';
 import SedaviLayout from '../../layout';
 
 const Sedavi = () => {
-  const municipio = "Valencia";
-  const enmunicipio = "en Valencia";
+  const municipio = "La Cañada";
+  const enmunicipio = "en La Cañada";
 
   return (
     <div className="gartalia">
       <div className="master">
-        <IntroTala municipio={municipio} />
+        <Intro municipio={municipio} />
         <GridMaster municipio={enmunicipio} />
       </div>
       
