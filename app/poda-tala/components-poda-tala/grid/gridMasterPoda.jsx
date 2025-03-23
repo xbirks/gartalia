@@ -6,19 +6,12 @@ import './grid.scss';
 import Grid from './grid';
 
 // IMAGENES
-import podatala from '../../../assets/img/poda-tala.jpg';
-import desrame from '../../../assets/img/desrame.jpg';
 import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
 
-import tocones from '../../../assets/img/tocones.jpg';
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
-import ornamental from '../../../assets/img/ornamental.jpg';
-import troncos from '../../../assets/img/troncos.jpg';
-import plagas from '../../../assets/img/plagas.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
 
 import podaseo from '../../../assets/img/podaseo.jpg';
-import hotel from '../../../assets/img/podahotel.jpg';
 import plameraseo from '../../../assets/img/palmerasseo.jpg';
 
 
@@ -48,13 +41,6 @@ function GridMaster({municipio}){
         ></Grid>
 
         <Grid
-        service={`Poda ornamental ${municipio}`}
-        description="Damos forma a árboles y setos para embellecer su jardín, cuidando cada corte para lograr un diseño estético y funcional que resalte su espacio verde. También hacemos diseños de jardín."
-        img={hotel}
-        top="none"
-        ></Grid>
-
-        <Grid
         service={`Recogida y disposición de residuos ${municipio}`}
         description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
         img={recogidaresiduos}
@@ -72,13 +58,6 @@ function GridMaster({municipio}){
         service={`Trámites con ayuntamientos ${municipio}`}
         description="Nos ocupamos de gestionar los permisos necesarios con el ayuntamiento para podas o talas, asegurándole un proceso sencillo y cumpliendo con todas las normativas locales en Valencia y alrededores."
         img={ayuntamiento}
-        top="none"
-        ></Grid>
-
-        <Grid
-        service={`Control de plagas ${municipio}`}
-        description="Identificamos y tratamos plagas o enfermedades en árboles y palmeras, aplicando soluciones efectivas para proteger su salud y la de su jardín con un enfoque profesional y sostenible."
-        img={plagas}
         top="none"
         ></Grid>
 

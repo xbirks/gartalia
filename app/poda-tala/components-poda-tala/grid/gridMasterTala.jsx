@@ -83,6 +83,13 @@ function GridMaster({municipio}){
         top="none"
         ></Grid>
 
+        <Grid
+        service={`Destoconado con máquina ${municipio}`}
+        description="Elimina tocones de forma rápida, segura y sin destrozar tu terreno con nuestra maquinaria especializada. Olvídate de excavaciones y esfuerzos innecesarios: evita rebrotes, plagas y gana espacio para nuevas plantaciones o construcciones."
+        img={tocones}
+        top="block"
+        ></Grid>
+
 
 
         </div>

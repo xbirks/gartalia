@@ -7,19 +7,8 @@ import Grid from './grid';
 
 // IMAGENES
 import podatala from '../../../assets/img/poda-tala.jpg';
-import disenojardines from '../../../assets/img/diseno-jardines.jpg';
-import paisajismo from '../../../assets/img/paisajismo.jpg';
 import desrame from '../../../assets/img/desrame.jpg';
 import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
-import parcelas from '../../../assets/img/parcelas.jpg';
-
-import mantcesped from '../../../assets/img/mant-cesped.jpg';
-import mantcomunidades from '../../../assets/img/mant-comunidades.jpg';
-import mantareasverdes from '../../../assets/img/mant-areasverdes.jpg';
-
-import instalariego from '../../../assets/img/instala-riego.jpg';
-import instalaluz from '../../../assets/img/instala-luz.jpg';
-import instalacercas from '../../../assets/img/instala-cercas.jpg';
 
 import tocones from '../../../assets/img/tocones.jpg';
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
@@ -48,7 +37,7 @@ function GridMaster({municipio}){
         ></Grid>
 
         <Grid
-        service={`Retirada de tocones con máquina ${municipio}`}
+        service={`Destoconado con máquina ${municipio}`}
         description="Elimina tocones de forma rápida, segura y sin destrozar tu terreno con nuestra maquinaria especializada. Olvídate de excavaciones y esfuerzos innecesarios: evita rebrotes, plagas y gana espacio para nuevas plantaciones o construcciones."
         img={tocones}
         top="block"
@@ -61,12 +50,12 @@ function GridMaster({municipio}){
         top="none"
         ></Grid>
 
-        <Grid
+        {/* <Grid
         service={`Poda ornamental ${municipio}`}
         description="Damos forma a árboles y setos para embellecer su jardín, cuidando cada corte para lograr un diseño estético y funcional que resalte su espacio verde. También hacemos diseños de jardín."
         img={ornamental}
         top="none"
-        ></Grid>
+        ></Grid> */}
 
         <Grid
         service={`Recogida y disposición de residuos ${municipio}`}
@@ -96,12 +85,12 @@ function GridMaster({municipio}){
         top="none"
         ></Grid>
 
-        <Grid
+        {/* <Grid
         service={`Control de plagas ${municipio}`}
         description="Identificamos y tratamos plagas o enfermedades en árboles y palmeras, aplicando soluciones efectivas para proteger su salud y la de su jardín con un enfoque profesional y sostenible."
         img={plagas}
         top="none"
-        ></Grid>
+        ></Grid> */}
 
         </div>
 
