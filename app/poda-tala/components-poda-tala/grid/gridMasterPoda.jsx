@@ -10,7 +10,7 @@ import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
 
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
-
+import tocones from '../../../assets/img/tocones.jpg';
 import podaseo from '../../../assets/img/podaseo.jpg';
 import plameraseo from '../../../assets/img/palmerasseo.jpg';
 

@@ -17,7 +17,7 @@ import ornamental from '../../../assets/img/ornamental.jpg';
 import troncos from '../../../assets/img/troncos.jpg';
 import plagas from '../../../assets/img/plagas.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
-
+import tocones from '../../../assets/img/tocones.jpg';
 import podaseo from '../../../assets/img/podaseo.jpg';
 import hotel from '../../../assets/img/podahotel.jpg';
 import plameraseo from '../../../assets/img/palmerasseo.jpg';
