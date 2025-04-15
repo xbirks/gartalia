@@ -16,6 +16,7 @@ import ornamental from '../../../assets/img/ornamental.jpg';
 import troncos from '../../../assets/img/troncos.jpg';
 import plagas from '../../../assets/img/plagas.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
+import pulpo from '../../../assets/img/pulpo.jpg';
 
 
 
@@ -50,17 +51,11 @@ function GridMaster({municipio}){
         top="none"
         ></Grid>
 
-        {/* <Grid
-        service={`Poda ornamental ${municipio}`}
-        description="Damos forma a árboles y setos para embellecer su jardín, cuidando cada corte para lograr un diseño estético y funcional que resalte su espacio verde. También hacemos diseños de jardín."
-        img={ornamental}
-        top="none"
-        ></Grid> */}
 
         <Grid
         service={`Recogida y disposición de residuos ${municipio}`}
         description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={recogidaresiduos}
+        img={pulpo}
         top="block"
         ></Grid>
 

@@ -10,17 +10,10 @@ import podatala from '../../../assets/img/poda-tala.jpg';
 import grua from '../../../assets/img/grua.jpg';
 import desrame from '../../../assets/img/desrame.jpg';
 import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
-
 import desbrozado from '../../../assets/img/desbrozado.jpg';
-import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
-import ornamental from '../../../assets/img/ornamental.jpg';
-import troncos from '../../../assets/img/troncos.jpg';
-import plagas from '../../../assets/img/plagas.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
-import tocones from '../../../assets/img/tocones.jpg';
-import podaseo from '../../../assets/img/podaseo.jpg';
-import hotel from '../../../assets/img/podahotel.jpg';
 import plameraseo from '../../../assets/img/palmerasseo.jpg';
+import pulpo from '../../../assets/img/pulpo.jpg';
 
 
 
@@ -58,7 +51,7 @@ function GridMaster({municipio}){
         <Grid
         service={`Retirada de palmeras secas ${municipio}`}
         description="Retiramos palmeras secas o afectadas por plagas, evitando riesgos para personas y propiedades. Nuestro servicio especializado se encarga de forma rápida y segura de la eliminación completa de palmeras, gestionando adecuadamente todos los residuos generados."
-        img={recogidaresiduos}
+        img={pulpo}
         top="block"
         ></Grid>
 
@@ -83,11 +76,12 @@ function GridMaster({municipio}){
         top="none"
         ></Grid>
 
-        <Grid
-        service={`Destoconado con máquina ${municipio}`}
-        description="Elimina tocones de forma rápida, segura y sin destrozar tu terreno con nuestra maquinaria especializada. Olvídate de excavaciones y esfuerzos innecesarios: evita rebrotes, plagas y gana espacio para nuevas plantaciones o construcciones."
-        img={tocones}
+<Grid
+        service={`Recogida y disposición de residuos ${municipio}`}
+        description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
+        img={pulpo}
         top="block"
+        link="/"
         ></Grid>
 
 

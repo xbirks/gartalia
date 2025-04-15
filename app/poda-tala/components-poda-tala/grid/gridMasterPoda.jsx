@@ -13,7 +13,7 @@ import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
 import tocones from '../../../assets/img/tocones.jpg';
 import podaseo from '../../../assets/img/podaseo.jpg';
 import plameraseo from '../../../assets/img/palmerasseo.jpg';
-
+import pulpo from '../../../assets/img/pulpo.jpg';
 
 
 function GridMaster({municipio}){
@@ -43,7 +43,7 @@ function GridMaster({municipio}){
         <Grid
         service={`Recogida y disposición de residuos ${municipio}`}
         description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={recogidaresiduos}
+        img={pulpo}
         top="block"
         ></Grid>
 
