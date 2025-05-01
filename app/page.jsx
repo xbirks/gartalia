@@ -23,7 +23,7 @@ export default function HomePage() {
       </div>
       <div className="other">
         <div className="masterOther">
-          <Other></Other>
+          <Other municipio="Valencia"></Other>
         </div>
       </div><div className="faq">
         <div className="masterFaq">

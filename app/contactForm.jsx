@@ -84,8 +84,8 @@ function ContactForm() {
     <div className="form__master">
       <div className="form__header">
         <div className="form__header-text">
-          <h4>Pide <br /> presupuesto</h4>
-          <p>o llama directamente al <Link href="tel:+34658677423">657 170 847</Link></p>
+          <h2>Pide <br /> presupuesto</h2>
+          <p className="tel_anchor">o llama directamente al <Link className="tel_anchor" href="tel:+34658677423">657 170 847</Link></p>
         </div>
         <Image id="iconpresu" src={IconPresupuesto} alt="Icono de Presupuesto" />
       </div>
