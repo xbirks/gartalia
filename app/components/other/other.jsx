@@ -24,6 +24,7 @@ function Other({municipio}){
             description="Es esencial para mantener tus plantas saludables y libres de plagas y enfermedades. Utiliza una combinación de técnicas, desde pesticidas hasta métodos más verdes como el control biológico, para proteger tus cultivos y jardines."
             img={fitosanitario}
             top="block"
+            link="/"
             ></Grid>
 
             <Grid
@@ -31,6 +32,7 @@ function Other({municipio}){
             description="Creación de muros verdes tanto en interiores como exteriores, aprovechando espacios reducidos y mejorando la calidad del aire."
             img={jardinesverticales}
             top="none"
+            link="/"
             ></Grid>
 
             <Grid
@@ -38,6 +40,7 @@ function Other({municipio}){
             description="La poda de seguridad se centra en eliminar ramas que pueden ser un riesgo para personas y propiedades, previniendo accidentes y manteniendo la salud del árbol."
             img={ramaspeligrosas}
             top="block"
+            link="/"
             ></Grid>
 
             </div>
