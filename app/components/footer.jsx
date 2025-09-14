@@ -122,7 +122,7 @@ function Footer(){
 
 
             <div style={{ backgroundColor: 'transparent', textAlign: 'center', padding: '5px 0', marginTop: '50px' }}>
-            <p style={{ color: '#45E688', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }}>Web creada por: <a style={{ color: '#45E688', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }} href="https://ermo.es" title="estudio de diseño web y posicionamiento SEO">Ermo Estudio - Andrés Ortega Montoya</a></p></div>
+            <p style={{ color: '#0D403B', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }}>¿Eres jardinero? <a style={{ color: '#0D403B', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }} href="https://www.ermo.es/hacer-web-jardinero" title="Diseñador web para jardineros">Haz una web como esta haciendo click aquí</a></p></div>
 
     </div>
 
