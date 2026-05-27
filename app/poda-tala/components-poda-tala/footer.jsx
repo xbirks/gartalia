@@ -52,7 +52,7 @@ function Footer(){
             <div className="footer__contacto">
                 <h4 className="footer__contacto-title">Somos jardineros, <span>¿podemos ayudarte?</span></h4>
                 <StandardButton
-                link="tel:+34658677423"
+                link="tel:+34657170847"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>

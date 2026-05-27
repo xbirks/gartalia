@@ -5,6 +5,9 @@ import Footer from "../../components/footer.jsx";
 const municipio = "Mislata";
 
 export const metadata = {
+  alternates: {
+    canonical: '/municipios/mislata',
+  },
   title: `GARTALIA | Jardinería en ${municipio} para particulares y empresas`,
   description: `20 años de experiencia como jardinero en ${municipio}. Ofrecemos poda en altura, diseño de jardines, y mantenimiento integral para particulares y empresas. Servicio barato y eficiente.`,
   applicationName: 'GARTALIA',

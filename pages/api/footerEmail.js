@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
         from: process.env.SMTP_USER,
-        to: 'andres03ortega@gmail.com',
+        to: 'gartaliacontacto@gmail.com',
         subject: 'Nuevo Número de Teléfono Recibido',
         text: `Teléfono: ${tel}`, 
         html: `<b>Teléfono:</b> ${tel}`,

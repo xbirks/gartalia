@@ -6,6 +6,10 @@ import Footer from "./components/footer.jsx";
 export const metadata = {
 
   //GENERIC
+  metadataBase: new URL('https://gartalia.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'GARTALIA | Jardinería en Valencia para particulares y empresas',
   description: '20 años de experiencia como jardinero en Valencia. Ofrecemos poda en altura, diseño de jardines, y mantenimiento integral para particulares y empresas. Servicio barato y eficiente.',
   applicationName: 'GARTALIA',
@@ -126,8 +130,6 @@ export default function RootLayout({ children }) {
        
         <meta name="theme-color" content="#6BDB8A" />
         <meta name="background-color" content="#0D403B" />
-        <link rel="canonical" href="https://gartalia.com" hrefLang="es-ES" />
-        <meta name="robots" content="index, follow" />
         <link rel="icon" href="https://gartalia.com/seo/favicon_500x500.jpg" title="Ícono de la pestaña" type="image/png" />
         <link rel="apple-touch-icon" sizes="180x180" href="https://gartalia.com/seo/ios_180x180.jpg" />
         <script
@@ -158,7 +160,7 @@ export default function RootLayout({ children }) {
                 "image": "https://gartalia.com/seo/meta-1200x630.jpg",
                 "url": "https://gartalia.com",
                 "hasMap": "#",
-                "telephone": "658677423",
+                "telephone": "657170847",
                 "priceRange": "$",
                 "address": {
                   "@type": "PostalAddress",

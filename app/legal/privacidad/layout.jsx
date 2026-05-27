@@ -5,6 +5,9 @@ import Footer from "../../components/footer.jsx";
 
 
 export const metadata = {
+  alternates: {
+    canonical: '/legal/privacidad',
+  },
   title: `GARTALIA | Política de privaciadad`,
   description: `Consulta la política de privacidad de Jardinería Gartalia`,
   applicationName: 'GARTALIA',

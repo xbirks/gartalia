@@ -5,6 +5,9 @@ import Footer from "../../../components/footer.jsx";
 const municipio = "Torrent";
 
 export const metadata = {
+  alternates: {
+    canonical: '/poda-tala/tala/torrent',
+  },
   title: `Tala de árboles y palmeras en ${municipio} por expertos | GARTALIA`,
   description: `Tala segura y profesional de árboles y palmeras en ${municipio}. Servicio rápido y eficaz. ¡Presupuesto GRATIS!`,
   applicationName: 'GARTALIA',

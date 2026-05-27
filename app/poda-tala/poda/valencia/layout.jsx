@@ -5,6 +5,9 @@ import Footer from "../../../components/footer.jsx";
 const municipio = "Valencia";
 
 export const metadata = {
+  alternates: {
+    canonical: '/poda-tala/poda/valencia',
+  },
   title: `Poda de árboles en ${municipio} por jardineros expertos | GARTALIA`,
   description: `Poda de árboles en Valencia para un crecimiento sano y seguro. Expertos en mantenimiento y seguridad. ¡Presupuesto GRATIS!`,
   applicationName: 'GARTALIA',

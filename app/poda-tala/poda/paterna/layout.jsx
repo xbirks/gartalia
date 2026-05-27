@@ -5,6 +5,9 @@ import Footer from "../../../components/footer.jsx";
 const municipio = "Paterna";
 
 export const metadata = {
+  alternates: {
+    canonical: '/poda-tala/poda/paterna',
+  },
   title: `Poda de árboles en ${municipio} por jardineros expertos | GARTALIA`,
   description: `Poda de árboles en ${municipio} para un crecimiento sano y seguro. Expertos en mantenimiento y seguridad. ¡Presupuesto GRATIS!`,
   applicationName: 'GARTALIA',
