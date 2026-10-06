@@ -121,8 +121,9 @@ function Footer(){
             </div>
 
 
+            {/* Crédito discreto a ermo (Andrés Ortega), autor de la web */}
             <div style={{ backgroundColor: 'transparent', textAlign: 'center', padding: '5px 0', marginTop: '50px' }}>
-            <p style={{ color: '#0D403B', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }}>¿Eres jardinero? <a style={{ color: '#0D403B', fontFamily: 'Roboto, sans-serif', fontSize: '12px' }} href="https://www.ermo.es/hacer-web-jardinero" title="Diseñador web para jardineros">Haz una web como esta haciendo click aquí</a></p></div>
+            <p style={{ color: '#90A495', fontFamily: 'neue-haas-unica, Arial, Helvetica, sans-serif', fontSize: '11px' }}>Diseño web: <a style={{ color: '#90A495' }} href="https://www.ermo.es/hacer-web-jardinero" title="Diseño web para jardineros" target="_blank" rel="noopener">ermo</a></p></div>
 
     </div>
 
