@@ -14,10 +14,12 @@ function Header() {
     return (
         <div className="header__master">
             <div>
+                {/* Los logos se cargan al momento (priority): están arriba del todo y, en diferido, tardaban en aparecer en el móvil.
+                    Son tres versiones según el ancho (style.scss) y pesan unos 15 KB entre todas. */}
                 <Link href="/" className="header__logo">
-                    <Image className="header__var-logo1" src={HeaderLogo} alt="Gartalia, poda y tala en altura en Valencia" height={50} width={217} />
-                    <Image className="header__var-logo2" src={HeaderName} alt="Gartalia" height={50} width={150} />
-                    <Image className="header__var-logo3" src={HeaderTree} alt="Gartalia" height={50} width={53} />
+                    <Image className="header__var-logo1" src={HeaderLogo} alt="Gartalia, poda y tala en altura en Valencia" height={50} width={217} priority />
+                    <Image className="header__var-logo2" src={HeaderName} alt="Gartalia" height={50} width={150} priority />
+                    <Image className="header__var-logo3" src={HeaderTree} alt="Gartalia" height={50} width={53} priority />
                 </Link>
             </div>
 
