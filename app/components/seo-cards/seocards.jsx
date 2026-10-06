@@ -8,7 +8,7 @@ import Card from './card';
 //IMG
 import pinoAltura from '../../assets/img/seo-2.jpg';
 import palmera from '../../assets/img/grua.jpg';
-import parcela from '../../assets/img/parcelas.jpg';
+import parcela from '../../assets/img/desbroce-parcela.jpg'; // Pexels, foto 15211861 (licencia Pexels: uso comercial sin atribución)
 
 
 function SeoCards({municipio}){
@@ -56,7 +56,7 @@ function SeoCards({municipio}){
                 </>
             }
             img={parcela}
-            alt="Camión cargado con los restos del desbroce de una parcela"
+            alt="Operario con equipo de protección desbrozando una parcela de hierba alta"
             >
             </Card>
 
