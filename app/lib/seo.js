@@ -7,11 +7,15 @@ export const ID_EMPRESA = `${SITE_URL}/#empresa`;
 export const TELEFONO = '+34657170847';
 export const FICHA_GOOGLE = 'https://www.google.com/maps?cid=16804389010768211644';
 
-const IMAGEN_SOCIAL = {
-  url: '/seo/meta-1200x630.jpg',
+// Imagen que sale al compartir la web (WhatsApp, redes) y la que ve Google como imagen de la empresa.
+// Desde el 07/10/2026, elegida por el usuario: la bota de un trepador con espuelas subiendo a una palmera, con degradado
+// verde oscuro desde abajo y el logo completo en el centro (antes, una foto del equipo anterior posando).
+// Si se cambia, usar un nombre de archivo nuevo: WhatsApp y Facebook guardan la imagen por su dirección.
+export const IMAGEN_SOCIAL = {
+  url: '/seo/poda-palmera-altura-gartalia-1200x630.jpg',
   width: 1200,
   height: 630,
-  alt: 'Gartalia, poda y tala en altura en Valencia',
+  alt: 'Trepador subiendo a una palmera con espuelas, arnés y motosierra, con el logo de Gartalia',
 };
 
 // Nombre correcto de cada pueblo o urbanización, por slug de la URL.

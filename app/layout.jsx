@@ -2,7 +2,7 @@ import "./style.scss";
 import Header from './components/header.jsx';
 import Footer from "./components/footer.jsx";
 import JsonLd from './components/seo/jsonLd';
-import { SITE_URL, MARCA, jsonLdEmpresa } from './lib/seo';
+import { SITE_URL, MARCA, IMAGEN_SOCIAL, jsonLdEmpresa } from './lib/seo';
 
 
 export const metadata = {
@@ -19,7 +19,7 @@ export const metadata = {
     siteName: MARCA,
     locale: 'es_ES',
     type: 'website',
-    images: [{ url: '/seo/meta-1200x630.jpg', width: 1200, height: 630, alt: 'Gartalia, poda y tala en altura en Valencia' }],
+    images: [IMAGEN_SOCIAL],
   },
 }
 
