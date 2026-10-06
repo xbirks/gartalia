@@ -15,6 +15,16 @@ function FaqMaster(){
             <p className="faq__comment">Estas son las dudas que más nos plantean antes de un trabajo:</p>
 
             <FaqItem
+            titulo="¿Cómo trabajáis para que no haya riesgos para mi casa?"
+            explicacion="Antes de empezar, Carlos va a ver el árbol y te explica paso a paso cómo lo vamos a hacer: por dónde se corta, cómo se baja cada trozo y qué zona hay que dejar libre. Si el árbol está pegado a la casa o encima del tejado, no lo tiramos entero: lo desmontamos por partes desde arriba y bajamos cada trozo de forma controlada, con la zona acotada." 
+            ></FaqItem>
+
+            <FaqItem
+            titulo="¿Tenéis seguro de responsabilidad civil?"
+            explicacion="Sí. Es lo primero que conviene preguntar a cualquier empresa que vaya a subirse a un árbol junto a tu casa: si algo sale mal y no tiene seguro, el problema es tuyo. Con nosotros, cada trabajo está cubierto." 
+            ></FaqItem>
+
+            <FaqItem
             titulo="¿Cuánto cuesta talar un pino o podar una palmera?"
             explicacion="Depende sobre todo de la altura, de lo cerca que esté de la casa o de los cables, de si hay que bajarlo por partes y de cuántos restos hay que retirar. Por eso no damos precios a ciegas: nos mandas unas fotos o vamos a verlo, y te damos el precio antes de empezar, sin compromiso."
             ></FaqItem>
@@ -22,11 +32,6 @@ function FaqMaster(){
             <FaqItem
             titulo="¿Hace falta permiso del ayuntamiento para talar un árbol?"
             explicacion="En muchos municipios sí, sobre todo en suelo urbano. En València, por ejemplo, se pide con el trámite MA.LC.15 y hay que justificar el motivo de la tala. Cada ayuntamiento tiene sus normas, así que cuando vamos a ver el árbol te decimos si hace falta y, si quieres, nos encargamos nosotros del papeleo."
-            ></FaqItem>
-
-            <FaqItem
-            titulo="¿Podéis talar un árbol pegado a la casa o encima del tejado?"
-            explicacion="Sí, es de los trabajos que más hacemos. En lugar de tirar el árbol entero, lo desmontamos por partes desde arriba y bajamos cada trozo de forma controlada, para que no toque el tejado, la piscina ni la valla. Antes de empezar revisamos la zona y la acotamos."
             ></FaqItem>
 
             <FaqItem

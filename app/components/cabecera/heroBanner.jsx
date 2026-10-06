@@ -24,11 +24,11 @@ function HeroBanner(){
             </div>
             <div className="hero__element hero__4">
                 <p>100%</p>
-                <p>limpio al<br></br>terminar</p>
+                <p>trabajos<br></br>asegurados</p>
             </div>
             <div className="hero__element hero__5">
-                <p>SEGURO</p>
-                <p>con seguro de<br></br>responsabilidad<br></br>civil</p>
+                <p>LIMPIO</p>
+                <p>lo dejamos<br></br>todo<br></br>recogido</p>
             </div>
         </div>
 

@@ -88,7 +88,7 @@ function GridMaster({municipio}){
 
 
 
-        <h3 className="second_h2">Cómo trabajamos</h3>
+        <h3 className="second_h2" id="como-trabajamos">Cómo trabajamos</h3>
         <p className="second_p"><strong>1. Vemos el árbol.</strong> Nos mandas fotos por WhatsApp o vamos a verlo, y te explicamos si conviene podar o talar.
         <br></br><br></br>
         <strong>2. Te damos el precio antes de empezar.</strong> Por escrito si lo necesitas, sin compromiso y sin sorpresas el día del trabajo.

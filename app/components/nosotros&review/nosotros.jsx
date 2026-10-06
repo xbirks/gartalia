@@ -21,7 +21,7 @@ function nosotros(){
                 </div>
             </div>
             <p className="nosotros__description">
-                <strong>Carlos Correa</strong> lleva más de 20 años trabajando con árboles en Valencia y se ha especializado en lo que casi nadie quiere hacer: <strong>podar y talar en altura</strong> árboles grandes y difíciles. Es quien va a ver el árbol, te explica qué hay que hacer y por qué, y te da un precio que luego respeta.
+                <strong>Carlos Correa</strong> lleva más de 20 años trabajando con árboles en Valencia y se ha especializado en lo que casi nadie quiere hacer: <strong>podar y talar en altura</strong> árboles grandes y difíciles. Es quien va a ver el árbol, te explica paso a paso cómo se va a hacer el trabajo y qué medidas de seguridad vamos a tomar, y te da un precio que luego respeta.
                 <br></br><br></br>
                 En cada trabajo está él con su equipo, de principio a fin, y no se van hasta dejarlo todo recogido. Han confiado en ellos el <strong>Ayuntamiento de La Eliana</strong>, el <strong>Ayuntamiento de Llíria</strong>, el resort El Oasis de La Eliana y el Club de Tenis El Collao, además de cientos de particulares.
                 </p>

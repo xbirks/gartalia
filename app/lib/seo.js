@@ -108,7 +108,7 @@ export function metadataPagina({ title, description, path }) {
 export const metadataHome = metadataPagina({
   title: 'Gartalia | Poda y tala en altura en Valencia',
   description:
-    'Poda y tala en altura de pinos, palmeras y árboles grandes junto a casas, en Valencia y el Camp de Túria. También desbrozamos parcelas.',
+    'Poda y tala en altura de pinos, palmeras y árboles grandes junto a casas en Valencia. Con seguro de responsabilidad civil y nos ocupamos del permiso.',
   path: '/',
 });
 

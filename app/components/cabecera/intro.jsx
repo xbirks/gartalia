@@ -10,7 +10,7 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, donde otros no se atreven</h1>
+      <h1><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, sin riesgos para tu casa</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
         {/* El primer botón se oculta en pantallas medianas y pequeñas (intro.scss) */}
         <StandardButton
@@ -19,13 +19,13 @@ function Intro({ municipio }) {
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/poda-tala"
-          title="Pinos y palmeras muy altos"
+          link="/poda-tala#como-trabajamos"
+          title="Te explicamos cada paso"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/poda-tala"
-          title="Árboles pegados a la casa"
+          link="/#preguntas"
+          title="Seguro de responsabilidad civil"
           style="emptyStandardButton"
         />
         <StandardButton
