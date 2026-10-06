@@ -7,13 +7,13 @@ import Grid from './grid';
 
 // IMAGENES
 import podatala from '../../../assets/img/poda-tala.jpg';
+import talapino from '../../../assets/img/licencia.jpg';
 import grua from '../../../assets/img/grua.jpg';
-import desrame from '../../../assets/img/desrame.jpg';
-import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
-import desbrozado from '../../../assets/img/desbrozado.jpg';
+import arbolcaido from '../../../assets/img/arbolcaio.jpg';
+import tocones from '../../../assets/img/tocones.jpg';
 import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
-import plameraseo from '../../../assets/img/palmerasseo.jpg';
-import pulpo from '../../../assets/img/pulpo.jpg';
+import desbrozado from '../../../assets/img/desbrozado.jpg';
+import troncos from '../../../assets/img/troncos.jpg';
 
 
 
@@ -21,81 +21,78 @@ function GridMaster({municipio}){
 
     return(
 
-    <div className="gridmaster" id="servicios"> 
+    <div className="gridmaster" id="servicios">
 
         <h2>Servicios</h2>
 
         <div className="gridmaster__elements">
 
         <Grid
-        service={`Tala controlada de árboles ${municipio}`}
-        description="Realizamos talas controladas utilizando técnicas especializadas que garantizan la seguridad del entorno y las personas. Nuestro equipo evalúa cada situación para asegurar una tala precisa y sin riesgos, protegiendo construcciones cercanas y zonas sensibles."
+        service={`Tala por partes junto a viviendas ${municipio}`}
+        description="Si no hay sitio para tumbar el árbol, lo desmontamos desde arriba, tramo a tramo, y bajamos cada trozo de forma controlada. Ni el tejado ni la piscina se enteran."
         img={podatala}
         top="block"
         ></Grid>
 
         <Grid
-        service={`Tala con grúas y plataformas elevadoras ${municipio}`}
-        description="Llevamos a cabo talas en altura con grúas y plataformas elevadoras, alcanzando árboles de difícil acceso con total seguridad y eficacia. Nuestro equipamiento especializado permite realizar talas rápidas minimizando cualquier riesgo para el entorno."
+        service={`Tala de pinos grandes o inclinados ${municipio}`}
+        description="Pinos de 15 o 20 metros, inclinados hacia la casa o con el tronco dañado. Valoramos el riesgo, decidimos por dónde cortar y talamos sin dejar nada a medias."
+        img={talapino}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Tala de palmeras secas o con picudo ${municipio}`}
+        description="Una palmera seca o con el cogollo caído puede venirse abajo. La talamos por partes y retiramos todos los restos con cuidado para no extender el picudo rojo."
         img={grua}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Tala especializada en palmeras ${municipio}`}
-        description="Ofrecemos talas específicas para palmeras, utilizando técnicas adaptadas a esta especie habitual en la Comunidad Valenciana. Nuestro equipo experto realiza cortes seguros y eficientes para eliminar palmeras deterioradas, enfermas o con peligro de caída."
-        img={desrame}
+        service={`Tala urgente por riesgo de caída ${municipio}`}
+        description="Árboles caídos tras un temporal, apoyados en otro árbol o a punto de partirse. Estos avisos los atendemos los primeros."
+        img={arbolcaido}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Retirada de palmeras secas ${municipio}`}
-        description="Retiramos palmeras secas o afectadas por plagas, evitando riesgos para personas y propiedades. Nuestro servicio especializado se encarga de forma rápida y segura de la eliminación completa de palmeras, gestionando adecuadamente todos los residuos generados."
-        img={pulpo}
-        top="block"
-        ></Grid>
-
-        <Grid
-        service={`Tala urgente por peligro inminente ${municipio}`}
-        description="Atendemos situaciones urgentes realizando talas inmediatas cuando exista un riesgo inminente de caída de árboles o palmeras. Nuestra respuesta rápida y profesional garantiza la protección del entorno y la seguridad de las personas."
-        img={plameraseo}
+        service={`Destoconado ${municipio}`}
+        description="Después de la tala podemos quitar también el tocón con destoconadora, para que no rebrote y puedas aprovechar ese espacio."
+        img={tocones}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Gestión de permisos y trámites municipales ${municipio}`}
-        description="Nos encargamos completamente de la gestión de permisos y trámites municipales necesarios para llevar a cabo la tala de árboles y palmeras. Facilitamos todo el proceso administrativo, agilizando los tiempos y evitando complicaciones a nuestros clientes."
+        service={`Permiso de tala del ayuntamiento ${municipio}`}
+        description="Te decimos si tu ayuntamiento exige permiso para talar ese árbol y nos ocupamos del trámite de principio a fin."
         img={ayuntamiento}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Triturado y reciclaje de restos vegetales ${municipio}`}
-        description="Ofrecemos servicios de trituración y reciclaje ecológico de restos vegetales tras la tala. Gestionamos responsablemente los residuos generados, convirtiéndolos en material aprovechable y reduciendo el impacto ambiental."
+        service={`Triturado y retirada de restos ${municipio}`}
+        description="Trituramos las ramas o las cargamos en el camión, y nos llevamos troncos y restos a un gestor autorizado. Al terminar barremos la zona."
         img={desbrozado}
         top="none"
         ></Grid>
 
-<Grid
-        service={`Recogida y disposición de residuos ${municipio}`}
-        description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={pulpo}
-        top="block"
-        link="/"
+        <Grid
+        service={`Leña troceada ${municipio}`}
+        description="Si quieres aprovechar el árbol, te dejamos la madera cortada a medida para la chimenea y apilada donde nos digas."
+        img={troncos}
+        top="none"
         ></Grid>
-
-
 
         </div>
 
 
 
 
-        <h3 className="second_h2">Hacemos que tus árboles se vean increíbles</h3>
-        <p className="second_p">El cuidado de los árboles requiere conocimientos especializados y una ejecución precisa. Por ello, nos encargamos de realizar podas que promuevan la salud de los árboles y minimicen cualquier riesgo en su jardín. Cuando la situación lo exige, <strong>también llevamos a cabo talas controladas con técnicas avanzadas</strong>, asegurándonos de proteger tanto las personas como las estructuras cercanas. Nuestro objetivo es proporcionarle un servicio integral que abarque desde el análisis inicial hasta la limpieza final del área, dejándola en perfectas condiciones tras nuestra intervención.
+        <h3 className="second_h2">Antes de talar, lo vemos de cerca</h3>
+        <p className="second_p">No todos los árboles que dan miedo hay que talarlos. A veces basta con una <strong>poda de reducción</strong> o con quitar dos ramas que cargan hacia la casa. Por eso, antes de darte un precio, vemos el árbol y te decimos lo que haríamos nosotros si fuera nuestro.
         <br></br><br></br>
-        Uno de nuestros servicios más destacados es la <strong>poda en altura, diseñada para árboles de gran tamaño</strong> que presentan retos específicos. Gracias a equipos como plataformas elevadoras y grúas, accedemos a las zonas más altas con total seguridad, ejecutando cada corte con precisión para preservar la integridad del árbol y garantizar la tranquilidad de quienes nos contratan. Esta especialización nos permite atender desde pequeños jardines hasta grandes extensiones, adaptándonos a las particularidades de cada espacio con el mismo nivel de profesionalidad.</p>
-                
+        Cuando sí hay que talar, <strong>acotamos la zona, trabajamos con seguro de responsabilidad civil</strong> y elegimos la técnica según el sitio: tumbar el árbol si hay espacio, o desmontarlo por partes si está cerca de la casa, de una piscina o de cables. Y al acabar, no queda ni una rama en el suelo.</p>
+
 
 
 
@@ -107,4 +104,4 @@ function GridMaster({municipio}){
 
 }
 
-export default GridMaster; 
+export default GridMaster;

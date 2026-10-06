@@ -26,9 +26,9 @@ export default function HomePage() {
       </div>
       <div className="other">
         <div className="masterOther">
-          <Other municipio="Valencia"></Other>
+          <Other municipio="en Valencia"></Other>
         </div>
-      </div><div className="faq">
+      </div><div className="faq" id="preguntas">
         <div className="masterFaq">
           <FaqMaster></FaqMaster>
         </div>

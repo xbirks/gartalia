@@ -19,7 +19,7 @@ const Sedavi = () => {
         <GridMaster municipio={enmunicipio} />
       </div>
       
-      <div className="faq">
+      <div className="faq" id="preguntas">
         <div className="masterFaq">
           <FaqMaster />
         </div>

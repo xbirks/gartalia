@@ -10,26 +10,27 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1>Contrata <span className="intro__h1-high">el mejor servicio</span> de poda y tala en altura en {municipio}</h1>
+      <h1><span className="intro__h1-high">Poda y tala de árboles</span> grandes y difíciles en {municipio}</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
+        {/* El primer botón se oculta en pantallas medianas y pequeñas (intro.scss) */}
         <StandardButton
-          link="/"
-          title="Tala controlada"
+          link="#servicios"
+          title="Leña troceada"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Gestión de residuos"
+          link="#servicios"
+          title="Tala por partes junto a casas"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Trámites con ayuntamientos"
+          link="#servicios"
+          title="Nos llevamos todos los restos"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Elaboración de leña"
+          link="#preguntas"
+          title="Nos ocupamos del permiso"
           style="emptyStandardButton"
         />
       </div>
@@ -37,8 +38,8 @@ function Intro({ municipio }) {
       <div style={{ marginTop: '6vh' }}></div>
       <HeroBanner />
 
-      <h2 className="second_h2">Ofrecemos servicios a particulares, empresas, comunidades y ayuntamientos</h2>
-      <p className="second_p">El mantenimiento adecuado de los árboles es esencial <strong>para garantizar la seguridad</strong> y el buen estado de los espacios verdes, ya sean jardines privados, comunidades o zonas públicas. Nuestra empresa, con más de 20 años de experiencia, se especializa en ofrecer servicios de poda y tala de árboles en altura <strong>adaptándonos a las necesidades de cada cliente</strong> y de su espacio. Nos comprometemos a dar <strong>soluciones eficientes y seguras</strong>, que respaldamos con un equipo cualificado y el uso de herramientas modernas, para que pueda confiar plenamente en nosotros.</p>
+      <h2 className="second_h2">Para particulares, comunidades, empresas y ayuntamientos</h2>
+      <p className="second_p">Hay árboles que se pueden podar desde el suelo y árboles que no. Nosotros nos dedicamos a los segundos: <strong>pinos, palmeras y árboles de gran porte</strong>, muchas veces pegados a una casa, a una piscina o a un cable, donde cada corte hay que pensarlo antes. Llevamos más de 20 años haciéndolo en Valencia y alrededores, para particulares, comunidades, empresas y ayuntamientos como los de La Eliana y Llíria. <strong>Te explicamos qué necesita el árbol</strong>, te damos el precio antes de empezar y no nos vamos hasta dejarlo todo recogido.</p>
     </div>
   );
 }

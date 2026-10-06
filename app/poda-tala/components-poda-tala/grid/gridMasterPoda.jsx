@@ -6,58 +6,55 @@ import './grid.scss';
 import Grid from './grid';
 
 // IMAGENES
-import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
-
+import podapinos from '../../../assets/img/podaseo.jpg';
+import palmeras from '../../../assets/img/palmerasseo.jpg';
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
-import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
-import tocones from '../../../assets/img/tocones.jpg';
-import podaseo from '../../../assets/img/podaseo.jpg';
-import plameraseo from '../../../assets/img/palmerasseo.jpg';
 import pulpo from '../../../assets/img/pulpo.jpg';
+import troncos from '../../../assets/img/troncos.jpg';
 
 
 function GridMaster({municipio}){
 
     return(
 
-    <div className="gridmaster" id="servicios"> 
+    <div className="gridmaster" id="servicios">
 
         <h2>Servicios</h2>
 
         <div className="gridmaster__elements">
 
         <Grid
-        service={`Poda de árboles en ${municipio}`}
-        description="Podamos árboles aplicando técnicas precisas y seguras para garantizar su desarrollo óptimo y la seguridad del entorno. Realizamos podas de mantenimiento y saneamiento adaptándonos a las necesidades de cada árbol y espacio. Nuestro equipo experto trabaja asegurando cortes limpios y adecuados que reducen el riesgo de caídas de ramas."
-        img={podaseo}
-        top="block"
-        ></Grid>
-
-        <Grid
-        service={`Poda de seguridad ${municipio}`}
-        description="Eliminamos ramas peligrosas que puedan caer, garantizando la protección de personas y estructuras con técnicas precisas y seguras adaptadas a cada situación."
-        img={podaseguridad}
-        top="none"
-        ></Grid>
-
-        <Grid
-        service={`Recogida y disposición de residuos ${municipio}`}
-        description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={pulpo}
+        service={`Poda de pinos ${municipio}`}
+        description="Quitamos las ramas secas y las que vuelan sobre la casa, la piscina o la parcela del vecino, y aligeramos la copa para que el pino aguante mejor el viento."
+        img={podapinos}
         top="block"
         ></Grid>
 
         <Grid
         service={`Poda de palmeras ${municipio}`}
-        description="Realizamos desrame de árboles para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
-        img={plameraseo}
+        description="Limpiamos hojas secas y racimos a cualquier altura y, de paso, revisamos si la palmera tiene síntomas de picudo rojo. Nos llevamos todas las hojas."
+        img={palmeras}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Trámites con ayuntamientos ${municipio}`}
-        description="Nos ocupamos de gestionar los permisos necesarios con el ayuntamiento para podas o talas, asegurándole un proceso sencillo y cumpliendo con todas las normativas locales en Valencia y alrededores."
-        img={ayuntamiento}
+        service={`Poda de seguridad ${municipio}`}
+        description="Ramas rotas, secas o colgando sobre zonas de paso. Las quitamos antes de que caigan solas, con la zona acotada y bajando cada rama de forma controlada."
+        img={podaseguridad}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Recogida de todos los restos ${municipio}`}
+        description="Las ramas no se quedan amontonadas en la entrada: las cargamos y las llevamos a un gestor autorizado. Al terminar barremos el jardín."
+        img={pulpo}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Leña troceada ${municipio}`}
+        description="Si la poda deja madera aprovechable, te la cortamos a medida para la chimenea y te la apilamos donde nos digas."
+        img={troncos}
         top="none"
         ></Grid>
 
@@ -66,11 +63,11 @@ function GridMaster({municipio}){
 
 
 
-        <h3 className="second_h2">Hacemos que tus árboles se vean increíbles</h3>
-        <p className="second_p">El cuidado de los árboles requiere conocimientos especializados y una ejecución precisa. Por ello, nos encargamos de realizar podas que promuevan la salud de los árboles y minimicen cualquier riesgo en su jardín. Cuando la situación lo exige, <strong>también llevamos a cabo talas controladas con técnicas avanzadas</strong>, asegurándonos de proteger tanto las personas como las estructuras cercanas. Nuestro objetivo es proporcionarle un servicio integral que abarque desde el análisis inicial hasta la limpieza final del área, dejándola en perfectas condiciones tras nuestra intervención.
+        <h3 className="second_h2">Cuándo conviene podar</h3>
+        <p className="second_p">Los <strong>pinos</strong> se podan mejor en los meses fríos, de finales de otoño a finales de invierno, cuando el árbol está en reposo. Las <strong>palmeras</strong>, también en invierno: el picudo rojo está menos activo y los cortes le atraen menos. Los árboles de hoja caduca, cuando han perdido la hoja.
         <br></br><br></br>
-        Uno de nuestros servicios más destacados es la <strong>poda en altura, diseñada para árboles de gran tamaño</strong> que presentan retos específicos. Gracias a equipos como plataformas elevadoras y grúas, accedemos a las zonas más altas con total seguridad, ejecutando cada corte con precisión para preservar la integridad del árbol y garantizar la tranquilidad de quienes nos contratan. Esta especialización nos permite atender desde pequeños jardines hasta grandes extensiones, adaptándonos a las particularidades de cada espacio con el mismo nivel de profesionalidad.</p>
-                
+        La excepción son las <strong>ramas peligrosas</strong>: una rama seca encima del tejado o de la zona de juegos de los niños no tiene que esperar a ninguna época. Si nos mandas una foto, te decimos si es urgente o si puede esperar a la temporada buena.</p>
+
 
 
 
@@ -82,4 +79,4 @@ function GridMaster({municipio}){
 
 }
 
-export default GridMaster; 
+export default GridMaster;

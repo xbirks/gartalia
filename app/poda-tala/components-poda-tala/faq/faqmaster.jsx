@@ -12,66 +12,62 @@ function FaqMaster(){
 
             <h2>¿Tienes preguntas?</h2>
 
-            <p className="faq__comment">Te dejamos aquí una lista con preguntas frecuentes:</p>
+            <p className="faq__comment">Lo que más nos preguntan antes de una poda o una tala:</p>
             
             <FaqItem
-            titulo="¿Cuándo es necesario podar un árbol?"
-            explicacion="La poda es necesaria cuando el árbol tiene ramas secas, enfermas o peligrosas, cuando crece demasiado y puede afectar a estructuras cercanas, o simplemente para mejorar su forma y salud. Lo ideal es podar en la época adecuada según la especie: los caducifolios en invierno y los perennes a finales de verano o principios de otoño. Así evitamos estrés y favorecemos un buen crecimiento." 
+            titulo="¿Cuándo hay que podar un árbol?"
+            explicacion="Cuando tiene ramas secas, rotas o que cargan hacia la casa, cuando ha crecido tanto que molesta o da miedo con el viento, o cuando hace años que nadie lo toca. En cuanto a la época, los pinos se podan mejor de finales de otoño a finales de invierno, las palmeras en los meses fríos y los árboles de hoja caduca cuando han perdido la hoja." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Por qué debería talar un árbol?"
-            explicacion="La tala es necesaria si el árbol está seco, enfermo o supone un peligro. También si sus raíces dañan tuberías, aceras o edificios. A veces, es obligatoria por normativas o construcciones. Siempre valoramos si hay alternativa, como la poda o el trasplante." 
-            ></FaqItem>
-
-            
-            <FaqItem
-            titulo="¿Qué incluye el servicio de poda en altura?"
-            explicacion="El servicio de poda en altura incluye el recorte de ramas altas y de difícil acceso usando técnicas y maquinaria especial. Nos aseguramos de eliminar ramas secas o peligrosas sin dañar el árbol, manteniendo su salud y forma. Además, garantizamos la seguridad en el proceso con equipos adecuados para trabajar a gran altura." 
+            titulo="¿Cuándo es mejor talar que podar?"
+            explicacion="Cuando el árbol está seco, muy enfermo, inclinado con riesgo de caer o dañando la casa con las raíces. Si se puede salvar con una buena poda, te lo diremos: talar es el último recurso, no el primero." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Necesito permisos para podar o talar árboles en Valencia?"
-            explicacion="Sí, en Valencia necesitas permiso del Ayuntamiento para podar o talar árboles, especialmente si están en espacios públicos o en terrenos urbanos. Debes realizar el trámite MA.LC.15, rellenar un formulario y justificar la razón de la poda o tala. Si es parte de una obra, también puede requerirse licencia de obra." 
+            titulo="¿Qué incluye la poda en altura?"
+            explicacion="Subir a la copa con arnés o con plataforma, quitar las ramas secas o peligrosas, aligerar el peso y dejar el árbol equilibrado. Incluye bajar las ramas de forma controlada, retirar todos los restos y dejar la zona barrida." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Qué hago con los restos de la poda o tala?"
-            explicacion="Nosotros nos encargamos de retirar y gestionar los restos de poda o tala. Los desechos pueden ser triturados y reciclados para su uso como abono o se llevan a un centro de reciclaje autorizado. Así, garantizamos que no quede ningún residuo en tu espacio y cumplimos con las normativas ambientales." 
+            titulo="¿Necesito permiso para podar o talar un árbol?"
+            explicacion="Para podar, normalmente no. Para talar, en muchos municipios sí, sobre todo en suelo urbano: en València, por ejemplo, se pide con el trámite MA.LC.15 de tala o trasplante. Los árboles monumentales están protegidos por ley. Cuando vamos a verlo te decimos si hace falta y nos ocupamos del papeleo." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Cuánto tiempo tardáis en Gartalia podando o talando un árbol?"
-            explicacion="El tiempo depende del tamaño y la complejidad del árbol, pero generalmente, en Gartalia solemos tardar entre 1 y 3 horas por árbol. Si es un trabajo más grande o complicado, como poda en altura, puede tomar un poco más. Siempre te informamos del tiempo estimado antes de comenzar el trabajo." 
+            titulo="¿Qué hacéis con los restos de la poda?"
+            explicacion="Nos los llevamos todos. Las ramas se trituran o se cargan en el camión y van a un gestor autorizado. Si hay madera aprovechable, te la dejamos troceada para la chimenea si la quieres." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Se pueden tratar las plagas en mis árboles?"
-            explicacion="Sí, en Gartalia tratamos las plagas en los árboles con productos específicos y técnicas adecuadas para cada tipo de infección. Identificamos la plaga y aplicamos el tratamiento más efectivo, siempre respetando el entorno. También damos recomendaciones para prevenir futuras plagas y mantener tus árboles saludables." 
+            titulo="¿Cuánto tardáis en podar un árbol?"
+            explicacion="Un pino o una palmera de tamaño normal suele llevar entre una y tres horas. Si el árbol es muy grande o hay que trabajar con mucho cuidado por la casa o los cables, puede ocupar la jornada entera. Te lo decimos antes de empezar." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Cuáles son las plagas más comunes en los árboles de Valencia y alrededores?"
-            explicacion="Las plagas más comunes en Valencia incluyen la procesionaria del pino, que afecta a los pinos, y el cochinillo blanco, que ataca a árboles frutales y ornamentales. También son frecuentes los pulgones en frutales y el barrenador del olivo, que debilita los olivos. Es importante actuar a tiempo para evitar daños mayores y preservar la salud de los árboles." 
-            ></FaqItem>
-
-            
-            <FaqItem
-            titulo="¿Ofrecen presupuestos gratuitos para poda y tala en altura?"
-            explicacion="Sí, en Gartalia ofrecemos presupuestos gratuitos para poda y tala en altura. Solo necesitamos conocer algunos detalles sobre el árbol y el trabajo a realizar, y nos desplazamos hasta tu ubicación para evaluarlo. De esta manera, te damos un presupuesto personalizado sin compromiso." 
+            titulo="¿Quitáis los bolsones de procesionaria?"
+            explicacion="Sí, también los que están en lo más alto del pino. Lo ideal es hacerlo en invierno, antes de que las orugas bajen al suelo, que es cuando más peligro tienen para niños y perros." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Cuáles son los riesgos asociados con la poda en altura?"
-            explicacion="Los riesgos asociados con la poda en altura incluyen caídas accidentales, tanto del operario como de ramas, que pueden causar lesiones graves. También existe el riesgo de daños a la propiedad si las ramas caen en zonas no controladas. Además, la fatiga o distracción del trabajador pueden aumentar el peligro, por eso siempre usamos equipos profesionales y tomamos medidas de seguridad para minimizar estos riesgos." 
+            titulo="¿Cómo sé si mi palmera tiene picudo rojo?"
+            explicacion="Los avisos más claros son las hojas del centro caídas o torcidas, hojas mordisqueadas y una copa que se abre como un paraguas. Si ves algo así, mándanos una foto cuanto antes: si está muy afectada, hay que talarla antes de que la copa se caiga y retirarla con cuidado para no extender la plaga." 
             ></FaqItem>
 
             <FaqItem
-            titulo="¿Cuánto cuesta la poda y tala en altura?"
-            explicacion="El precio de la poda y tala en altura suele empezar desde 150 a 200 euros, dependiendo de la complejidad del trabajo. Es importante tener en cuenta el tamaño del árbol, el terreno y la vegetación circundante, ya que estos factores pueden influir en el costo final. Te ofrecemos una evaluación personalizada para ajustar el presupuesto según tus necesidades." 
+            titulo="¿El presupuesto es gratis?"
+            explicacion="Sí. Con unas fotos por WhatsApp muchas veces ya podemos orientarte, y si hace falta vamos a verlo. El precio te lo damos antes de empezar y sin compromiso." 
             ></FaqItem>
 
+            <FaqItem
+            titulo="¿Qué riesgos tiene la poda en altura?"
+            explicacion="Para quien no tiene experiencia, muchos: caídas, ramas que golpean al bajar o motosierras trabajando en altura. Por eso trabajamos con arnés, equipo de trepa o plataforma, acotamos la zona y tenemos seguro de responsabilidad civil." 
+            ></FaqItem>
 
+            <FaqItem
+            titulo="¿Cuánto cuesta la poda en altura?"
+            explicacion="Una poda en altura sencilla suele empezar en unos 150-200 euros. A partir de ahí depende de la altura, del acceso, de lo cerca que esté de la casa y de los restos que haya que retirar. Te damos el precio exacto antes de empezar." 
+            ></FaqItem>
 
         </div>
     );

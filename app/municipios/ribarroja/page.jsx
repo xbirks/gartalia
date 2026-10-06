@@ -11,8 +11,8 @@ import SeoCards from '../../components/seo-cards/seocards';
 import SedaviLayout from './layout';
 
 const Sedavi = () => {
-  const municipio = "Ribarroja del Turia";
-  const enmunicipio = "en Ribarroja del Turia";
+  const municipio = "Riba-roja de Túria";
+  const enmunicipio = "en Riba-roja de Túria";
 
   return (
     <div className="gartalia">
@@ -28,7 +28,7 @@ const Sedavi = () => {
           <Other municipio={enmunicipio} />
         </div>
       </div>
-      <div className="faq">
+      <div className="faq" id="preguntas">
         <div className="masterFaq">
           <FaqMaster />
         </div>

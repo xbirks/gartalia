@@ -10,26 +10,27 @@ import HeroBanner from './heroBanner';
 function IntroTala({ municipio }) {
   return (
     <div className="intro__master">
-      <h1><span className="intro__h1-high">Tala en altura</span> de árboles o palmeras <span className="intro__h1-high">rápida y segura</span> en {municipio}</h1>
+      <h1><span className="intro__h1-high">Tala de árboles y pinos</span> en {municipio}, también pegados a la casa</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
+        {/* El primer botón se oculta en pantallas medianas y pequeñas (intro.scss) */}
         <StandardButton
-          link="/"
-          title="Tala controlada en altura"
+          link="#servicios"
+          title="Leña troceada"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Tala especializada en palmeras"
+          link="#servicios"
+          title="Tala por partes"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Tala segura en altura"
+          link="#servicios"
+          title="Palmeras secas o con picudo"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Talas preventivas"
+          link="#preguntas"
+          title="Nos ocupamos del permiso"
           style="emptyStandardButton"
         />
       </div>
@@ -37,8 +38,8 @@ function IntroTala({ municipio }) {
       <div style={{ marginTop: '6vh' }}></div>
       <HeroBanner />
 
-      <h2 className="second_h2">Tala de árboles y palmeras para particulares y empresas</h2>
-      <p className="second_p">La tala segura de árboles y palmeras es esencial <strong>para prevenir riesgos</strong> en jardines, parcelas y espacios públicos en la Comunidad Valenciana. Con más de 20 años de experiencia en el sector, ofrecemos servicios especializados en la tala controlada de especies típicas como <strong>pinos, palmeras, cipreses, algarrobos, olivos y encinas</strong>, muy presentes en nuestra región mediterránea. Nuestro equipo cualificado emplea técnicas avanzadas y equipamiento moderno <strong>para garantizar intervenciones rápidas y seguras</strong>, incluso en zonas complicadas o de difícil acceso. Confíe en nuestra experiencia para retirar con seguridad árboles o palmeras peligrosas o en mal estado, protegiendo así su entorno y propiedades.</p>
+      <h2 className="second_h2">Tala segura de árboles y palmeras</h2>
+      <p className="second_p">Talar un pino de 20 metros en mitad de un campo es sencillo. Hacerlo a un metro de una fachada, con la piscina debajo y cables al lado, no lo es. Por eso, cuando no hay sitio para tumbar el árbol, <strong>lo desmontamos por partes desde arriba</strong> y bajamos cada trozo de forma controlada. Talamos <strong>pinos, palmeras, chopos, eucaliptos y árboles secos o enfermos</strong> en {municipio} y alrededores, nos ocupamos del permiso si hace falta y nos llevamos todo, o te dejamos la leña troceada si la quieres.</p>
     </div>
   );
 }

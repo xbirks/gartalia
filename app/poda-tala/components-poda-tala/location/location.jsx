@@ -12,9 +12,9 @@ function Location(){
         <div className="location__master">
             <h3 className="location__title">¿Qué árbol necesitas podar o talar?</h3>
             <p className="location__description">
-            En Gartalia, nos encargamos de la poda y tala de todo tipo de árboles en la provincia de Valencia, adaptándonos a cada especie y necesidad. Desde árboles ornamentales hasta frutales, trabajamos con <strong>pinos, olivos, algarrobos, almendros, naranjos, limoneros, cipreses, robles, encinas, palmeras, eucaliptos, chopos, sauces</strong> y más. Nuestro equipo cuenta con la experiencia y maquinaria adecuada para garantizar cortes seguros y precisos, respetando el entorno y la salud de cada árbol.
+            Podamos y talamos los árboles que más se ven en los jardines y parcelas de Valencia: <strong>pinos, palmeras, olivos, algarrobos, cipreses, chopos, eucaliptos, moreras y ficus</strong>, entre otros. Cada uno se trabaja de una manera: no es lo mismo limpiar una palmera de 12 metros que bajar un pino inclinado sobre una casa.
             <br /><br />
-            Ya sea una <strong>poda de mantenimiento, formación o seguridad, o la tala de un árbol enfermo o peligroso</strong>, actuamos con rapidez y eficiencia. Nos desplazamos a cualquier punto de Valencia, asegurando un servicio profesional y adaptado a cada situación. Confía en nosotros para mantener tus árboles en perfecto estado y preservar la belleza de tu entorno.</p>
+            Trabajamos en Valencia y alrededores, sobre todo en el Camp de Túria y l’Horta: <strong>Llíria, Bétera, Paterna, La Pobla de Vallbona, Riba-roja, Godella, La Eliana, Náquera</strong> y sus urbanizaciones. Mándanos fotos por WhatsApp y te decimos qué necesita tu árbol y cuánto cuesta.</p>
 
             <div className="location__buttons">
                 <StandardButton
@@ -31,29 +31,29 @@ function Location(){
             </div>
 
             <div className="location__seo-link">
-                <Link href="/">Jardineros en Valencia</Link>
-                <Link href="/municipios/manises">Jardineros en Manises</Link>
-                <Link href="/municipios/eliana">Jardineros en La Eliana</Link>
-                <Link href="/municipios/godella">Jardineros en Godella</Link>
-                <Link href="/municipios/mascamarena">Jardineros en Mas Camarena</Link>
-                <Link href="/municipios/betera">Jardineros en Bétera</Link>
-                <Link href="/municipios/torre-en-conill">Jardineros en Torre en Conill</Link>
-                <Link href="/municipios/benaguasil">Jardineros en Benaguacil</Link>
-                <Link href="/municipios/casinos">Jardineros en Casinos</Link>
-                <Link href="/municipios/turis">Jardineros en Turis</Link>
-                <Link href="/municipios/marines">Jardineros en Marines</Link>
-                <Link href="/municipios/naquera">Jardineros en Náquera</Link>
-                <Link href="/municipios/pobla-de-vallbona">Jardineros en La Pobla de Vallbona</Link>
-                <Link href="/municipios/paterna">Jardineros en Paterna</Link>
-                <Link href="/municipios/canada">Jardineros en La Cañada</Link>
-                <Link href="/municipios/rocafort">Jardineros en Rocafort</Link>
-                <Link href="/municipios/massarojos">Jardineros en Massarrojos</Link>
-                <Link href="/municipios/burjassot">Jardineros en Burjassot</Link>
-                <Link href="/municipios/olocau">Jardineros en Olocau</Link>
-                <Link href="/municipios/liria">Jardineros en Liria</Link>
-                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
-                <Link href="/municipios/santabarbara">Jardineros en Santa Bárbara</Link>
-                <Link href="/municipios/calicanto">Jardineros en Calicanto</Link>
+                <Link href="/">Poda y tala en Valencia</Link>
+                <Link href="/municipios/manises">Poda y tala en Manises</Link>
+                <Link href="/municipios/eliana">Poda y tala en La Eliana</Link>
+                <Link href="/municipios/godella">Poda y tala en Godella</Link>
+                <Link href="/municipios/mascamarena">Poda y tala en Mas Camarena</Link>
+                <Link href="/municipios/betera">Poda y tala en Bétera</Link>
+                <Link href="/municipios/torre-en-conill">Poda y tala en Torre en Conill</Link>
+                <Link href="/municipios/benaguasil">Poda y tala en Benaguasil</Link>
+                <Link href="/municipios/casinos">Poda y tala en Casinos</Link>
+                <Link href="/municipios/turis">Poda y tala en Turís</Link>
+                <Link href="/municipios/marines">Poda y tala en Marines</Link>
+                <Link href="/municipios/naquera">Poda y tala en Náquera</Link>
+                <Link href="/municipios/pobla-de-vallbona">Poda y tala en La Pobla de Vallbona</Link>
+                <Link href="/municipios/paterna">Poda y tala en Paterna</Link>
+                <Link href="/municipios/canada">Poda y tala en La Cañada</Link>
+                <Link href="/municipios/rocafort">Poda y tala en Rocafort</Link>
+                <Link href="/municipios/massarojos">Poda y tala en Massarrojos</Link>
+                <Link href="/municipios/burjassot">Poda y tala en Burjassot</Link>
+                <Link href="/municipios/olocau">Poda y tala en Olocau</Link>
+                <Link href="/municipios/liria">Poda y tala en Llíria</Link>
+                <Link href="/municipios/campoolivar">Poda y tala en Campolivar</Link>
+                <Link href="/municipios/santabarbara">Poda y tala en Santa Bárbara</Link>
+                <Link href="/municipios/calicanto">Poda y tala en Calicanto</Link>
             </div>
 
 

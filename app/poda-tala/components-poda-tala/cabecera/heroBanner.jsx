@@ -15,20 +15,20 @@ function HeroBanner(){
                 <p>años de<br></br>experiencia</p>
             </div>
             <div className="hero__element hero__2">
-                <Image src={certificados} alt="icono de profesionales certificados de Gartalia"></Image>
+                <Image src={certificados} alt="Icono de profesionales certificados"></Image>
                 <p>Profesionales<br></br>certificados</p>
             </div>
             <div className="hero__element hero__3">
-                <p>247</p>
-                <p>proyectos<br></br>exitosos<br></br>completados</p>
+                <p>4,9</p>
+                <p>estrellas en<br></br>Google, con<br></br>+95 reseñas</p>
             </div>
             <div className="hero__element hero__4">
-                <p>ECO</p>
-                <p>Comprometidos<br></br>con el medio<br></br>ambiente</p>
+                <p>100%</p>
+                <p>limpio al<br></br>terminar</p>
             </div>
             <div className="hero__element hero__5">
-                <p>RÁPIDO</p>
-                <p>profesional y<br></br>garantía de<br></br>calidad</p>
+                <p>SEGURO</p>
+                <p>con seguro de<br></br>responsabilidad<br></br>civil</p>
             </div>
         </div>
 

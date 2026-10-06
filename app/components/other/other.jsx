@@ -6,41 +6,38 @@ import './other.scss';
 import Grid from '../grid/grid';
 
 //IMG
-import jardinesverticales from '../../assets/img/jardines-verticales.jpg';
-import fitosanitario from '../../assets/img/fitosanitario.jpg';
-import ramaspeligrosas from '../../assets/img/ramas-peligrosas.jpg';
+import procesionaria from '../../assets/img/podaseo.jpg';
+import lena from '../../assets/img/troncos.jpg';
+import comunidades from '../../assets/img/podahotel.jpg';
 
 function Other({municipio}){
 
     return(
-        <div className="gridmaster other"> 
+        <div className="gridmaster other">
 
-            <h2>Otros servicios</h2>
+            <h2>También nos encargamos de</h2>
 
             <div className="gridmaster__elements">
 
             <Grid
-            service={`Control fitosanitario ${municipio}`}
-            description="Es esencial para mantener tus plantas saludables y libres de plagas y enfermedades. Utiliza una combinación de técnicas, desde pesticidas hasta métodos más verdes como el control biológico, para proteger tus cultivos y jardines."
-            img={fitosanitario}
-            top="block"
-            link="/"
-            ></Grid>
-
-            <Grid
-            service={`Instalación de jardines verticales ${municipio}`}
-            description="Creación de muros verdes tanto en interiores como exteriores, aprovechando espacios reducidos y mejorando la calidad del aire."
-            img={jardinesverticales}
+            service={`Bolsones de procesionaria ${municipio}`}
+            description="Quitamos los bolsones de procesionaria de los pinos, también los que están en lo más alto, antes de que bajen las orugas. Importante si en casa hay niños o perros."
+            img={procesionaria}
             top="none"
-            link="/"
             ></Grid>
 
             <Grid
-            service={`Poda de seguridad para ramas peligrosas ${municipio}`}
-            description="La poda de seguridad se centra en eliminar ramas que pueden ser un riesgo para personas y propiedades, previniendo accidentes y manteniendo la salud del árbol."
-            img={ramaspeligrosas}
-            top="block"
-            link="/"
+            service={`Leña troceada para la chimenea ${municipio}`}
+            description="Si quieres aprovechar la madera del árbol, te la dejamos cortada a medida para la chimenea y apilada donde nos digas."
+            img={lena}
+            top="none"
+            ></Grid>
+
+            <Grid
+            service={`Comunidades, urbanizaciones y empresas ${municipio}`}
+            description="Podamos y talamos el arbolado de zonas comunes, hoteles y clubes, con presupuesto por escrito y el trabajo organizado para molestar lo mínimo a vecinos y clientes."
+            img={comunidades}
+            top="none"
             ></Grid>
 
             </div>

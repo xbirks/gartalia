@@ -12,11 +12,11 @@ function Location(){
         <div className="location__master">
             <h3 className="location__title">¿Dónde necesitas que vayamos?</h3>
             <p className="location__description">
-                En <strong>Gartalia</strong>, cubrimos toda la provincia de Valencia, desde la ciudad hasta los pueblos más pequeños. Atendemos a lugares como <strong>Llíria, Bétera, Paterna, La Pobla de Vallbona, Ribarroja del Turia, Benaguacil, Godella, La Eliana, Casinos, Marines, Olocau y Náquera</strong>. Nos adaptamos a cada área para ofrecer el mejor servicio posible, manteniendo jardines y áreas verdes en condiciones óptimas. Estamos siempre disponibles para ofrecerte soluciones personalizadas, sea donde sea que te encuentres <strong>en Valencia</strong>.
+                Trabajamos en Valencia y en los pueblos y urbanizaciones de alrededor, sobre todo en el Camp de Túria y l’Horta: <strong>Llíria, Bétera, Paterna, La Pobla de Vallbona, Riba-roja, Benaguasil, Godella, La Eliana, Náquera, Olocau, Marines y Casinos</strong>, y urbanizaciones como Mas Camarena, Torre en Conill, Santa Bárbara o La Cañada.
                 <br></br><br></br>
-                Además, estamos comprometidos con ofrecer <strong>servicios de jardinería accesibles y eficientes</strong>, lo que nos permite responder rápidamente a las necesidades de nuestros clientes en cualquier parte de la provincia. Nuestro equipo se desplaza con todo el equipo necesario para asegurar que cada proyecto se complete a la perfección, independientemente de la ubicación. 
+                Son zonas de chalets con pinos y palmeras que en veinte o treinta años han crecido mucho más de lo previsto, muchas veces pegados a la casa, a la piscina o a la valla del vecino. Es justo el trabajo que mejor hacemos.
                 <br></br><br></br>
-                Este enfoque flexible y dedicado nos ha permitido construir relaciones duraderas con nuestros clientes, quienes confían en nosotros para mantener sus espacios verdes saludables y atractivos año tras año.</p>
+                Mándanos unas fotos por WhatsApp o rellena el formulario. Vamos a verlo y te damos el precio antes de empezar, sin compromiso.</p>
 
             <div className="location__buttons">
                 <StandardButton
@@ -33,29 +33,29 @@ function Location(){
             </div>
 
             <div className="location__seo-link">
-                <Link href="/">Jardineros en Valencia</Link>
-                <Link href="/municipios/manises">Jardineros en Manises</Link>
-                <Link href="/municipios/eliana">Jardineros en La Eliana</Link>
-                <Link href="/municipios/godella">Jardineros en Godella</Link>
-                <Link href="/municipios/mascamarena">Jardineros en Mas Camarena</Link>
-                <Link href="/municipios/betera">Jardineros en Bétera</Link>
-                <Link href="/municipios/torre-en-conill">Jardineros en Torre en Conill</Link>
-                <Link href="/municipios/benaguasil">Jardineros en Benaguacil</Link>
-                <Link href="/municipios/casinos">Jardineros en Casinos</Link>
-                <Link href="/municipios/turis">Jardineros en Turis</Link>
-                <Link href="/municipios/marines">Jardineros en Marines</Link>
-                <Link href="/municipios/naquera">Jardineros en Náquera</Link>
-                <Link href="/municipios/pobla-de-vallbona">Jardineros en La Pobla de Vallbona</Link>
-                <Link href="/municipios/paterna">Jardineros en Paterna</Link>
-                <Link href="/municipios/canada">Jardineros en La Cañada</Link>
-                <Link href="/municipios/rocafort">Jardineros en Rocafort</Link>
-                <Link href="/municipios/massarojos">Jardineros en Massarrojos</Link>
-                <Link href="/municipios/burjassot">Jardineros en Burjassot</Link>
-                <Link href="/municipios/olocau">Jardineros en Olocau</Link>
-                <Link href="/municipios/liria">Jardineros en Liria</Link>
-                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
-                <Link href="/municipios/santabarbara">Jardineros en Santa Bárbara</Link>
-                <Link href="/municipios/calicanto">Jardineros en Calicanto</Link>
+                <Link href="/">Poda y tala en Valencia</Link>
+                <Link href="/municipios/manises">Poda y tala en Manises</Link>
+                <Link href="/municipios/eliana">Poda y tala en La Eliana</Link>
+                <Link href="/municipios/godella">Poda y tala en Godella</Link>
+                <Link href="/municipios/mascamarena">Poda y tala en Mas Camarena</Link>
+                <Link href="/municipios/betera">Poda y tala en Bétera</Link>
+                <Link href="/municipios/torre-en-conill">Poda y tala en Torre en Conill</Link>
+                <Link href="/municipios/benaguasil">Poda y tala en Benaguasil</Link>
+                <Link href="/municipios/casinos">Poda y tala en Casinos</Link>
+                <Link href="/municipios/turis">Poda y tala en Turís</Link>
+                <Link href="/municipios/marines">Poda y tala en Marines</Link>
+                <Link href="/municipios/naquera">Poda y tala en Náquera</Link>
+                <Link href="/municipios/pobla-de-vallbona">Poda y tala en La Pobla de Vallbona</Link>
+                <Link href="/municipios/paterna">Poda y tala en Paterna</Link>
+                <Link href="/municipios/canada">Poda y tala en La Cañada</Link>
+                <Link href="/municipios/rocafort">Poda y tala en Rocafort</Link>
+                <Link href="/municipios/massarojos">Poda y tala en Massarrojos</Link>
+                <Link href="/municipios/burjassot">Poda y tala en Burjassot</Link>
+                <Link href="/municipios/olocau">Poda y tala en Olocau</Link>
+                <Link href="/municipios/liria">Poda y tala en Llíria</Link>
+                <Link href="/municipios/campoolivar">Poda y tala en Campolivar</Link>
+                <Link href="/municipios/santabarbara">Poda y tala en Santa Bárbara</Link>
+                <Link href="/municipios/calicanto">Poda y tala en Calicanto</Link>
             </div>
 
 

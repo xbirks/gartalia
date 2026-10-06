@@ -7,16 +7,13 @@ import Grid from './grid';
 
 // IMAGENES
 import podatala from '../../../assets/img/poda-tala.jpg';
-import desrame from '../../../assets/img/desrame.jpg';
-import recogidaresiduos from '../../../assets/img/recogida-residuos.jpg';
-
-import tocones from '../../../assets/img/tocones.jpg';
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
-import ornamental from '../../../assets/img/ornamental.jpg';
-import troncos from '../../../assets/img/troncos.jpg';
-import plagas from '../../../assets/img/plagas.jpg';
-import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
+import palmeras from '../../../assets/img/palmerasseo.jpg';
+import arbolcaido from '../../../assets/img/arbolcaio.jpg';
+import tocones from '../../../assets/img/tocones.jpg';
 import pulpo from '../../../assets/img/pulpo.jpg';
+import troncos from '../../../assets/img/troncos.jpg';
+import ayuntamiento from '../../../assets/img/ayuntamiento.jpg';
 
 
 
@@ -24,79 +21,82 @@ function GridMaster({municipio}){
 
     return(
 
-    <div className="gridmaster" id="servicios"> 
+    <div className="gridmaster" id="servicios">
 
         <h2>Servicios</h2>
 
         <div className="gridmaster__elements">
 
         <Grid
-        service={`Poda y tala en altura ${municipio}`}
-        description="Nos especializamos en poda y tala en altura, empleando técnicas seguras para gestionar árboles grandes y en ubicaciones complicadas. Este servicio previene riesgos y promueve la salud y el buen crecimiento de tus árboles."
+        service={`Tala por partes junto a viviendas ${municipio}`}
+        description="Cuando el árbol no se puede tumbar entero, lo desmontamos desde arriba, tramo a tramo, y bajamos cada trozo de forma controlada. Así talamos sin tocar tejados, piscinas, vallas ni cables."
         img={podatala}
         top="block"
         ></Grid>
 
         <Grid
-        service={`Destoconado con máquina ${municipio}`}
-        description="Elimina tocones de forma rápida, segura y sin destrozar tu terreno con nuestra maquinaria especializada. Olvídate de excavaciones y esfuerzos innecesarios: evita rebrotes, plagas y gana espacio para nuevas plantaciones o construcciones."
-        img={tocones}
-        top="block"
-        ></Grid>
-
-        <Grid
-        service={`Poda de seguridad ${municipio}`}
-        description="Eliminamos ramas peligrosas que puedan caer, garantizando la protección de personas y estructuras con técnicas precisas y seguras adaptadas a cada situación."
+        service={`Poda en altura ${municipio}`}
+        description="Quitamos ramas secas, rotas o que cargan hacia la casa y aligeramos la copa para que el árbol aguante mejor el viento."
         img={podaseguridad}
         top="none"
         ></Grid>
 
-
-        <Grid
-        service={`Recogida y disposición de residuos ${municipio}`}
-        description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={pulpo}
-        top="block"
-        ></Grid>
-
         <Grid
         service={`Poda y tala de palmeras ${municipio}`}
-        description="Realizamos desrame de árboles para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
-        img={desrame}
+        description="Limpieza de hojas secas y racimos, y tala de palmeras secas o afectadas por el picudo rojo, de cualquier altura. Nos llevamos todas las hojas, que abultan muchísimo."
+        img={palmeras}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Elaboración de leña ${municipio}`}
-        description="Aprovechamos la madera de la tala o poda, cortándola a medida para convertirla en leña útil, ofreciendo un servicio adicional práctico y sostenible según sus necesidades específicas."
+        service={`Tala urgente de árboles peligrosos ${municipio}`}
+        description="Pinos inclinados, árboles apoyados en otro o caídos tras un temporal. Cuando hay riesgo para la casa o para las personas, el aviso pasa por delante."
+        img={arbolcaido}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Destoconado con máquina ${municipio}`}
+        description="Molemos el tocón con destoconadora para que no rebrote y puedas aprovechar ese espacio, sin hacer un agujero en el jardín."
+        img={tocones}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Retirada de restos ${municipio}`}
+        description="Cargamos troncos y ramas y nos lo llevamos todo a un gestor autorizado. El jardín queda barrido y, si ha caído algo fuera, la calle también."
+        img={pulpo}
+        top="none"
+        ></Grid>
+
+        <Grid
+        service={`Leña troceada ${municipio}`}
+        description="Si quieres la madera para la chimenea, te la dejamos cortada a medida y apilada donde nos digas."
         img={troncos}
         top="none"
         ></Grid>
 
         <Grid
-        service={`Trámites con ayuntamientos ${municipio}`}
-        description="Nos ocupamos de gestionar los permisos necesarios con el ayuntamiento para podas o talas, asegurándole un proceso sencillo y cumpliendo con todas las normativas locales en Valencia y alrededores."
+        service={`Permisos con el ayuntamiento ${municipio}`}
+        description="Te decimos si tu árbol necesita permiso para talarlo y nos ocupamos del trámite, para que no tengas que pelearte con formularios ni ventanillas."
         img={ayuntamiento}
         top="none"
         ></Grid>
-
-        {/* <Grid
-        service={`Control de plagas ${municipio}`}
-        description="Identificamos y tratamos plagas o enfermedades en árboles y palmeras, aplicando soluciones efectivas para proteger su salud y la de su jardín con un enfoque profesional y sostenible."
-        img={plagas}
-        top="none"
-        ></Grid> */}
 
         </div>
 
 
 
 
-        <h3 className="second_h2">Hacemos que tus árboles se vean increíbles</h3>
-        <p className="second_p">El cuidado de los árboles requiere conocimientos especializados y una ejecución precisa. Por ello, nos encargamos de realizar podas que promuevan la salud de los árboles y minimicen cualquier riesgo en su jardín. Cuando la situación lo exige, <strong>también llevamos a cabo talas controladas con técnicas avanzadas</strong>, asegurándonos de proteger tanto las personas como las estructuras cercanas. Nuestro objetivo es proporcionarle un servicio integral que abarque desde el análisis inicial hasta la limpieza final del área, dejándola en perfectas condiciones tras nuestra intervención.
+        <h3 className="second_h2">Cómo trabajamos</h3>
+        <p className="second_p"><strong>1. Vemos el árbol.</strong> Nos mandas fotos por WhatsApp o vamos a verlo, y te explicamos si conviene podar o talar.
         <br></br><br></br>
-        Uno de nuestros servicios más destacados es la <strong>poda en altura, diseñada para árboles de gran tamaño</strong> que presentan retos específicos. Gracias a equipos como plataformas elevadoras y grúas, accedemos a las zonas más altas con total seguridad, ejecutando cada corte con precisión para preservar la integridad del árbol y garantizar la tranquilidad de quienes nos contratan. Esta especialización nos permite atender desde pequeños jardines hasta grandes extensiones, adaptándonos a las particularidades de cada espacio con el mismo nivel de profesionalidad.</p>
-                
+        <strong>2. Te damos el precio antes de empezar.</strong> Por escrito si lo necesitas, sin compromiso y sin sorpresas el día del trabajo.
+        <br></br><br></br>
+        <strong>3. Pedimos el permiso si hace falta.</strong> Te decimos si tu ayuntamiento lo exige y nos encargamos del trámite.
+        <br></br><br></br>
+        <strong>4. Hacemos el trabajo y lo dejamos limpio.</strong> Acotamos la zona, trabajamos con el equipo adecuado y con seguro de responsabilidad civil, y no nos vamos hasta dejarlo todo recogido.</p>
+
 
 
 
@@ -108,4 +108,4 @@ function GridMaster({municipio}){
 
 }
 
-export default GridMaster; 
+export default GridMaster;

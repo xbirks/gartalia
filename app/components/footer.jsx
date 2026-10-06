@@ -28,21 +28,21 @@ function Footer(){
                 <div className="header__nav">
                 <ImgButton
                     link="/#servicios"
-                    title="Servicios"
+                    title="Poda y tala"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 ></ImgButton>
 
                 <ImgButton
-                    link="/#mantenimiento"
-                    title="Mantenimiento"
+                    link="/#parcelas"
+                    title="Parcelas"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 ></ImgButton>
 
                 <ImgButton
-                    link="/#instalaciones"
-                    title="Instalaciones"
+                    link="/#preguntas"
+                    title="Preguntas"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}
                 ></ImgButton>
@@ -50,7 +50,7 @@ function Footer(){
             </div>
             <HeroBanner></HeroBanner>
             <div className="footer__contacto">
-                <h4 className="footer__contacto-title">Somos jardineros, <span>¿podemos ayudarte?</span></h4>
+                <h4 className="footer__contacto-title">¿Un árbol que te preocupa? <span>Te ayudamos</span></h4>
                 <StandardButton
                 link="tel:+34657170847"
                 title="Contactar"
@@ -77,10 +77,10 @@ function Footer(){
             <SeoAnchor link="/municipios/godella" pueblo="Godella"></SeoAnchor>
             <SeoAnchor link="/municipios/alzira" pueblo="Alzira"></SeoAnchor>
             <SeoAnchor link="/municipios/chiva" pueblo="Chiva"></SeoAnchor>
-            <SeoAnchor link="/municipios/pobla-de-vallbona" pueblo="Pobla de Vallbona"></SeoAnchor>
+            <SeoAnchor link="/municipios/pobla-de-vallbona" pueblo="La Pobla de Vallbona"></SeoAnchor>
             <SeoAnchor link="/municipios/moncada" pueblo="Moncada"></SeoAnchor>
             <SeoAnchor link="/municipios/paterna" pueblo="Paterna"></SeoAnchor>
-            <SeoAnchor link="/municipios/ribarroja" pueblo="Ribarroja del Turia"></SeoAnchor>
+            <SeoAnchor link="/municipios/ribarroja" pueblo="Riba-roja de Túria"></SeoAnchor>
             <SeoAnchor link="/municipios/pucol" pueblo="Puçol"></SeoAnchor>
             <SeoAnchor link="/municipios/montserrat" pueblo="Montserrat"></SeoAnchor>
             <SeoAnchor link="/municipios/alfafar" pueblo="Alfafar"></SeoAnchor>
@@ -93,7 +93,7 @@ function Footer(){
             <SeoAnchor link="/municipios/benaguasil" pueblo="Benaguasil"></SeoAnchor>
             <SeoAnchor link="/municipios/picassent" pueblo="Picassent"></SeoAnchor>
             <SeoAnchor link="/municipios/alginet" pueblo="Alginet"></SeoAnchor>
-            <SeoAnchor link="/municipios/liria" pueblo="Liria"></SeoAnchor>
+            <SeoAnchor link="/municipios/liria" pueblo="Llíria"></SeoAnchor>
             <SeoAnchor link="/municipios/torrent" pueblo="Torrent"></SeoAnchor>
             <SeoAnchor link="/municipios/mislata" pueblo="Mislata"></SeoAnchor>
             <SeoAnchor link="/municipios/albal" pueblo="Albal"></SeoAnchor>

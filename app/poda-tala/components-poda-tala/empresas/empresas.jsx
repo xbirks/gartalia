@@ -16,7 +16,7 @@ function Empresas(){
 
         <div className="empresas__master">
 
-            <h3 className="empresas__title">Empresas que ya confían en nosotros</h3>
+            <h3 className="empresas__title">Ayuntamientos y empresas que ya confían en nosotros</h3>
 
             <div className="empresas__img">
                 <Image src={oasis} alt="logotipo del resort hotelero El Oasis de la Eliana" width={200} height={200} loading='lazy'></Image>

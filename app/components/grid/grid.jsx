@@ -13,8 +13,8 @@ function Grid({service, description, img, top, link}){
 
         <div className="grid__master">
             <div className="grid__img">
-                <Image src={img} alt={`fotografía de ${service} hecho por Jardinería Gartalia en Valencia`}  width={733} height={490} loading="lazy"></Image>
-                <div className="top-solicitado" style={{ display: top }}><p>TOP SOLICITADO</p></div>
+                <Image src={img} alt={service.trim()}  width={733} height={490} loading="lazy"></Image>
+                {top === 'block' && <div className="top-solicitado"><p>MÁS SOLICITADO</p></div>}
             </div>
 
             <div className="grid__info">

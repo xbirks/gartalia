@@ -9,8 +9,8 @@ import SeoCards from '../../components-poda-tala/seo-cards/seocardsTala';
 import SedaviLayout from '../../layout';
 
 const Sedavi = () => {
-  const municipio = "Benifaio";
-  const enmunicipio = "en Benifaio";
+  const municipio = "Benifaió";
+  const enmunicipio = "en Benifaió";
 
   return (
     <div className="gartalia">
@@ -19,7 +19,7 @@ const Sedavi = () => {
         <GridMaster municipio={enmunicipio} />
       </div>
       
-      <div className="faq">
+      <div className="faq" id="preguntas">
         <div className="masterFaq">
           <FaqMaster />
         </div>

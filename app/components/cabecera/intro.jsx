@@ -10,26 +10,27 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1>Contrata <span className="intro__h1-high">los mejores</span> servicios de jardinería en {municipio}</h1>
+      <h1><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, donde otros no se atreven</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
+        {/* El primer botón se oculta en pantallas medianas y pequeñas (intro.scss) */}
         <StandardButton
-          link="/"
-          title="Creación y diseño de jardines"
+          link="/#parcelas"
+          title="Limpieza de parcelas"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Mantenimiento de comunidades"
+          link="/poda-tala"
+          title="Pinos y palmeras muy altos"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Montajes de riego por aspersión"
+          link="/poda-tala"
+          title="Árboles pegados a la casa"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Poda y tala en altura"
+          link="/#preguntas"
+          title="Nos ocupamos del permiso"
           style="emptyStandardButton"
         />
       </div>

@@ -7,103 +7,56 @@ import Card from './card';
 
 //IMG
 import emergencia from '../../../assets/img/emergencia.jpg';
-import arbolcaio from '../../../assets/img/arbolcaio.jpg';
-import licencia from '../../../assets/img/licencia.jpg';
-
+import pinos from '../../../assets/img/poda-tala.jpg';
+import licencia from '../../../assets/img/ayuntamiento.jpg';
 
 function SeoCards({ municipio }) {
+  // municipio llega como "en Paterna", o como "en Valencia" en la página principal de poda y tala
+  const en = municipio ? ` ${municipio}` : '';
+
   return (
     <div className="seoCards">
       <Card
-        title={`Actuamos en situaciones de emergencia 24/7 ${municipio}`}
+        title={`Árboles caídos o a punto de caer${en}`}
         info={
           <>
-            Cuando las tormentas o los vientos intensos, como los de la{" "}
-            <strong>&quot;DANA&quot;</strong> que vivimos en Valencia en el año
-            2024, afectan a los árboles de su propiedad, estamos disponibles 24/7
-            para actuar de inmediato. <strong>Respondemos a emergencias con rapidez</strong>,
-            evitando que árboles caídos o ramas peligrosas comprometan la seguridad
-            de su jardín o de sus zonas verdes.
+            Después de un temporal es normal encontrarse un pino tumbado sobre la valla, un árbol apoyado en otro o una rama enorme colgando encima del tejado. <strong>No intentes moverlo tú</strong>: un tronco con tensión puede saltar al cortarlo y hacer mucho daño.
             <br />
             <br />
-            Nuestra empresa se especializa en poda y tala de urgencia, con jardineros
-            certificados listos para <strong>intervenir en cualquier momento</strong>,
-            día o noche. Además, ofrecemos apuntalamiento y cableado para estabilizar
-            árboles dañados, asegurando una solución integral que protege su hogar y
-            sus zonas verdes sin importar la hora.
+            Llámanos al 657 170 847 y mándanos fotos. Estos avisos los atendemos antes que el resto de trabajos: aseguramos la zona, cortamos el árbol por partes y nos llevamos todo.
           </>
         }
         img={emergencia}
-        alt="Un arbol caído en medio de la carretera en el monte de Bétera"
-      ></Card>
+        alt="Árboles derribados por el viento en una zona de pinar"
+      />
 
       <Card
-        title={`Contingencia contra los efectos de la DANA de Valencia`}
+        title={`Pinos que han crecido demasiado cerca de casa${en}`}
         info={
           <>
-            La DANA que devastó Valencia en octubre de 2024 dejó un rastro de
-            destrucción en jardines y zonas verdes, con inundaciones que arrasaron
-            áreas como Paiporta y árboles desplomados por vientos extremos. Este
-            evento mostró la vulnerabilidad de los espacios verdes ante fenómenos
-            climáticos severos.
+            Muchos chalets de Valencia y del Camp de Túria tienen pinos plantados hace treinta años que hoy superan los 15 metros y están a un paso de la fachada o de la piscina. Con el viento se mueven, sueltan ramas y las raíces levantan el suelo.
             <br />
             <br />
-            Con más de 20 años de experiencia, nos especializamos en poda y tala
-            para prevenir y gestionar estos riesgos, protegiendo su propiedad y
-            a su familia. Si necesita ayuda urgente tras una tormenta como la{" "}
-            <strong>&quot;DANA&quot;</strong>, contáctenos; estamos aquí para devolver
-            la seguridad, la integridad y el orden a su jardín.
+            No siempre hay que talarlos. A veces basta con una <strong>poda de reducción</strong> para quitar peso y las ramas que cargan hacia la casa. Lo vemos de cerca y te decimos qué haríamos nosotros si fuera nuestro.
           </>
         }
-        img={arbolcaio}
-        alt="Una encina caída en medio de la carretera cerca de San Antonio de Benageber"
-      ></Card>
+        img={pinos}
+        alt="Operario trepando a un pino con arnés para podarlo"
+      />
 
       <Card
-        title={`Consigue tu licencia para talar o trasplantar árboles ${municipio}`}
+        title={`Permiso para talar un árbol${en}: nos encargamos`}
         info={
           <>
-            Si necesitas <strong>talar o trasplantar un árbol en Valencia</strong>, ya
-            sea en tu jardín o en un espacio público, el Ayuntamiento exige un permiso
-            especial con el trámite <strong>MA.LC.15</strong>.
+            En muchos municipios hace falta permiso del ayuntamiento para talar un árbol, sobre todo en suelo urbano. En València se pide con el trámite <strong>MA.LC.15</strong>, en el que hay que indicar dónde está el árbol y justificar por qué hay que talarlo.
             <br />
             <br />
-            Solo tienes que rellenar un formulario con tus datos, indicar la ubicación
-            del árbol y explicar el motivo de la tala o trasplante.{" "}
-            <strong>Si forma parte de una obra, es posible que necesites también la
-            licencia de obra y la comunicación previa.</strong>
-            <br />
-            <br />
-            Puedes presentar tu solicitud en:
-            <ul>
-              <li>
-                <strong>Casa Consistorial</strong> (C/ Arquebisbe Mayoral, 1) – Horario:
-                8:30 a 14:00
-              </li>
-              <li>
-                <strong>Oficina de Tabacalera</strong> (C/ Amadeu de Savoia, 11)
-              </li>
-            </ul>
-            <strong>Recomendación:</strong> Pide cita previa en{" "}
-            <a href="https://www.valencia.es" target="_blank" rel="noopener noreferrer">
-              www.valencia.es
-            </a>{" "}
-            o llamando al <strong>010</strong> para evitar esperas.
-            <br />
-            <br />
-            También puedes hacerlo de forma rápida y sencilla en la{" "}
-            <strong>Sede Electrónica</strong>.
-            <br />
-            <br />
-            <strong>
-              Si te parece complicado, no te preocupes, nosotros podemos ayudarte a
-              gestionarlo sin líos.
-            </strong>
+            Cada ayuntamiento tiene sus normas y sus plazos. Cuando vamos a ver el árbol te decimos si tu caso necesita permiso y, si quieres, <strong>preparamos y tramitamos nosotros la solicitud</strong>.
           </>
         }
         img={licencia}
-        alt="Jardinero de Gartalia cortando el tronco de un pino en Gilet, Valencia"
-      ></Card>
+        alt="Revisión de la documentación para un permiso de tala"
+      />
     </div>
   );
 }

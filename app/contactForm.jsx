@@ -123,7 +123,7 @@ function ContactForm() {
         <input
           type="text"
           name="service"
-          placeholder="¿Qué servicio necesitas?"
+          placeholder="¿Qué necesitas? Ej.: talar un pino"
           value={formData.service}
           onChange={handleChange}
           required
@@ -133,14 +133,14 @@ function ContactForm() {
         <input
           type="text"
           name="location"
-          placeholder="¿En que municipio estás?"
+          placeholder="¿En qué municipio estás?"
           value={formData.location}
           onChange={handleChange}
           required
         />
 
         <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
-        <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos que nos ayuden a saber el estado del jardín</label>
+        <label htmlFor="file-upload" className="custom-file-upload">Sube fotos del árbol o de la parcela: nos ayudan a darte precio antes</label>
         <div className="file-selected">
           {selectedFiles.length > 0 ? selectedFiles.join(', ') : 'Ninguna foto seleccionada'}
         </div>

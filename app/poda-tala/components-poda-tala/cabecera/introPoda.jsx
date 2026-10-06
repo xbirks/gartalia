@@ -10,26 +10,27 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1><span className="intro__h1-high">Poda de árboles</span> rápida, segura y eficiente en {municipio}</h1>
+      <h1><span className="intro__h1-high">Poda en altura</span> en {municipio}: pinos, palmeras y árboles grandes</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
+        {/* El primer botón se oculta en pantallas medianas y pequeñas (intro.scss) */}
         <StandardButton
-          link="/"
-          title="Poda de seguridad"
+          link="#servicios"
+          title="Recogida de todos los restos"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Poda ornamental"
+          link="#servicios"
+          title="Ramas secas y peligrosas"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Recogida de residuos"
+          link="#servicios"
+          title="Palmeras de cualquier altura"
           style="emptyStandardButton"
         />
         <StandardButton
-          link="/"
-          title="Poda de palmeras"
+          link="#servicios"
+          title="Pinos sobre tejados y piscinas"
           style="emptyStandardButton"
         />
       </div>
@@ -37,8 +38,8 @@ function Intro({ municipio }) {
       <div style={{ marginTop: '6vh' }}></div>
       <HeroBanner />
 
-      <h2 className="second_h2">Poda de árboles profesional para particulares y empresas</h2>
-      <p className="second_p">La poda adecuada de los árboles es fundamental <strong>para su crecimiento saludable</strong> y la seguridad de su entorno, tanto en jardines privados como en espacios públicos. Con más de 20 años de experiencia, ofrecemos un servicio especializado en poda de árboles, incluyendo <strong>olivos, pinos, encinas, cipreses y algarrobos</strong>, especies típicas del Mediterráneo español. Nuestro equipo cualificado utiliza técnicas avanzadas y herramientas modernas <strong>para garantizar cortes precisos</strong> que favorezcan la regeneración del árbol y minimicen riesgos. Confíe en nosotros para mantener sus árboles fuertes y en perfecto estado.</p>
+      <h2 className="second_h2">Poda de árboles para particulares, comunidades y empresas</h2>
+      <p className="second_p">Una buena poda en altura no consiste en cortar mucho, sino en cortar bien: quitar las ramas secas o que cargan hacia la casa, aligerar el peso de la copa y dejar el árbol equilibrado para que aguante el viento. Lo hacemos en <strong>pinos, palmeras, olivos, algarrobos, cipreses y chopos</strong>, que es lo que más encontramos en los jardines de {municipio} y alrededores. <strong>Subimos con arnés o con plataforma</strong>, según el árbol y el acceso, y al terminar retiramos todas las ramas.</p>
     </div>
   );
 }

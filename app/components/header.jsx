@@ -24,19 +24,19 @@ function Header() {
             <div className="header__nav">
                 <ImgButton
                     link="/#servicios"
-                    title="Servicios"
+                    title="Poda y tala"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 />
                 <ImgButton
-                    link="/#mantenimiento"
-                    title="Mantenimiento"
+                    link="/#parcelas"
+                    title="Parcelas"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 />
                 <ImgButton
-                    link="/#instalaciones"
-                    title="Instalaciones"
+                    link="/#preguntas"
+                    title="Preguntas"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}
                 />
