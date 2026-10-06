@@ -23,7 +23,7 @@ function Footer(){
         <div className="footer__master">
             <div className="footer__resume">
                 <div className="footer__logo">
-                    <Image src={HeaderLogoFooter} alt="logotipo para el footer de Gartalia" width={217} height={50} loading='lazy'></Image>
+                    <Image src={HeaderLogoFooter} alt="Gartalia" width={217} height={50} loading='lazy'></Image>
                 </div>
                 <div className="header__nav">
                 <ImgButton

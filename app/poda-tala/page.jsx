@@ -9,6 +9,10 @@ import Other from './components-poda-tala/other/other';
 import FaqMaster from './components-poda-tala/faq/faqmaster';
 import SeoCards from './components-poda-tala/seo-cards/seocards';
 import SedaviLayout from './layout';
+import JsonLd from '../components/seo/jsonLd';
+import { metadataPodaTala, jsonLdPodaTala } from '../lib/seo';
+
+export const metadata = metadataPodaTala;
 
 const Sedavi = () => {
   const municipio = "Valencia";
@@ -16,6 +20,7 @@ const Sedavi = () => {
 
   return (
     <div className="gartalia">
+      <JsonLd data={jsonLdPodaTala()} />
       <div className="master">
         <Intro municipio={municipio} />
         <GridMaster municipio={enmunicipio} />

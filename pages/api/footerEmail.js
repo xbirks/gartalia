@@ -1,12 +1,12 @@
-// pages/api/sendSimpleEmail.js
 import nodemailer from 'nodemailer';
+import { escapar, enUnaLinea, avisarN8n } from '../../app/lib/contactos';
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method Not Allowed' });
     }
 
-    const { tel } = req.body;
+    const { tel } = req.body || {};
 
     const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
@@ -22,16 +22,17 @@ export default async function handler(req, res) {
         from: process.env.SMTP_USER,
         to: 'gartaliacontacto@gmail.com',
         subject: 'Nuevo Número de Teléfono Recibido',
-        text: `Teléfono: ${tel}`, 
-        html: `<b>Teléfono:</b> ${tel}`,
+        text: `Teléfono: ${enUnaLinea(tel, 40)}`,
+        html: `<b>Teléfono:</b> ${escapar(tel, 40)}`,
     };
 
+    await avisarN8n({ origen: 'formulario-pie', telefono: enUnaLinea(tel, 40) });
 
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).json({ message: 'Error sending email', error: error.toString() });
-        }
+    try {
+        const info = await transporter.sendMail(mailOptions);
         res.status(200).json({ message: 'Email successfully sent', info: info.response });
-    });
+    } catch (error) {
+        console.error('Error sending email:', error);
+        res.status(500).json({ message: 'Error sending email' });
+    }
 }

@@ -39,7 +39,7 @@ function Location(){
                 <Link href="/municipios/godella">Jardineros en Godella</Link>
                 <Link href="/municipios/mascamarena">Jardineros en Mas Camarena</Link>
                 <Link href="/municipios/betera">Jardineros en Bétera</Link>
-                <Link href="/municipios/torreconill">Jardineros en Torre en Conill</Link>
+                <Link href="/municipios/torre-en-conill">Jardineros en Torre en Conill</Link>
                 <Link href="/municipios/benaguasil">Jardineros en Benaguacil</Link>
                 <Link href="/municipios/casinos">Jardineros en Casinos</Link>
                 <Link href="/municipios/turis">Jardineros en Turis</Link>
@@ -53,7 +53,6 @@ function Location(){
                 <Link href="/municipios/burjassot">Jardineros en Burjassot</Link>
                 <Link href="/municipios/olocau">Jardineros en Olocau</Link>
                 <Link href="/municipios/liria">Jardineros en Liria</Link>
-                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
                 <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
                 <Link href="/municipios/santabarbara">Jardineros en Santa Bárbara</Link>
                 <Link href="/municipios/calicanto">Jardineros en Calicanto</Link>

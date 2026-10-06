@@ -9,7 +9,10 @@ import Nosotros from "./components/nosotros&review/nosotros";
 import Other from "./components/other/other";
 import FaqMaster from "./components/faq/faqmaster";
 import SeoCards from "./components/seo-cards/seocards";
- 
+import { metadataHome } from "./lib/seo";
+
+export const metadata = metadataHome;
+
 
 export default function HomePage() {
   return (

@@ -15,9 +15,9 @@ function Header() {
         <div className="header__master">
             <div>
                 <Link href="/" className="header__logo">
-                    <Image className="header__var-logo1" src={HeaderLogo} alt="logotipo principal para el Header" height={50} width={217} />
-                    <Image className="header__var-logo2" src={HeaderName} alt="logotipo principal para el Header versión 2" height={50} width={150} />
-                    <Image className="header__var-logo3" src={HeaderTree} alt="logotipo principal para el Header versión 3" height={50} width={53} />
+                    <Image className="header__var-logo1" src={HeaderLogo} alt="Gartalia, poda y tala en altura en Valencia" height={50} width={217} />
+                    <Image className="header__var-logo2" src={HeaderName} alt="Gartalia" height={50} width={150} />
+                    <Image className="header__var-logo3" src={HeaderTree} alt="Gartalia" height={50} width={53} />
                 </Link>
             </div>
 
