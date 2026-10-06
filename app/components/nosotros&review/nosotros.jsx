@@ -57,8 +57,7 @@ function nosotros({ resenas = true }){
             </p>
 
             <figure className="nosotros__equipo">
-                <Image src={Equipo} alt="Carlos Correa con su equipo, con casco y camiseta verde de Gartalia, junto a un pino talado" sizes="(max-width: 1100px) 100vw, 1000px" loading="lazy"></Image>
-                <figcaption>Carlos, segundo por la izquierda, con su equipo</figcaption>
+                <Image src={Equipo} alt="Equipo de Gartalia, con casco y camiseta verde, junto a un pino talado" sizes="(max-width: 1100px) 100vw, 1000px" loading="lazy"></Image>
             </figure>
 
             <BotonesContacto ubicacion="nosotros" />
