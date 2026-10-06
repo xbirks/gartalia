@@ -5,12 +5,14 @@ import Link from 'next/link';
 import './location.scss';
 
 import StandardButton from '../../../buttons/standardButton.jsx';
-import { enlaceWhatsApp } from '../../../lib/whatsapp';
+import { enlaceWhatsApp, mensajeFurgoneta } from '../../../lib/whatsapp';
+import { useDeLaFurgoneta } from '../../../components/contacto/origen';
 
 function Location({ municipio }){
 
     // municipio llega como "en Bétera" (o "en Valencia" en /poda-tala)
     const en = municipio ? ` ${municipio}` : '';
+    const furgoneta = useDeLaFurgoneta();
 
     return(
         <div className="location__master">
@@ -22,7 +24,7 @@ function Location({ municipio }){
 
             <div className="location__buttons">
                 <StandardButton
-                link={enlaceWhatsApp(`Hola, os mando unas fotos de un árbol que tengo${en} para que me digáis qué necesita y cuánto cuesta.`)}
+                link={enlaceWhatsApp(furgoneta ? mensajeFurgoneta(`poda y tala de árboles${en}`) : `Hola, os mando unas fotos de un árbol que tengo${en} para que me digáis qué necesita y cuánto cuesta.`)}
                 title="WhatsApp"
                 style="standardButton">
                 </StandardButton>

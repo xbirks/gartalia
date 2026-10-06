@@ -28,6 +28,7 @@ function SeoCards({ municipio }) {
         img={emergencia}
         alt="Árboles derribados por el viento en una zona de pinar"
         mensaje={`Hola, tengo un árbol caído o a punto de caer${en} y necesito que lo veáis cuanto antes.`}
+        servicio={`tala urgente de árboles caídos o peligrosos${en}`}
       />
 
       <Card
@@ -43,6 +44,7 @@ function SeoCards({ municipio }) {
         img={pinos}
         alt="Operario trepando a un pino con arnés para podarlo"
         mensaje={`Hola, tengo un pino muy grande o pegado a la casa${en} y quiero que lo veáis.`}
+        servicio={`poda y tala de pinos grandes${en}`}
       />
 
       <Card
@@ -58,6 +60,7 @@ function SeoCards({ municipio }) {
         img={licencia}
         alt="Revisión de la documentación para un permiso de tala"
         mensaje={`Hola, quiero que me preparéis el informe técnico para pedir permiso de tala${en}.`}
+        servicio={`informe técnico para el permiso de tala${en}`}
       />
     </div>
   );

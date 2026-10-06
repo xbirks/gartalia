@@ -28,6 +28,7 @@ function SeoCards({ municipio }) {
         img={pinos}
         alt="Poda en altura de un árbol grande"
         mensaje={`Hola, quiero pedir presupuesto para podar un pino${en}.`}
+        servicio={`poda de pinos${en}`}
       />
 
       <Card
@@ -43,6 +44,7 @@ function SeoCards({ municipio }) {
         img={palmeras}
         alt="Trepador podando una palmera alta"
         mensaje={`Hola, quiero pedir presupuesto para podar una palmera${en}.`}
+        servicio={`poda de palmeras${en}`}
       />
 
       <Card
@@ -58,6 +60,7 @@ function SeoCards({ municipio }) {
         img={hotel}
         alt="Jardines de un hotel con palmeras altas"
         mensaje={`Hola, quiero pedir presupuesto para la poda de una comunidad, un hotel o una urbanización${en}.`}
+        servicio={`poda para hoteles, comunidades y urbanizaciones${en}`}
       />
     </div>
   );

@@ -21,13 +21,13 @@ function Check() {
 // Portada: promesa, entradilla, botones de contacto y los tres motivos para confiar.
 // El formulario va más abajo, después de «Quién está detrás» (components/presupuesto).
 // Las páginas de poda y tala usan esta misma portada con su titular, su entradilla, sus ✓ y su mensaje de WhatsApp.
-function Intro({ municipio, titulo, entradilla = ENTRADILLA, garantias = GARANTIAS, mensaje }) {
+function Intro({ municipio, titulo, entradilla = ENTRADILLA, garantias = GARANTIAS, mensaje, servicio }) {
   return (
     <div className="intro__master">
       <h1>{titulo ?? <><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, sin riesgos para tu casa</>}</h1>
       <p className="intro__entradilla">{entradilla}</p>
 
-      <BotonesContacto ubicacion="portada" mensaje={mensaje} />
+      <BotonesContacto ubicacion="portada" mensaje={mensaje} servicio={servicio} />
 
       <ul className="intro__garantias">
         {garantias.map((garantia) => (

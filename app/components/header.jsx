@@ -5,8 +5,7 @@ import HeaderLogo from '../assets/icon/gartalia_header_logo.svg';
 import HeaderName from '../assets/icon/gartalia_name_logo.svg';
 import HeaderTree from '../assets/icon/gartalia_tree_logo.svg';
 import ImgButton from '../buttons/imgbutton';
-import StandardButton from '../buttons/standardButton';
-import { WHATSAPP_WEB } from '../lib/whatsapp';
+import WhatsAppCabecera from './contacto/whatsappCabecera';
 import IconServicios from '../assets/img/icon_servicios.svg';
 import IconInstalaciones from '../assets/img/icon_instalaciones.svg';
 import IconMantenimiento from '../assets/img/icon_mantenimiento.svg';
@@ -43,12 +42,7 @@ function Header() {
                 />
             </div>
 
-            {/* El mismo mensaje que la barra fija del móvil */}
-            <StandardButton
-                link={WHATSAPP_WEB}
-                title="WhatsApp"
-                style="standardButton"
-            />
+            <WhatsAppCabecera />
         </div>
     );
 }

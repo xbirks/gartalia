@@ -10,6 +10,7 @@ function IntroTala({ municipio }) {
       titulo={<><span className="intro__h1-high">Tala de árboles y pinos</span> en {municipio}, también pegados a la casa</>}
       entradilla="Pinos y árboles grandes pegados a la casa, a la piscina o a la valla del vecino. Si no hay sitio para tumbarlos, los desmontamos por partes desde arriba y lo dejamos todo limpio."
       mensaje={`Hola, quiero pedir presupuesto para talar un pino o un árbol grande en ${municipio}.`}
+      servicio={`tala de árboles y pinos en ${municipio}`}
     />
   );
 }

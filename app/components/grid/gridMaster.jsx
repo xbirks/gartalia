@@ -82,6 +82,7 @@ function GridMaster({municipio}){
 
         <Grid
         service={`Permiso de tala del ayuntamiento ${municipio}`}
+        servicio={`informe técnico para el permiso de tala ${municipio}`}
         mensaje={msg('quiero que me preparéis el informe técnico para pedir permiso de tala')}
         description="Para talar un árbol, muchos ayuntamientos piden un permiso. Si la solicitud llega incompleta, se queda parada o te piden más papeles. Por eso te preparamos el informe técnico del árbol: especie, tamaño, estado y motivo de la tala. Así el ayuntamiento tiene todo lo que necesita desde el primer día y el trámite va mucho más rápido."
         img={ayuntamiento}

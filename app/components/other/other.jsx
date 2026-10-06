@@ -40,6 +40,7 @@ function Other({municipio}){
 
             <Grid
             service={`Comunidades, urbanizaciones y empresas ${municipio}`}
+            servicio={`poda y tala para comunidades, urbanizaciones y empresas ${municipio}`}
             mensaje={msg('quiero pedir presupuesto para el arbolado de una comunidad, una urbanización o una empresa')}
             description="Podamos y talamos el arbolado de zonas comunes, hoteles y clubes, con presupuesto por escrito y el trabajo organizado para molestar lo mínimo a vecinos y clientes."
             img={comunidades}

@@ -30,6 +30,7 @@ function SeoCards({municipio}){
             img={pinoAltura}
             alt="Tala en altura de un pino con arnés y motosierra"
             mensaje={`Hola, tengo un pino muy grande o inclinado${en} y quiero que lo veáis.`}
+            servicio={`poda y tala de pinos${en}`}
             >
             </Card>
 
@@ -45,6 +46,7 @@ function SeoCards({municipio}){
             img={palmera}
             alt="Poda de una palmera alta desde una plataforma elevadora"
             mensaje={`Hola, quiero pedir presupuesto para podar o talar una palmera${en}.`}
+            servicio={`poda y tala de palmeras${en}`}
             >
             </Card>
 
@@ -60,6 +62,7 @@ function SeoCards({municipio}){
             img={parcela}
             alt="Operario con equipo de protección desbrozando una parcela de hierba alta"
             mensaje={`Hola, quiero pedir presupuesto para limpiar una parcela${en}.`}
+            servicio={`limpieza de parcelas${en}`}
             >
             </Card>
 

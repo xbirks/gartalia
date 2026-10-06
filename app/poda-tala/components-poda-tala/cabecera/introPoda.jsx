@@ -13,6 +13,7 @@ function IntroPoda({ municipio }) {
       entradilla="Pinos que vuelan sobre el tejado o la piscina, ramas secas que pueden caer y palmeras de cualquier altura. Subimos a la copa y bajamos cada rama de forma controlada, sin dañar nada de lo que hay debajo."
       garantias={GARANTIAS_PODA}
       mensaje={`Hola, quiero pedir presupuesto para podar un árbol alto en ${municipio}.`}
+      servicio={`poda en altura en ${municipio}`}
     />
   );
 }

@@ -28,6 +28,7 @@ function SeoCards({ municipio }) {
         img={talapino}
         alt="Tala de un pino con motosierra"
         mensaje={`Hola, tengo un árbol que quizá haya que talar${en} y quiero que lo veáis.`}
+        servicio={`tala de árboles${en}`}
       />
 
       <Card
@@ -43,6 +44,7 @@ function SeoCards({ municipio }) {
         img={emergencia}
         alt="Árbol arrancado de raíz por el viento"
         mensaje={`Hola, tengo un árbol caído o a punto de caer${en} y necesito que lo veáis cuanto antes.`}
+        servicio={`tala urgente de árboles caídos o peligrosos${en}`}
       />
 
       <Card
@@ -58,6 +60,7 @@ function SeoCards({ municipio }) {
         img={grua}
         alt="Trabajo en altura en una palmera desde una plataforma elevadora"
         mensaje={`Hola, quiero pedir presupuesto para talar una palmera seca o con picudo${en}.`}
+        servicio={`tala de palmeras secas o con picudo${en}`}
       />
     </div>
   );

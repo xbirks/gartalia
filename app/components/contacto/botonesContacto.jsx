@@ -1,15 +1,16 @@
 'use client';
 
 import { TELEFONO } from '../../lib/seo';
-import { MENSAJE_GENERAL, enlaceWhatsApp, WHATSAPP_WEB } from '../../lib/whatsapp';
+import { MENSAJE_GENERAL, SERVICIO_GENERAL, enlaceWhatsApp, mensajeFurgoneta } from '../../lib/whatsapp';
+import { deLaFurgoneta, useDeLaFurgoneta } from './origen';
 import './botonesContacto.scss';
 
-// Botones de contacto de la web (la página del QR tiene los suyos, con el mensaje de la furgoneta).
+// Botones de contacto de la web. Si la visita viene del QR de la furgoneta, el WhatsApp lo dice (origen.js).
 
 export function marcar(evento, ubicacion) {
   try {
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: evento, ubicacion, pagina: typeof window !== 'undefined' ? window.location.pathname : '' });
+    window.dataLayer.push({ event: evento, ubicacion, pagina: window.location.pathname, origen: deLaFurgoneta() ? 'furgoneta' : 'web' });
   } catch (e) {
     // Sin Tag Manager el enlace funciona igual.
   }
@@ -33,10 +34,12 @@ export function IconoTelefono() {
 
 // Dos botones grandes: WhatsApp y llamar. variante: 'claro' (sobre fondo oscuro) o 'normal'.
 // mensaje: el texto de WhatsApp ya escrito; las páginas de poda y tala pasan el suyo.
-export default function BotonesContacto({ ubicacion, variante = 'normal', mensaje = MENSAJE_GENERAL }) {
+// servicio: lo que se pone en el mensaje de quien viene de la furgoneta («…en los servicios de poda en altura»).
+export default function BotonesContacto({ ubicacion, variante = 'normal', mensaje = MENSAJE_GENERAL, servicio = SERVICIO_GENERAL }) {
+  const furgoneta = useDeLaFurgoneta();
   return (
     <div className={`contacto__botones contacto__botones--${variante}`}>
-      <a className="contacto__boton contacto__boton--whatsapp" href={enlaceWhatsApp(mensaje)} onClick={() => marcar('web_whatsapp', ubicacion)}>
+      <a className="contacto__boton contacto__boton--whatsapp" href={enlaceWhatsApp(furgoneta ? mensajeFurgoneta(servicio) : mensaje)} onClick={() => marcar('web_whatsapp', ubicacion)}>
         <IconoWhatsApp />
         <span>Escríbenos por WhatsApp</span>
       </a>
@@ -50,13 +53,14 @@ export default function BotonesContacto({ ubicacion, variante = 'normal', mensaj
 
 // Barra fija abajo en el móvil, para tener siempre a mano llamar o escribir.
 export function BarraContacto() {
+  const furgoneta = useDeLaFurgoneta();
   return (
     <div className="contacto__barra" role="region" aria-label="Contacto rápido">
       <a className="contacto__barra-boton contacto__barra-boton--llamar" href={`tel:${TELEFONO}`} onClick={() => marcar('web_llamada', 'barra-fija')}>
         <IconoTelefono />
         <span>Llamar</span>
       </a>
-      <a className="contacto__barra-boton contacto__barra-boton--whatsapp" href={WHATSAPP_WEB} onClick={() => marcar('web_whatsapp', 'barra-fija')}>
+      <a className="contacto__barra-boton contacto__barra-boton--whatsapp" href={enlaceWhatsApp(furgoneta ? mensajeFurgoneta() : MENSAJE_GENERAL)} onClick={() => marcar('web_whatsapp', 'barra-fija')}>
         <IconoWhatsApp />
         <span>WhatsApp</span>
       </a>

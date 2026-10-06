@@ -9,6 +9,10 @@ const nextConfig = {
       { source: '/municipios/massarrojos', destination: '/municipios/massarojos', permanent: true },
       { source: '/poda-tala/poda/massarrojos', destination: '/poda-tala/poda/massarojos', permanent: true },
       { source: '/poda-tala/tala/massarrojos', destination: '/poda-tala/tala/massarojos', permanent: true },
+      // QR del vinilo de la furgoneta (lleva grabado gartalia.com/furgo): va a la home marcado como «viene de la furgoneta»,
+      // para contarlo en Analytics y para que los WhatsApp lo digan (components/contacto/origen.js).
+      // Temporal a propósito: así se puede cambiar el destino sin reimprimir el vinilo.
+      { source: '/furgo', destination: '/?utm_source=furgoneta&utm_medium=qr&utm_campaign=vinilo', permanent: false },
     ];
   },
 

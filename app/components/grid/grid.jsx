@@ -5,10 +5,17 @@ import Link from 'next/link';
 import './grid.scss';
 
 import StandardButton from '../../buttons/standardButton.jsx';
-import { WHATSAPP_WEB, enlaceWhatsApp } from '../../lib/whatsapp';
+import { WHATSAPP_WEB, enlaceWhatsApp, mensajeFurgoneta, enMinuscula } from '../../lib/whatsapp';
+import { useDeLaFurgoneta } from '../contacto/origen';
 
 
-function Grid({service, description, img, alt, top, link, mensaje}){
+// servicio: lo que dice el WhatsApp de quien viene de la furgoneta; si no se pasa, el nombre de la tarjeta.
+function Grid({service, description, img, alt, top, link, mensaje, servicio}){
+
+    const furgoneta = useDeLaFurgoneta();
+    const whatsapp = furgoneta
+        ? enlaceWhatsApp(mensajeFurgoneta(enMinuscula(servicio || service)))
+        : (mensaje ? enlaceWhatsApp(mensaje) : WHATSAPP_WEB);
 
     return(
 
@@ -24,7 +31,7 @@ function Grid({service, description, img, alt, top, link, mensaje}){
             <p className="grid__description">{description}</p>
             <div className="grid__buttons">
                 <StandardButton
-                link={mensaje ? enlaceWhatsApp(mensaje) : WHATSAPP_WEB}
+                link={whatsapp}
                 title="WhatsApp"
                 style="standardButton">
                 </StandardButton>
