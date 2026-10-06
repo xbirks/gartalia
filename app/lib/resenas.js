@@ -3,12 +3,11 @@
 // Las citas son de la reseña original. Lo que se quita va marcado con «[…]» (también al principio o al final).
 // Los «…» son puntos suspensivos del propio cliente. Solo se corrigen erratas de ortografía
 // (tildes, mayúsculas, espacios, «parias» → «varias»), sin cambiar ni añadir palabras.
-// La página del QR (app/furgo/resenas.js, rama pagina-furgo) tiene su propia lista con las mismas citas;
-// al juntar las ramas conviene que lea de aquí.
-// Al actualizar: cambiar NOTA y TOTAL_OPINIONES con los datos de la ficha.
+// NOTA hay que revisarla si cambia en la ficha. El total de opiniones se deja fijo en «+99»
+// (decisión del usuario, 07/10/2026, con 99 en Google) para no tener que tocarlo con cada reseña nueva.
 
 export const NOTA = '4,9';
-export const TOTAL_OPINIONES = 98;
+export const TOTAL_OPINIONES = '+99';
 
 export const RESENAS = [
   {
