@@ -108,14 +108,14 @@ export function metadataPagina({ title, description, path }) {
 export const metadataHome = metadataPagina({
   title: 'Gartalia | Poda y tala en altura en Valencia',
   description:
-    'Poda y tala en altura de pinos, palmeras y árboles grandes junto a casas en Valencia. Con seguro de responsabilidad civil y nos ocupamos del permiso.',
+    'Poda y tala en altura de pinos, palmeras y árboles grandes junto a casas en Valencia. Con seguro de responsabilidad civil e informe técnico para el permiso.',
   path: '/',
 });
 
 export const metadataPodaTala = metadataPagina({
   title: 'Poda y tala de árboles en Valencia | Empresa de tala en altura',
   description:
-    'Poda y tala de pinos, palmeras y árboles peligrosos en Valencia. Gestionamos el permiso del ayuntamiento y retiramos todos los restos.',
+    'Poda y tala de pinos, palmeras y árboles peligrosos en Valencia. Te preparamos el informe para el permiso de tala y retiramos todos los restos.',
   path: '/poda-tala',
 });
 
@@ -149,7 +149,7 @@ export function metadataTala(slug) {
   const { nombre } = municipio(slug);
   return metadataPagina({
     title: conMarca(`Tala de árboles y pinos en ${nombre}`),
-    description: conCierre(`Talamos pinos, palmeras y árboles peligrosos en ${nombre}, también junto a casas y tejados. Nos ocupamos del permiso y lo dejamos todo limpio.`),
+    description: conCierre(`Talamos pinos, palmeras y árboles peligrosos en ${nombre}, también junto a casas. Te preparamos el informe para el permiso y lo dejamos todo limpio.`),
     path: `/poda-tala/tala/${slug}`,
   });
 }
@@ -163,7 +163,7 @@ const SERVICIOS = [
   'Tala de árboles peligrosos junto a viviendas',
   'Destoconado',
   'Retirada de bolsones de procesionaria',
-  'Gestión de permisos de tala',
+  'Informe técnico para permisos de tala',
   'Desbroce y limpieza de parcelas',
 ];
 

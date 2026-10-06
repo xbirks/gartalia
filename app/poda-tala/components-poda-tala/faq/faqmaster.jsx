@@ -31,7 +31,7 @@ function FaqMaster(){
 
             <FaqItem
             titulo="¿Necesito permiso para podar o talar un árbol?"
-            explicacion="Para podar, normalmente no. Para talar, en muchos municipios sí, sobre todo en suelo urbano: en València, por ejemplo, se pide con el trámite MA.LC.15 de tala o trasplante. Los árboles monumentales están protegidos por ley. Cuando vamos a verlo te decimos si hace falta y nos ocupamos del papeleo." 
+            explicacion="Para podar, normalmente no. Para talar, en muchos municipios sí, sobre todo en suelo urbano: en València, por ejemplo, se pide con el trámite MA.LC.15 de tala o trasplante. Los árboles monumentales están protegidos por ley. Cuando vamos a verlo te decimos si hace falta y te preparamos el informe técnico del árbol, para que el ayuntamiento tenga todo lo que necesita desde el primer día." 
             ></FaqItem>
 
             <FaqItem

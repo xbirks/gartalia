@@ -26,7 +26,7 @@ function FaqMaster(){
 
             <FaqItem
             titulo="¿Necesito permiso para talar un árbol?"
-            explicacion="En muchos municipios sí, sobre todo en suelo urbano. En València se pide con el trámite MA.LC.15 y hay que justificar el motivo. Los árboles monumentales están protegidos por ley. Te decimos si tu caso lo necesita y nos encargamos del trámite." 
+            explicacion="En muchos municipios sí, sobre todo en suelo urbano. En València se pide con el trámite MA.LC.15 y hay que justificar el motivo. Los árboles monumentales están protegidos por ley. Te decimos si tu caso lo necesita y te preparamos el informe técnico del árbol, para que la solicitud llegue completa desde el primer día." 
             ></FaqItem>
 
             <FaqItem

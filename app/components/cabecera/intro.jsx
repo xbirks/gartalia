@@ -7,8 +7,8 @@ import HeroBanner from './heroBanner';
 import BotonesContacto from '../contacto/botonesContacto';
 
 // Los tres motivos para confiar van como texto con ✓, no como botones, para que no compitan con WhatsApp y llamar.
-export const GARANTIAS = ['Te explicamos cada paso', 'Seguro de responsabilidad civil', 'Nos ocupamos del permiso'];
-const ENTRADILLA = 'Pinos, palmeras y árboles grandes pegados a casas. Los bajamos por partes, nos encargamos del permiso de tala y lo dejamos todo limpio.';
+export const GARANTIAS = ['Te explicamos cada paso', 'Seguro de responsabilidad civil', 'Informe técnico para el permiso'];
+const ENTRADILLA = 'Pinos, palmeras y árboles grandes pegados a casas. Los bajamos por partes, te preparamos el informe para el permiso de tala y lo dejamos todo limpio.';
 
 function Check() {
   return (

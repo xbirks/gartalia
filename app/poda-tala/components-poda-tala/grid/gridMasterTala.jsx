@@ -27,7 +27,7 @@ function GridMaster({municipio}){
 
     {/* Presentación: antes iba en la portada; ahora va tras las reseñas, como en la home */}
     <h2 className="second_h2">Tala segura de árboles y palmeras</h2>
-    <p className="second_p">Talar un pino de 20 metros en mitad de un campo es sencillo. Hacerlo a un metro de una fachada, con la piscina debajo y cables al lado, no lo es. Por eso, cuando no hay sitio para tumbar el árbol, <strong>lo desmontamos por partes desde arriba</strong> y bajamos cada trozo de forma controlada. Talamos <strong>pinos, palmeras, chopos, eucaliptos y árboles secos o enfermos</strong> {municipio} y alrededores, nos ocupamos del permiso si hace falta y nos llevamos todo, o te dejamos la leña troceada si la quieres.</p>
+    <p className="second_p">Talar un pino de 20 metros en mitad de un campo es sencillo. Hacerlo a un metro de una fachada, con la piscina debajo y cables al lado, no lo es. Por eso, cuando no hay sitio para tumbar el árbol, <strong>lo desmontamos por partes desde arriba</strong> y bajamos cada trozo de forma controlada. Talamos <strong>pinos, palmeras, chopos, eucaliptos y árboles secos o enfermos</strong> {municipio} y alrededores, te preparamos el informe para el permiso si hace falta y nos llevamos todo, o te dejamos la leña troceada si la quieres.</p>
 
     <div className="gridmaster" id="servicios">
 
@@ -77,8 +77,8 @@ function GridMaster({municipio}){
 
         <Grid
         service={`Permiso de tala del ayuntamiento ${municipio}`}
-        mensaje={msg('necesito talar un árbol y quiero que os ocupéis del permiso del ayuntamiento')}
-        description="Te decimos si tu ayuntamiento exige permiso para talar ese árbol y nos ocupamos del trámite de principio a fin."
+        mensaje={msg('quiero que me preparéis el informe técnico para pedir permiso de tala')}
+        description="Para talar un árbol, muchos ayuntamientos piden un permiso. Si la solicitud llega incompleta, se queda parada o te piden más papeles. Por eso te preparamos el informe técnico del árbol: especie, tamaño, estado y motivo de la tala. Así el ayuntamiento tiene todo lo que necesita desde el primer día y el trámite va mucho más rápido."
         img={ayuntamiento}
         top="none"
         ></Grid>

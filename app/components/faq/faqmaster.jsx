@@ -31,7 +31,7 @@ function FaqMaster(){
 
             <FaqItem
             titulo="¿Hace falta permiso del ayuntamiento para talar un árbol?"
-            explicacion="En muchos municipios sí, sobre todo en suelo urbano. En València, por ejemplo, se pide con el trámite MA.LC.15 y hay que justificar el motivo de la tala. Cada ayuntamiento tiene sus normas, así que cuando vamos a ver el árbol te decimos si hace falta y, si quieres, nos encargamos nosotros del papeleo."
+            explicacion="En muchos municipios sí, sobre todo en suelo urbano. En València, por ejemplo, se pide con el trámite MA.LC.15 y hay que justificar el motivo de la tala. Si la solicitud llega incompleta, se queda parada o te piden más papeles. Por eso, cuando vamos a ver el árbol, te decimos si hace falta y te preparamos el informe técnico: especie, tamaño, estado y motivo de la tala. Así el trámite va mucho más rápido."
             ></FaqItem>
 
             <FaqItem

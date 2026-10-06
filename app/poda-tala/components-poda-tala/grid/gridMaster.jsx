@@ -92,9 +92,9 @@ function GridMaster({municipio}){
         ></Grid>
 
         <Grid
-        service={`Permisos con el ayuntamiento ${municipio}`}
-        mensaje={msg('necesito talar un árbol y quiero que os ocupéis del permiso del ayuntamiento')}
-        description="Te decimos si tu árbol necesita permiso para talarlo y nos ocupamos del trámite, para que no tengas que pelearte con formularios ni ventanillas."
+        service={`Permiso de tala del ayuntamiento ${municipio}`}
+        mensaje={msg('quiero que me preparéis el informe técnico para pedir permiso de tala')}
+        description="Para talar un árbol, muchos ayuntamientos piden un permiso. Si la solicitud llega incompleta, se queda parada o te piden más papeles. Por eso te preparamos el informe técnico del árbol: especie, tamaño, estado y motivo de la tala. Así el ayuntamiento tiene todo lo que necesita desde el primer día y el trámite va mucho más rápido."
         img={ayuntamiento}
         top="none"
         ></Grid>
@@ -109,7 +109,7 @@ function GridMaster({municipio}){
         <br></br><br></br>
         <strong>2. Te damos el precio antes de empezar.</strong> Por escrito si lo necesitas, sin compromiso y sin sorpresas el día del trabajo.
         <br></br><br></br>
-        <strong>3. Pedimos el permiso si hace falta.</strong> Te decimos si tu ayuntamiento lo exige y nos encargamos del trámite.
+        <strong>3. Si hace falta permiso, te preparamos el informe.</strong> Te decimos si tu ayuntamiento lo exige y redactamos el informe técnico del árbol, para que la solicitud llegue completa y no se quede parada.
         <br></br><br></br>
         <strong>4. Hacemos el trabajo y lo dejamos limpio.</strong> Acotamos la zona, trabajamos con el equipo adecuado y con seguro de responsabilidad civil, y no nos vamos hasta dejarlo todo recogido.</p>
 
