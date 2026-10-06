@@ -371,6 +371,12 @@ strong{
 			padding-left: 10px;
 			margin-top: 10px;
 			margin-bottom: 60px;
+
+			// El enlace a la política de privacidad, del mismo color que el texto
+			a{
+				color: inherit;
+				text-decoration: underline;
+			}
 		}
 
 		.success-message{

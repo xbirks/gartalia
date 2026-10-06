@@ -24,18 +24,18 @@ export default function Privacidad(){
 
       <h2>2. Datos Personales Recopilados</h2>
       <p className="p_pol">A través de nuestro formulario de contacto en <a href="https://gartalia.com" target="_blank" rel="noopener noreferrer"> https://gartalia.com</a>, podemos recopilar los siguientes datos personales:<br></br><br></br>
-      - Nombre y apellidos<br></br>
-      - Dirección de correo electrónico<br></br>
+      - Nombre<br></br>
       - Número de teléfono<br></br>
-      - Imágenes que pueda adjuntar<br></br>
-      - Dirección postal</p>
+      - Municipio<br></br>
+      - El trabajo que necesita<br></br>
+      - Imágenes que pueda adjuntar</p>
 
 
       <h2>3. Finalidad del Tratamiento</h2>
       <p className="p_pol">Los datos personales que nos proporcione serán utilizados exclusivamente para:<br></br><br></br>
 
       - Contactarlo en relación con su solicitud o consulta.<br></br>
-      - Proporcionarle información y presupuesto sobre nuestros servicios de jardinería.<br></br>
+      - Proporcionarle información y presupuesto sobre nuestros servicios de poda, tala y limpieza de parcelas.<br></br>
       - Coordinar y prestar el servicio solicitado.</p>
 
 

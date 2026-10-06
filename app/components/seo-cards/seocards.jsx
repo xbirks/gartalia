@@ -6,7 +6,7 @@ import './seocards.scss';
 import Card from './card';
 
 //IMG
-import pinoAltura from '../../assets/img/seo-2.jpg';
+import pinoAltura from '../../assets/img/pino-inclinado-trepador-gartalia.jpg'; // DSC04514 (equipo actual)
 import palmera from '../../assets/img/grua.jpg';
 import parcela from '../../assets/img/desbroce-parcela.jpg'; // Pexels, foto 15211861 (licencia Pexels: uso comercial sin atribución)
 
@@ -28,7 +28,7 @@ function SeoCards({municipio}){
                 </>
             }
             img={pinoAltura}
-            alt="Tala en altura de un pino con arnés y motosierra"
+            alt="Trepador de Gartalia con cuerdas subido a un pino grande e inclinado"
             mensaje={`Hola, tengo un pino muy grande o inclinado${en} y quiero que lo veáis.`}
             servicio={`poda y tala de pinos${en}`}
             >

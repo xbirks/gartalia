@@ -329,6 +329,12 @@
                 font-weight: 400;
                 line-height: 143.326%;
                 padding-left: 10px;
+
+                // El enlace a la política de privacidad, del mismo color que el texto (antes salía en azul)
+                a{
+                    color: inherit;
+                    text-decoration: underline;
+                }
             }
         }
 

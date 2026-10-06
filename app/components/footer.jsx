@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import '../style.scss';
 
 import ImgButton from '../buttons/imgbutton';
@@ -17,6 +19,13 @@ import IconMantenimiento from '../assets/img/icon_mantenimiento-dark.svg'
 
 
 function Footer(){
+
+    // «Presupuesto» baja al formulario de la página; en las que no lo tienen (privacidad, 404) lleva al de la home
+    const ruta = usePathname();
+    const [presupuesto, setPresupuesto] = useState(ruta?.startsWith('/legal') ? '/#presupuesto' : '#presupuesto');
+    useEffect(() => {
+        setPresupuesto(document.getElementById('presupuesto') ? '#presupuesto' : '/#presupuesto');
+    }, [ruta]);
 
     return(
         <div className="footer__master">
@@ -51,12 +60,12 @@ function Footer(){
                 <h4 className="footer__contacto-title">¿Un árbol que te preocupa? <span>Te ayudamos</span></h4>
                 <StandardButton
                 link="tel:+34657170847"
-                title="Contactar"
+                title="Llamar"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="#presupuesto"
+                link={presupuesto}
                 title="Presupuesto"
                 style="emptyStandardButton">
                 </StandardButton>
@@ -100,19 +109,10 @@ function Footer(){
             </div>
 
             <div className="footer__politicas">
-                <StandardButton
-                link="/"
-                title="Aviso legal"
-                style="emptyStandardButton">
-                </StandardButton>
+                {/* Aviso legal y política de cookies: pendientes de los datos fiscales; antes enlazaban a la home */}
                 <StandardButton
                 link="/legal/privacidad"
                 title="Política de privacidad"
-                style="emptyStandardButton">
-                </StandardButton>
-                <StandardButton
-                link="/"
-                title="Política de cookies"
                 style="emptyStandardButton">
                 </StandardButton>
 
