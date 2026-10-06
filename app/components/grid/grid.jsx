@@ -5,7 +5,7 @@ import Link from 'next/link';
 import './grid.scss';
 
 import StandardButton from '../../buttons/standardButton.jsx';
-import { WHATSAPP_WEB, enlaceWhatsApp } from '../contacto/botonesContacto';
+import { WHATSAPP_WEB, enlaceWhatsApp } from '../../lib/whatsapp';
 
 
 function Grid({service, description, img, alt, top, link, mensaje}){

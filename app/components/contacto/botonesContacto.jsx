@@ -1,13 +1,10 @@
 'use client';
 
 import { TELEFONO } from '../../lib/seo';
+import { MENSAJE_GENERAL, enlaceWhatsApp, WHATSAPP_WEB } from '../../lib/whatsapp';
 import './botonesContacto.scss';
 
 // Botones de contacto de la web (la página del QR tiene los suyos, con el mensaje de la furgoneta).
-const MENSAJE = 'Hola, quiero pedir presupuesto para un árbol.';
-// Enlace de WhatsApp con el mensaje ya escrito (cada servicio lleva el suyo, así Carlos sabe qué necesita el cliente).
-export const enlaceWhatsApp = (mensaje) => `https://wa.me/34657170847?text=${encodeURIComponent(mensaje)}`;
-export const WHATSAPP_WEB = enlaceWhatsApp(MENSAJE);
 
 export function marcar(evento, ubicacion) {
   try {
@@ -36,7 +33,7 @@ export function IconoTelefono() {
 
 // Dos botones grandes: WhatsApp y llamar. variante: 'claro' (sobre fondo oscuro) o 'normal'.
 // mensaje: el texto de WhatsApp ya escrito; las páginas de poda y tala pasan el suyo.
-export default function BotonesContacto({ ubicacion, variante = 'normal', mensaje = MENSAJE }) {
+export default function BotonesContacto({ ubicacion, variante = 'normal', mensaje = MENSAJE_GENERAL }) {
   return (
     <div className={`contacto__botones contacto__botones--${variante}`}>
       <a className="contacto__boton contacto__boton--whatsapp" href={enlaceWhatsApp(mensaje)} onClick={() => marcar('web_whatsapp', ubicacion)}>

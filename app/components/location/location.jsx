@@ -5,8 +5,12 @@ import Link from 'next/link';
 import './location.scss';
 
 import StandardButton from '../../buttons/standardButton.jsx';
+import { enlaceWhatsApp } from '../../lib/whatsapp';
 
-function Location(){
+function Location({ municipio }){
+
+    // municipio llega como "en Paterna" en las páginas de pueblo; en la home no llega
+    const en = municipio ? ` ${municipio}` : '';
 
     return(
         <div className="location__master">
@@ -20,8 +24,8 @@ function Location(){
 
             <div className="location__buttons">
                 <StandardButton
-                link="https://wa.me/message/44EBMJCUV7LNO1"
-                title="Contactar"
+                link={enlaceWhatsApp(`Hola, quiero pedir presupuesto para un árbol${en}. Os mando unas fotos.`)}
+                title="WhatsApp"
                 style="standardButton">
                 </StandardButton>
 

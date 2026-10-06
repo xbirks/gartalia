@@ -32,7 +32,7 @@ const Sedavi = () => {
         <Empresas />
         <Nosotros />
         <Presupuesto />
-        <Location />
+        <Location municipio={enmunicipio} />
       </div>
       <div className="other">
         <div className="masterOther">

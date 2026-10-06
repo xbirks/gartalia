@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './seocards.scss';
 import StandardButton from '../../buttons/standardButton.jsx';
-import { WHATSAPP_WEB, enlaceWhatsApp } from '../contacto/botonesContacto';
+import { WHATSAPP_WEB, enlaceWhatsApp } from '../../lib/whatsapp';
 
 function Card({title, info, img, alt, mensaje}){
 
