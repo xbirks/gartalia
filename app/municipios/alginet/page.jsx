@@ -5,6 +5,7 @@ import GridMaster from '../../components/grid/gridMaster';
 import Empresas from '../../components/empresas/empresas';
 import Location from '../../components/location/location';
 import Nosotros from '../../components/nosotros&review/nosotros';
+import Presupuesto from '../../components/presupuesto/presupuesto';
 import Other from '../../components/other/other';
 import FaqMaster from '../../components/faq/faqmaster';
 import SeoCards from '../../components/seo-cards/seocards';
@@ -22,6 +23,7 @@ const Sedavi = () => {
         <Empresas />
         <Location />
         <Nosotros />
+        <Presupuesto />
       </div>
       <div className="other">
         <div className="masterOther">

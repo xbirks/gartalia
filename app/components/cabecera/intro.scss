@@ -45,7 +45,7 @@
 		}
     }
 
-    // Entradilla bajo los botones del titular: mismo cuerpo de texto que el resto de la web (16 px)
+    // Entradilla bajo el titular: mismo cuerpo de texto que el resto de la web (16 px)
     .intro__entradilla{
         color: $botella;
         font-family: $neue;
@@ -63,29 +63,52 @@
         }
     }
 
-    .intro__mejores-servicios{
+    // Los tres motivos para confiar, bajo los botones de contacto: texto con ✓, no botones
+    .intro__garantias{
+        list-style: none;
         display: flex;
-        gap: 20px;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px 28px;
+        margin: 22px auto 0 auto;
+        padding: 0;
 
-        @include media600px {
-            display: block;
-            text-align: center;
-		}
+        // En el móvil, una debajo de otra y con las ✓ en columna
+        @include media700px {
+            flex-direction: column;
+            align-items: flex-start;
+            width: fit-content;
+            gap: 8px;
+            margin-top: 18px;
+        }
 
-        .emptyStandardButton:nth-child(1){
-            @include media1458px {
-                display: none;
+        li{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: $botella;
+            font-family: $neue;
+            font-size: 16px;
+            line-height: 20px;
+
+            @include media700px {
+                font-size: 14px;
+                line-height: 18px;
             }
         }
 
-        .emptyStandardButton{
-            @include media600px {
-                margin: 5px 0 5px 0;
-            }
+        .intro__check{
+            width: 20px;
+            height: 20px;
+            padding: 4px;
+            box-sizing: border-box;
+            flex: none;
+            border-radius: 50%;
+            background-color: $esmeralda;
+            color: $botella;
         }
     }
-    
+
 }
 
 

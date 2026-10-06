@@ -5,7 +5,8 @@ import "./style.scss";
 import IconPresupuesto from "./assets/img/icon_presupuesto.svg";
 import Compressor from 'compressorjs';
 
-function ContactForm() {
+// Sin titulo ni texto sale la cabecera de siempre («Pide presupuesto»); la home y los pueblos le ponen la suya (components/presupuesto).
+function ContactForm({ titulo, texto }) {
   const [formData, setFormData] = useState({
     name: '',
     tel: '',
@@ -89,8 +90,8 @@ function ContactForm() {
     <div className="form__master">
       <div className="form__header">
         <div className="form__header-text">
-          <h2>Pide <br /> presupuesto</h2>
-          <p className="tel_anchor">o llama directamente al <Link className="tel_anchor" href="tel:+34657170847">657 170 847</Link></p>
+          <h2>{titulo ?? <>Pide <br /> presupuesto</>}</h2>
+          <p className="tel_anchor">{texto ?? <>o llama directamente al <Link className="tel_anchor" href="tel:+34657170847">657 170 847</Link></>}</p>
         </div>
         <Image id="iconpresu" src={IconPresupuesto} alt="Icono de Presupuesto" />
       </div>

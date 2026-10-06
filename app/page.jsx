@@ -6,6 +6,7 @@ import GridMaster from "./components/grid/gridMaster";
 import Empresas from "./components/empresas/empresas";
 import Location from "./components/location/location";
 import Nosotros, { Resenas } from "./components/nosotros&review/nosotros";
+import Presupuesto from "./components/presupuesto/presupuesto";
 import Other from "./components/other/other";
 import FaqMaster from "./components/faq/faqmaster";
 import SeoCards from "./components/seo-cards/seocards";
@@ -15,16 +16,18 @@ import { metadataHome } from "./lib/seo";
 export const metadata = metadataHome;
 
 
-// Orden: portada, reseñas y empresas que confían (la prueba, pronto), servicios, quién está detrás y zona.
+// Orden: qué hacemos (portada) → por qué fiarse (reseñas) → servicios → ayuntamientos y empresas que confían
+// → quién está detrás → formulario, cuando el visitante ya está convencido. Después, zona, otros servicios y preguntas.
 export default function HomePage() {
   return (
     <div className="Gartalia">
       <div className="master">
         <Intro municipio="Valencia"></Intro>
         <Resenas></Resenas>
-        <Empresas></Empresas>
         <GridMaster municipio=""></GridMaster>
+        <Empresas></Empresas>
         <Nosotros resenas={false}></Nosotros>
+        <Presupuesto></Presupuesto>
         <Location></Location>
       </div>
       <div className="other">
