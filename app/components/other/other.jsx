@@ -12,6 +12,9 @@ import comunidades from '../../assets/img/podahotel.jpg';
 
 function Other({municipio}){
 
+    // Mensaje de WhatsApp de cada servicio, con el pueblo («en Bétera»), como en el resto de tarjetas
+    const msg = (texto) => `Hola, ${texto}${municipio ? ' ' + municipio : ''}.`;
+
     return(
         <div className="gridmaster other">
 
@@ -21,6 +24,7 @@ function Other({municipio}){
 
             <Grid
             service={`Bolsones de procesionaria ${municipio}`}
+            mensaje={msg('quiero pedir presupuesto para quitar bolsones de procesionaria de los pinos')}
             description="Quitamos los bolsones de procesionaria de los pinos, también los que están en lo más alto, antes de que bajen las orugas. Importante si en casa hay niños o perros."
             img={procesionaria}
             top="none"
@@ -28,6 +32,7 @@ function Other({municipio}){
 
             <Grid
             service={`Leña troceada para la chimenea ${municipio}`}
+            mensaje={msg('quiero aprovechar la madera del árbol como leña para la chimenea')}
             description="Si quieres aprovechar la madera del árbol, te la dejamos cortada a medida para la chimenea y apilada donde nos digas."
             img={lena}
             top="none"
@@ -35,6 +40,7 @@ function Other({municipio}){
 
             <Grid
             service={`Comunidades, urbanizaciones y empresas ${municipio}`}
+            mensaje={msg('quiero pedir presupuesto para el arbolado de una comunidad, una urbanización o una empresa')}
             description="Podamos y talamos el arbolado de zonas comunes, hoteles y clubes, con presupuesto por escrito y el trabajo organizado para molestar lo mínimo a vecinos y clientes."
             img={comunidades}
             top="none"

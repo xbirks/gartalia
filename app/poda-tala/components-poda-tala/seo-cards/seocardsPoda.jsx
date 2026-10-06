@@ -2,8 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import './seocards.scss';
-import Card from './card';
+import Card from '../../../components/seo-cards/card'; // la misma tarjeta de la home (trae sus estilos), con el WhatsApp de cada tema
 
 //IMG
 import pinos from '../../../assets/img/podaseo.jpg';
@@ -28,6 +27,7 @@ function SeoCards({ municipio }) {
         }
         img={pinos}
         alt="Poda en altura de un árbol grande"
+        mensaje={`Hola, quiero pedir presupuesto para podar un pino${en}.`}
       />
 
       <Card
@@ -42,6 +42,7 @@ function SeoCards({ municipio }) {
         }
         img={palmeras}
         alt="Trepador podando una palmera alta"
+        mensaje={`Hola, quiero pedir presupuesto para podar una palmera${en}.`}
       />
 
       <Card
@@ -56,6 +57,7 @@ function SeoCards({ municipio }) {
         }
         img={hotel}
         alt="Jardines de un hotel con palmeras altas"
+        mensaje={`Hola, quiero pedir presupuesto para la poda de una comunidad, un hotel o una urbanización${en}.`}
       />
     </div>
   );

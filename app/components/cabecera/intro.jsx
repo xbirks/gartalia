@@ -7,7 +7,8 @@ import HeroBanner from './heroBanner';
 import BotonesContacto from '../contacto/botonesContacto';
 
 // Los tres motivos para confiar van como texto con ✓, no como botones, para que no compitan con WhatsApp y llamar.
-const GARANTIAS = ['Te explicamos cada paso', 'Seguro de responsabilidad civil', 'Nos ocupamos del permiso'];
+export const GARANTIAS = ['Te explicamos cada paso', 'Seguro de responsabilidad civil', 'Nos ocupamos del permiso'];
+const ENTRADILLA = 'Pinos, palmeras y árboles grandes pegados a casas. Los bajamos por partes, nos encargamos del permiso de tala y lo dejamos todo limpio.';
 
 function Check() {
   return (
@@ -19,18 +20,17 @@ function Check() {
 
 // Portada: promesa, entradilla, botones de contacto y los tres motivos para confiar.
 // El formulario va más abajo, después de «Quién está detrás» (components/presupuesto).
-function Intro({ municipio }) {
+// Las páginas de poda y tala usan esta misma portada con su titular, su entradilla, sus ✓ y su mensaje de WhatsApp.
+function Intro({ municipio, titulo, entradilla = ENTRADILLA, garantias = GARANTIAS, mensaje }) {
   return (
     <div className="intro__master">
-      <h1><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, sin riesgos para tu casa</h1>
-      <p className="intro__entradilla">
-        Pinos, palmeras y árboles grandes pegados a casas. Los bajamos por partes, nos encargamos del permiso de tala y lo dejamos todo limpio.
-      </p>
+      <h1>{titulo ?? <><span className="intro__h1-high">Poda y tala en altura</span> en {municipio}, sin riesgos para tu casa</>}</h1>
+      <p className="intro__entradilla">{entradilla}</p>
 
-      <BotonesContacto ubicacion="portada" />
+      <BotonesContacto ubicacion="portada" mensaje={mensaje} />
 
       <ul className="intro__garantias">
-        {GARANTIAS.map((garantia) => (
+        {garantias.map((garantia) => (
           <li key={garantia}><Check />{garantia}</li>
         ))}
       </ul>

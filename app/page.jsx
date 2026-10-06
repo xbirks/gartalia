@@ -26,7 +26,7 @@ export default function HomePage() {
         <Resenas></Resenas>
         <GridMaster municipio=""></GridMaster>
         <Empresas></Empresas>
-        <Nosotros resenas={false}></Nosotros>
+        <Nosotros></Nosotros>
         <Presupuesto></Presupuesto>
         <Location></Location>
       </div>

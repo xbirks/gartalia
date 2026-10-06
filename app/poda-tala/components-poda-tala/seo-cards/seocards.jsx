@@ -2,8 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import './seocards.scss';
-import Card from './card';
+import Card from '../../../components/seo-cards/card'; // la misma tarjeta de la home (trae sus estilos), con el WhatsApp de cada tema
 
 //IMG
 import emergencia from '../../../assets/img/emergencia.jpg';
@@ -28,6 +27,7 @@ function SeoCards({ municipio }) {
         }
         img={emergencia}
         alt="Árboles derribados por el viento en una zona de pinar"
+        mensaje={`Hola, tengo un árbol caído o a punto de caer${en} y necesito que lo veáis cuanto antes.`}
       />
 
       <Card
@@ -42,6 +42,7 @@ function SeoCards({ municipio }) {
         }
         img={pinos}
         alt="Operario trepando a un pino con arnés para podarlo"
+        mensaje={`Hola, tengo un pino muy grande o pegado a la casa${en} y quiero que lo veáis.`}
       />
 
       <Card
@@ -56,6 +57,7 @@ function SeoCards({ municipio }) {
         }
         img={licencia}
         alt="Revisión de la documentación para un permiso de tala"
+        mensaje={`Hola, necesito talar un árbol${en} y quiero que os ocupéis del permiso del ayuntamiento.`}
       />
     </div>
   );

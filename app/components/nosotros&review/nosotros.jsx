@@ -34,11 +34,10 @@ export function Resenas(){
     );
 }
 
-// En las páginas de pueblo las reseñas van aquí debajo; en la portada van más arriba (resenas={false}).
-function nosotros({ resenas = true }){
+// Las reseñas (<Resenas />) van aparte, justo después de la portada, en todas las páginas.
+function nosotros(){
 
     return(
-        <>
         <div className="nosotros__master">
             {/* La Q de Halyard tiene la cola cortada en horizontal y a este tamaño se ve rara: solo esa letra va en Neue Haas Unica */}
             <h2 className="nosotros__title"><span className="nosotros__q">Q</span>uién está detrás de Gartalia</h2>
@@ -62,8 +61,6 @@ function nosotros({ resenas = true }){
 
             <BotonesContacto ubicacion="nosotros" />
         </div>
-        {resenas && <Resenas />}
-        </>
     );
 }
 

@@ -35,10 +35,11 @@ export function IconoTelefono() {
 }
 
 // Dos botones grandes: WhatsApp y llamar. variante: 'claro' (sobre fondo oscuro) o 'normal'.
-export default function BotonesContacto({ ubicacion, variante = 'normal' }) {
+// mensaje: el texto de WhatsApp ya escrito; las páginas de poda y tala pasan el suyo.
+export default function BotonesContacto({ ubicacion, variante = 'normal', mensaje = MENSAJE }) {
   return (
     <div className={`contacto__botones contacto__botones--${variante}`}>
-      <a className="contacto__boton contacto__boton--whatsapp" href={WHATSAPP_WEB} onClick={() => marcar('web_whatsapp', ubicacion)}>
+      <a className="contacto__boton contacto__boton--whatsapp" href={enlaceWhatsApp(mensaje)} onClick={() => marcar('web_whatsapp', ubicacion)}>
         <IconoWhatsApp />
         <span>Escríbenos por WhatsApp</span>
       </a>
