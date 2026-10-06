@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import "./intro.scss";
 import certificados from '../../assets/img/icon_certificados.svg';
+// Sin enlace a Google aquí: más abajo están las reseñas, y no conviene sacar a nadie de la página tan pronto.
+import { NOTA, TOTAL_OPINIONES } from '../../lib/resenas';
 
 
 function HeroBanner(){
@@ -19,16 +21,16 @@ function HeroBanner(){
                 <p>Profesionales<br></br>certificados</p>
             </div>
             <div className="hero__element hero__3">
-                <p>4,9</p>
-                <p>estrellas en<br></br>Google, con<br></br>+95 reseñas</p>
+                <p>{NOTA}</p>
+                <p>estrellas en<br></br>Google, con<br></br>{TOTAL_OPINIONES} opiniones</p>
             </div>
             <div className="hero__element hero__4">
                 <p>100%</p>
-                <p>trabajos<br></br>asegurados</p>
+                <p>limpio al<br></br>terminar</p>
             </div>
             <div className="hero__element hero__5">
-                <p>LIMPIO</p>
-                <p>lo dejamos<br></br>todo<br></br>recogido</p>
+                <p>ECO</p>
+                <p>comprometidos<br></br>con el medio<br></br>ambiente</p>
             </div>
         </div>
 

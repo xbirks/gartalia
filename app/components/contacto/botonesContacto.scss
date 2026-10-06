@@ -1,0 +1,109 @@
+@import '../../styles/variables.scss';
+
+.contacto__icono {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.contacto__botones {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contacto__boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 60px;
+  font-family: $neue;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: $transition-short;
+}
+
+.contacto__boton--whatsapp {
+  background-color: $esmeralda;
+  color: $botella;
+
+  &:hover {
+    background-color: $blanco-verde;
+    color: $botella;
+  }
+}
+
+.contacto__botones--normal .contacto__boton--llamar {
+  background-color: $blanco-verde;
+  color: $botella;
+  border: 1.5px solid $botella;
+
+  &:hover {
+    background-color: $botella;
+    color: $esmeralda;
+  }
+}
+
+.contacto__botones--claro .contacto__boton--llamar {
+  background-color: transparent;
+  color: $blanco-verde;
+  border: 1.5px solid $blanco-verde;
+
+  &:hover {
+    background-color: $blanco-verde;
+    color: $botella;
+  }
+}
+
+.contacto__barra {
+  display: none;
+
+  @include media700px {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px)) 10px;
+    background-color: rgba(251, 255, 252, 0.96);
+    box-shadow: 0 -4px 18px rgba(13, 64, 59, 0.14);
+  }
+}
+
+.contacto__barra-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  border-radius: 60px;
+  font-family: $neue;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contacto__barra-boton--llamar {
+  background-color: $botella;
+  color: $blanco-verde;
+}
+
+.contacto__barra-boton--whatsapp {
+  background-color: $esmeralda;
+  color: $botella;
+}
+
+// Hueco abajo para que la barra fija no tape el final de la página
+@include media700px {
+  body:has(.contacto__barra) {
+    padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+  }
+}

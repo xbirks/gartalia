@@ -251,3 +251,50 @@
         }
     }
 }
+
+// Foto del equipo bajo el texto de Carlos
+.nosotros__master{
+
+    .nosotros__equipo{
+        max-width: 1000px;
+        margin: 0 auto 40px auto;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        figcaption{
+            color: $botella;
+            font-family: $neue;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    // En el móvil las reseñas van en una fila que se desliza de lado (se ve una y un trozo de la siguiente)
+    .review__list{
+        @include media700px {
+            display: flex;
+            gap: 14px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 10px;
+
+            .review__tarjeta{
+                flex: 0 0 85%;
+                box-sizing: border-box;
+                scroll-snap-align: start;
+            }
+        }
+    }
+}
+
+
+// Q del título «Quién está detrás de Gartalia» con la otra tipografía de la web (ver nosotros.jsx)
+.nosotros__master .nosotros__title .nosotros__q{
+    font-family: $neue;
+}

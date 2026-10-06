@@ -50,6 +50,11 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Se aceptan espacios y +34; lo que cuenta es que haya al menos 9 cifras.
+    if (formData.tel.replace(/\D/g, '').length < 9) {
+      setStatus('telefono');
+      return;
+    }
     if (!acceptedPolicy) {
       setStatus('error');
       alert('No has aceptado la Política de Privacidad.');
@@ -108,7 +113,8 @@ function ContactForm() {
           value={formData.tel}
           onChange={handleChange}
           required
-          maxLength="9"
+          inputMode="tel"
+          autoComplete="tel"
         />
 {/* 
         <input
@@ -140,7 +146,7 @@ function ContactForm() {
         />
 
         <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
-        <label htmlFor="file-upload" className="custom-file-upload">Sube fotos del árbol o de la parcela: nos ayudan a darte precio antes</label>
+        <label htmlFor="file-upload" className="custom-file-upload">Sube fotos del árbol o de la parcela (opcional)</label>
         <div className="file-selected">
           {selectedFiles.length > 0 ? selectedFiles.join(', ') : 'Ninguna foto seleccionada'}
         </div>
@@ -158,6 +164,7 @@ function ContactForm() {
 
       {status === 'success' && <p className="success-message">¡Qué bien! Hemos recibido tu mensaje.</p>}
       {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 657 170 847.</p>}
+      {status === 'telefono' && <p className="error-message">Revisa el teléfono: faltan cifras.</p>}
     </div>
   );
 }

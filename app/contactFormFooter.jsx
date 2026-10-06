@@ -8,6 +8,11 @@ function FooterForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         setStatus(''); // Resetear el estado antes de enviar
+        // Se aceptan espacios y +34; lo que cuenta es que haya al menos 9 cifras.
+        if (tel.replace(/\D/g, '').length < 9) {
+            setStatus('telefono');
+            return;
+        }
 
         const response = await fetch('/api/footerEmail', {
             method: 'POST',
@@ -31,7 +36,9 @@ function FooterForm() {
                 value={tel}
                 onChange={(e) => setTel(e.target.value)}
                 placeholder="Tu teléfono"
-                required maxLength="9"
+                required
+                inputMode="tel"
+                autoComplete="tel"
             />
             <button type="submit" className="form__send-button">
                 <p>Enviar</p>
@@ -39,6 +46,7 @@ function FooterForm() {
             <p className="footer__legal">Al darle click a enviar aceptas nuestras políticas de privacidad. Puedes leerlas haciendo <Link href="/legal/privacidad">click aquí.</Link></p>
             {status === 'success' && <p className="success-message">¡Qué bien! Hemos recibido tu mensaje.</p>}
             {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 657 170 847.</p>}
+            {status === 'telefono' && <p className="error-message">Revisa el teléfono: faltan cifras.</p>}
         </form>
     );
 }

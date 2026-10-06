@@ -4,8 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './seocards.scss';
 import StandardButton from '../../buttons/standardButton.jsx';
+import { WHATSAPP_WEB, enlaceWhatsApp } from '../contacto/botonesContacto';
 
-function Card({title, info, img, alt}){
+function Card({title, info, img, alt, mensaje}){
 
     return(
         <div className="card">
@@ -14,13 +15,13 @@ function Card({title, info, img, alt}){
                 <p className="card__info">{info}</p>
                 <StandardButton
                 link="#presupuesto"
-                title="Presupuesto"
+                title="Pedir presupuesto"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://wa.me/message/44EBMJCUV7LNO1"
-                title="Contacto"
+                link={mensaje ? enlaceWhatsApp(mensaje) : WHATSAPP_WEB}
+                title="WhatsApp"
                 style="emptyStandardButton">
                 </StandardButton>
             </div>

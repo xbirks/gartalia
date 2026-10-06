@@ -6,7 +6,6 @@ import '../style.scss';
 
 import ImgButton from '../buttons/imgbutton';
 import StandardButton from '../buttons/standardButton';
-import HeroBanner from './cabecera/heroBanner';
 import FooterForm from '../contactFormFooter';
 import SeoAnchor from './footer/seoAnchor';
 //IMG
@@ -48,7 +47,6 @@ function Footer(){
                 ></ImgButton>
                 </div>
             </div>
-            <HeroBanner></HeroBanner>
             <div className="footer__contacto">
                 <h4 className="footer__contacto-title">¿Un árbol que te preocupa? <span>Te ayudamos</span></h4>
                 <StandardButton

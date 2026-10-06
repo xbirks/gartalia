@@ -5,15 +5,16 @@ import Link from 'next/link';
 import './grid.scss';
 
 import StandardButton from '../../buttons/standardButton.jsx';
+import { WHATSAPP_WEB, enlaceWhatsApp } from '../contacto/botonesContacto';
 
 
-function Grid({service, description, img, top, link}){
+function Grid({service, description, img, alt, top, link, mensaje}){
 
     return(
 
         <div className="grid__master">
             <div className="grid__img">
-                <Image src={img} alt={service.trim()}  width={733} height={490} loading="lazy"></Image>
+                <Image src={img} alt={alt || service.trim()}  width={733} height={490} loading="lazy"></Image>
                 {top === 'block' && <div className="top-solicitado"><p>MÁS SOLICITADO</p></div>}
             </div>
 
@@ -23,14 +24,14 @@ function Grid({service, description, img, top, link}){
             <p className="grid__description">{description}</p>
             <div className="grid__buttons">
                 <StandardButton
-                link="https://wa.me/message/44EBMJCUV7LNO1"
-                title="Contactar"
+                link={mensaje ? enlaceWhatsApp(mensaje) : WHATSAPP_WEB}
+                title="WhatsApp"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
                 link="#presupuesto"
-                title="Presupuesto"
+                title="Pedir presupuesto"
                 style="emptyStandardButton">
                 </StandardButton>
             </div>

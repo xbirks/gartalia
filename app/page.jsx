@@ -5,24 +5,27 @@ import Intro from "./components/cabecera/intro";
 import GridMaster from "./components/grid/gridMaster";
 import Empresas from "./components/empresas/empresas";
 import Location from "./components/location/location";
-import Nosotros from "./components/nosotros&review/nosotros";
+import Nosotros, { Resenas } from "./components/nosotros&review/nosotros";
 import Other from "./components/other/other";
 import FaqMaster from "./components/faq/faqmaster";
 import SeoCards from "./components/seo-cards/seocards";
+import { BarraContacto } from "./components/contacto/botonesContacto";
 import { metadataHome } from "./lib/seo";
 
 export const metadata = metadataHome;
 
 
+// Orden: portada, reseñas y empresas que confían (la prueba, pronto), servicios, quién está detrás y zona.
 export default function HomePage() {
   return (
     <div className="Gartalia">
       <div className="master">
         <Intro municipio="Valencia"></Intro>
-        <GridMaster municipio=""></GridMaster>
+        <Resenas></Resenas>
         <Empresas></Empresas>
+        <GridMaster municipio=""></GridMaster>
+        <Nosotros resenas={false}></Nosotros>
         <Location></Location>
-        <Nosotros></Nosotros>
       </div>
       <div className="other">
         <div className="masterOther">
@@ -40,7 +43,8 @@ export default function HomePage() {
       <div className="master">
         <SeoCards  municipio="" ></SeoCards>
       </div>
+      <BarraContacto />
     </div>
-    
+
   );
 }
