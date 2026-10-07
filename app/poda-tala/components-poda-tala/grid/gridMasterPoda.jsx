@@ -7,7 +7,7 @@ import Grid from '../../../components/grid/grid'; // la misma tarjeta de la home
 
 // IMAGENES
 import podapinos from '../../../assets/img/podaseo.jpg';
-import palmeras from '../../../assets/img/palmerasseo.jpg';
+import palmeras from '../../../assets/img/palmeras-altas-gartalia.jpg'; // IMG_9491, sin personas (elegida por el usuario)
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
 import pulpo from '../../../assets/img/pulpo.jpg';
 import troncos from '../../../assets/img/troncos.jpg';
@@ -44,6 +44,7 @@ function GridMaster({municipio}){
         mensaje={msg('quiero pedir presupuesto para podar una palmera')}
         description="Limpiamos hojas secas y racimos a cualquier altura y, de paso, revisamos si la palmera tiene síntomas de picudo rojo. Nos llevamos todas las hojas."
         img={palmeras}
+        alt="Copas de palmeras altas vistas desde abajo"
         top="none"
         ></Grid>
 

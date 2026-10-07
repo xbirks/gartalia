@@ -9,7 +9,7 @@ import Grid from './grid';
 // Fotos reales del equipo actual (carpeta fotos-2). Palmeras: aún no hay foto propia.
 import talapino from '../../assets/img/tala-pino-por-partes-gartalia.jpg';
 import podaaltura from '../../assets/img/poda-pino-altura-gartalia.jpg';
-import palmeras from '../../assets/img/palmerasseo.jpg';
+import palmeras from '../../assets/img/palmeras-altas-gartalia.jpg'; // IMG_9491, sin personas (elegida por el usuario)
 import arbolcaido from '../../assets/img/pino-peligroso-gartalia.jpg';
 import tocones from '../../assets/img/tocones.jpg';
 import ayuntamiento from '../../assets/img/ayuntamiento.jpg';
@@ -57,6 +57,7 @@ function GridMaster({municipio}){
         mensaje={msg('quiero pedir presupuesto para podar o talar una palmera')}
         description="Limpiamos hojas secas y racimos de palmeras de cualquier altura. Si una palmera está seca o tocada por el picudo rojo, la talamos y la retiramos antes de que sea un peligro."
         img={palmeras}
+        alt="Copas de palmeras altas vistas desde abajo"
         top="none"
         link="/poda-tala"
         ></Grid>

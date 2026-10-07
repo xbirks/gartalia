@@ -6,7 +6,7 @@ import Card from '../../../components/seo-cards/card'; // la misma tarjeta de la
 
 //IMG
 import pinos from '../../../assets/img/podaseo.jpg';
-import palmeras from '../../../assets/img/palmerasseo.jpg';
+import palmeras from '../../../assets/img/palmeras-altas-gartalia.jpg'; // IMG_9491, sin personas (elegida por el usuario)
 import hotel from '../../../assets/img/podahotel.jpg';
 
 function SeoCards({ municipio }) {
@@ -42,7 +42,7 @@ function SeoCards({ municipio }) {
           </>
         }
         img={palmeras}
-        alt="Trepador podando una palmera alta"
+        alt="Copas de palmeras altas vistas desde abajo"
         mensaje={`Hola, quiero pedir presupuesto para podar una palmera${en}.`}
         servicio={`poda de palmeras${en}`}
       />

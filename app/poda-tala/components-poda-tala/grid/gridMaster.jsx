@@ -8,7 +8,7 @@ import Grid from '../../../components/grid/grid'; // la misma tarjeta de la home
 // IMAGENES
 import podatala from '../../../assets/img/poda-tala.jpg';
 import podaseguridad from '../../../assets/img/poda-seguridad.jpg';
-import palmeras from '../../../assets/img/palmerasseo.jpg';
+import palmeras from '../../../assets/img/palmeras-altas-gartalia.jpg'; // IMG_9491, sin personas (elegida por el usuario)
 import arbolcaido from '../../../assets/img/arbolcaio.jpg';
 import tocones from '../../../assets/img/tocones.jpg';
 import pulpo from '../../../assets/img/pulpo.jpg';
@@ -56,6 +56,7 @@ function GridMaster({municipio}){
         mensaje={msg('quiero pedir presupuesto para podar o talar una palmera')}
         description="Limpieza de hojas secas y racimos, y tala de palmeras secas o afectadas por el picudo rojo, de cualquier altura. Nos llevamos todas las hojas, que abultan muchísimo."
         img={palmeras}
+        alt="Copas de palmeras altas vistas desde abajo"
         top="none"
         ></Grid>
 
