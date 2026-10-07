@@ -55,6 +55,7 @@ function nosotros(){
                 Su precio es el de un oficio bien aprendido, y no siempre el más bajo. Carlos y su equipo transmiten tanta confianza que muchos clientes les encargan el trabajo <strong>sin pedir otros presupuestos</strong>. Los han elegido los ayuntamientos de La Eliana y Llíria, el resort El Oasis y el Club de Tenis El Collao. Y ya suman <strong>más de 450 trabajos en altura</strong>.
             </p>
 
+            <h3 className="nosotros__subtitulo">Nuestro equipo de trabajo</h3>
             <figure className="nosotros__equipo">
                 <Image src={Equipo} alt="Equipo de Gartalia, con casco y camiseta verde, junto a un pino talado" sizes="(max-width: 1100px) 100vw, 1000px" loading="lazy"></Image>
             </figure>
