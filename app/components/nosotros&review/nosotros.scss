@@ -255,9 +255,10 @@
 // Foto del equipo bajo el texto de Carlos
 .nosotros__master{
 
-    // Título encima de la foto del equipo, con el mismo estilo que «Ayuntamientos y empresas que ya confían en nosotros»
+    // Título encima de la foto del equipo: mismo estilo que «Ayuntamientos y empresas que ya confían en nosotros»,
+    // pero en verde oscuro (lo pidió el usuario)
     .nosotros__subtitulo{
-        color: $esmeralda;
+        color: $botella;
         text-align: center;
         font-family: $halyard;
         font-size: 70px;
