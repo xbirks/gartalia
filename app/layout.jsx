@@ -14,6 +14,8 @@ export const metadata = {
   creator: MARCA,
   publisher: MARCA,
   robots: { index: true, follow: true },
+  // Verificación de Search Console (propiedad https://www.gartalia.com/ de la cuenta de Gartalia). No quitar.
+  verification: { google: 'it-I9P93NcjQEKe7t1fLLYJSnQ2sqpwRT4lmN8hGRBc' },
   // Iconos: app/favicon.ico, app/icon.png y app/apple-icon.png (Next.js los enlaza solo)
   openGraph: {
     siteName: MARCA,
